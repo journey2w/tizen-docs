@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Overview
+order: 3
+---
+
 ![Tizen banner](media/tizen-connect-everything.jpg)
 
 # Welcome to Tizen Studio

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 1.0 Release Notes
+order: -100
+---
+
 # Tizen 1.0 Release Notes
 
 Release Date: Apr. 30, 2012

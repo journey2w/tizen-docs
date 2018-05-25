@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.2
+order: -220
+---
+
 # Tizen 2.2
 
 Release Date: 22 Jul, 2013

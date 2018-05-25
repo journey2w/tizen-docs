@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 3.0 Public M3
+order: -303
+---
+
 # Tizen 3.0 Public M3
 
 Release Date: Jul 5, 2017

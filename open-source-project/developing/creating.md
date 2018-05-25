@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Creating Tizen Images with MIC
+order: 7
+---
+
 # Creating Tizen Images with MIC
 
 This topic provides information on how to create a Tizen image.

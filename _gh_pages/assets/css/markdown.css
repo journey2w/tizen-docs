@@ -1,0 +1,85 @@
+@import url("../bootstrap-4.0.0-beta/assets/css/docs.min.css");
+
+/* 
+ * Override docs.min.css
+ */
+ 
+.bd-content a {
+  color: #4183C4;
+}
+
+.bd-content h1 {
+  font-size: 2.6rem;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+
+.bd-content h2 {
+  margin-top: 1.8rem!important;
+  margin-bottom: .6rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.bd-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: .6rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.bd-content h4 {
+  margin-top: 1.4rem;
+  margin-bottom: .6rem;
+  font-size: 1.3rem;
+}
+
+.bd-content h5 {
+  margin-top: 1.3rem;
+  margin-bottom: .6rem;
+  font-size: 1.1rem;
+}
+
+.bd-content h6 {
+  margin-top: 1.3rem;
+  margin-bottom: .6rem;
+  font-size: 1rem;
+}
+
+.bd-content hr {
+  margin-top: 1.6rem;
+}
+
+.bd-content blockquote {
+  border-left: 4px solid #ddd;
+  margin: .8rem 0;
+  padding: 0 1rem;
+  color: #777;
+}
+
+.bd-content p,
+.bd-content ul {
+  max-width: 100%;
+}
+
+.bd-content>ol li,
+.bd-content>ul li {
+  margin: .3rem 0;
+}
+
+.bd-content table {
+  width: auto;
+  margin: 1rem 0;
+}
+
+.bd-content table th,
+.bd-content table td {
+  padding: .5rem .6rem!important;
+}
+
+.bd-content table thead th {
+  background-color: #f4f4f4;
+}

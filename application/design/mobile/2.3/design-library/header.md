@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Header
+order: 1
+---
+
 # Header
 
 The header, which appears at the top of the application screen, is a word or phrase describing the screen content or purpose.

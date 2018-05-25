@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Body
+order: 1
+---
+
 # Body
 
 The body is the screen area visible under the header. The application body can contain the following content types, such as lists or menus.

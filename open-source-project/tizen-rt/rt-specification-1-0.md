@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen RT 1.0 Specification
+order: 2
+---
+
 # Tizen RT 1.0 Specification
 
 ## IoT Data Management

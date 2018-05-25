@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Iconography
+order: 1
+---
+
 # Iconography
 
 ![Tizen icons](media/2.2.png)

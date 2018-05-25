@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Getting Started with Tizen RT
+order: 1
+---
+
 # Getting Started with Tizen RT
 
 

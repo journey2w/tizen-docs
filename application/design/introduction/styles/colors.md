@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Colors
+order: 1
+---
+
 # Colors
 
 Colors play an important role in creating designs for a rich visual experience. Carefully selected colors add rhythm and richness to the screen design and provide the entire system with visual consistency.

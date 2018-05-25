@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.3.1
+order: -231
+---
+
 # Tizen 2.3.1
 
 The Tizen 2.3.1 release provides developers with the Tizen kernel, device drivers, middleware subsystems, and Web/native APIs, necessary to develop future Tizen-compliant solutions.

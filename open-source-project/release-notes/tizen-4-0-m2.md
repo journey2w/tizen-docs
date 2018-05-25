@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 4.0 Public M2
+order: -402
+---
+
 # Tizen 4.0 Public M2
 
 Release Date: 01 Nov, 2017

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Development Tips
+order: 8
+---
+
 # Development Tips
 
 - **SSH configuration file content**

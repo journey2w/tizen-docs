@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Scroll
+order: 1
+---
+
 # Scroll
 
 The body area supports the following types of scrolling and functionality:

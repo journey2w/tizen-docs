@@ -1,3 +1,9 @@
+---
+layout: solution
+title: GBS Configuration
+order: 2
+---
+
 # GBS Configuration
 
 The GBS configuration files are all simple INI-style files that record various choices and settings used by many GBS commands. Some settings represent purely personal preferences, while others are vital to a correctly-functioning build, and still others simply tweak command behavior a little.

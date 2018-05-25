@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.0
+order: -200
+---
+
 # Tizen 2.0
 
 Release Date: 18 Feb, 2013

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Contributing to Tizen Studio
+order: 2
+---
+
 # Contributing to Tizen Studio
 
 The Tizen Studio is an open-source project. You can contribute to the source code and help improve the Tizen Studio.

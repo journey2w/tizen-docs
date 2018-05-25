@@ -1,0 +1,3801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Creating Your First Tizen Wearable Native Widget Application &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/application/overview/">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/application/native/overview">Native Application</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/overview/">Overview</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/tutorials/overview">Tutorials</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/application/native/getting-started/mobile/first-app">Getting Started</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/guides/overview">API Guides</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/api/overview">API Reference</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/application/design/introduction">Design</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="creating-your-first-tizen-wearable-native-widget-application">Creating Your First Tizen Wearable Native Widget Application</h1>
+
+<p><strong>Welcome to Tizen wearable native widget application development!</strong></p>
+
+<p>A wearable native widget application is created using the C language, and can be run on Tizen wearable devices. The application uses the native API, which provides various interfaces to the device hardware allowing you to take advantage of numerous capabilities tailored to run with limited device resources.</p>
+
+<p>A widget application is one of the Tizen application types. It can be shown by specific UI applications (such as the home screen and lock screen) that can contain widget applications.</p>
+
+<p><strong>Figure: Widget application on a wearable device</strong></p>
+
+<p><img src="media/widget_app_wearable.png" alt="Widget application on a wearable device" /></p>
+
+<p>Study the following instructions to help familiarize yourself with the Tizen <a href="../../tutorials/process/app-dev-process.md">native application development process</a> as well as using the Tizen Studio and installing the created application on the emulator or target device. With the instructions, you can create and run a basic wearable native widget application, which displays some text on the screen with no user interaction:</p>
+
+<ol>
+  <li>
+    <p>Before you get started with developing Tizen applications, download and install the <a href="../../../tizen-studio/setup/download.md">Tizen Studio</a>.</p>
+
+    <p>For more information on the installation process, see the <a href="../../../tizen-studio/setup/install-sdk.md">installation guide</a>.</p>
+  </li>
+  <li>
+    <p><a href="#create">Create a wearable native widget project</a> using the Tizen Studio.</p>
+
+    <p>This step shows how you can use a predesigned project template that creates all the basic files and folders required for your project.</p>
+  </li>
+  <li>
+    <p><a href="#build">Build the application</a>.</p>
+
+    <p>After you have implemented code for the features you want, this step shows how you can build the application to validate and compile the code.</p>
+  </li>
+  <li>
+    <p><a href="#run">Run the application</a>.</p>
+
+    <p>This step shows how you can run the application on the emulator or a real target device.</p>
+  </li>
+  <li>
+    <p><a href="#ui">Design a UI</a>.</p>
+
+    <p>This step shows how you can create the application UI and make small alterations to it to improve the usability of your application.</p>
+  </li>
+</ol>
+
+<p>When you are developing a more complex application, you can take advantage of the <a href="../../../tizen-studio/native-tools/cover-native.md">native tools included in the Tizen Studio</a> to ease the tasks of creating functionality and designing the application UI.</p>
+
+<p><a name="create"></a></p>
+<h2 id="creating-a-project">Creating a Project</h2>
+
+<p>The following example shows you how to create and configure a basic wearable native widget application project in the Tizen Studio. An application project contains all the files that make up an application.</p>
+
+<blockquote>
+  <p><strong>Note</strong><br />
+Standalone widget application packages are not allowed in the Tizen Store.
+For user convenience, you can use a standalone widget application for testing purposes in the Tizen Studio. If you want to publish the application in the Tizen Store, combine it with at least 1 UI application in the same package. For more information, see <a href="../../tutorials/process/app-dev-process.md#develop">Developing Multiple Projects as a Combined Package</a>.</p>
+</blockquote>
+
+<p>The following figure illustrates the application to be created. The application screen displays the <strong>Hello widget</strong> text and no user interaction is provided.</p>
+
+<p><strong>Figure: Wearable native Widget application</strong></p>
+
+<p><img src="media/basic_app_running_wn_widget.png" alt="Wearable native Widget application" /></p>
+
+<p>To create the application project:</p>
+
+<ol>
+  <li>
+    <p>Launch the Tizen Studio.</p>
+  </li>
+  <li>
+    <p>Make sure the <strong>Native</strong> perspective is selected in the upper-right corner of the Tizen Studio window.</p>
+
+    <p><img src="media/change_perspective_n.png" alt="Checking the perspective" /></p>
+
+    <p>If not, select it. If the perspective is not visible, in the Tizen Studio menu, select <strong>Window &gt; Perspective &gt; Open Perspective &gt; Other &gt; Native</strong>, and click <strong>OK</strong>.</p>
+  </li>
+  <li>
+    <p>In the Tizen Studio menu, select <strong>File &gt; New &gt; Tizen Project</strong>.</p>
+
+    <p><img src="media/create_project_1.png" alt="Creating a new Tizen Native project" /></p>
+
+    <p>The Project Wizard opens.</p>
+  </li>
+  <li>
+    <p>In the Project Wizard, define the project details.</p>
+
+    <p>The Project Wizard is used to create the basic application skeleton with the required folder structure and mandatory files. You can easily create different applications by selecting an applicable template or sample for the Project Wizard to use.</p>
+
+    <ol>
+      <li>
+        <p>Select the <strong>Template</strong> project type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_type.png" alt="Selecting the project type" /></p>
+      </li>
+      <li>
+        <p>Select the profile (<strong>Wearable</strong>) and version from a drop-down list and click <strong>Next</strong>.</p>
+
+        <p>The version depends on the platform version you have installed and with which you are developing the application.</p>
+
+        <p><img src="media/create_project_wizard_version_wearable.png" alt="Selecting the profile and version" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Native Application</strong> application type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_app_wearable.png" alt="Selecting the application type" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Widget</strong> template and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_template_wn_widget.png" alt="Selecting the template" /></p>
+      </li>
+      <li>
+        <p>Define the project properties and click <strong>Finish</strong>.</p>
+
+        <p>You can enter the project name (3-50 characters) and the unique package ID. You can also select the location and working sets by clicking <strong>More properties</strong>.</p>
+
+        <p><img src="media/create_project_wizard_properties_wn_widget.png" alt="Defining properties" /></p>
+
+        <p>The Project Wizard sets up the project, creates the application files using the default content from the template, and closes. For more information on the Project Wizard and the available templates, see <a href="../../../tizen-studio/native-tools/project-wizard.md">Creating Tizen Projects with Tizen Project Wizard</a>.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>You can see the created project in the <strong>Project Explorer</strong> view. The most important files and folders include:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">inc</code>: Default folder for included source files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">res</code>: Folder for resource files used by the application only</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">shared</code>: Folder for resource files to be shared with other applications</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">src</code>: Folder for source code files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lib</code>: Folder for external library files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">tizen-manifest.xml</code>: Manifest file used by the platform to install and launch the application</p>
+  </li>
+</ul>
+
+<p><strong>Figure: Application in the Project Explorer</strong></p>
+
+<p><img src="media/basic_app_project_explorer_wn_widget.png" alt="Application in the Project Explorer" /></p>
+
+<blockquote>
+  <p><strong>Note</strong><br />
+You can <a href="#configuration">view and modify the application configuration</a> in the manifest editor. In this example, no configuration changes are required.</p>
+</blockquote>
+
+<p>Your application project is now ready for further actions. Next, build the application.</p>
+
+<p><a name="configuration"></a></p>
+<h3 id="managing-the-application-configuration">Managing the Application Configuration</h3>
+
+<p>To view and modify the application configuration:</p>
+
+<ol>
+  <li>
+    <p>In the <strong>Project Explorer</strong> view, double-click the <code class="highlighter-rouge">tizen-manifest.xml</code> file of the application. The Tizen Studio opens the file in the manifest editor.</p>
+  </li>
+  <li>
+    <p>In the manifest editor, view and modify the configuration details using the various tabs:</p>
+
+    <p><img src="media/basic_app_config_wn_widget.png" alt="Configuring the application" /></p>
+
+    <ul>
+      <li>
+        <p><strong>Overview</strong>: Define general information, such as the package, label, and icon of the application.</p>
+      </li>
+      <li>
+        <p><strong>Features</strong>: Define required software and hardware features. This information is used for application filtering in the Tizen Store.</p>
+      </li>
+      <li>
+        <p><strong>Privileges</strong>: Define the security-sensitive APIs or API groups accessed and used by the application.</p>
+      </li>
+      <li>
+        <p><strong>Localization</strong>: Define localized values for the application label, description, and icon.</p>
+      </li>
+      <li>
+        <p><strong>Advanced</strong>: Define advanced features, such as application metadata, <a href="../../../tizen-studio/native-tools/manifest-text-editor.md#widget_app">widget</a> (preview image and supported size), and miscellaneous options.</p>
+      </li>
+      <li>
+        <p><strong>Source</strong>: View and edit the source code of the <code class="highlighter-rouge">tizen-manifest.xml</code> file. Changes made and saved on the other tabs are reflected in the source code and vice versa.</p>
+      </li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Note</strong><br />
+The <code class="highlighter-rouge">tizen-manifest.xml</code> file must conform to both the XML file format and the Tizen native application specification requirements. Editing the file in the <strong>Source</strong> tab is intended for advanced users only.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>To save any changes, in the Tizen Studio menu, select <strong>File &gt; Save All</strong>.</p>
+  </li>
+</ol>
+
+<p>For more information on configuring the application, see <a href="../../tutorials/process/setting-properties.md#manifest">Setting the Application Manifest</a>.</p>
+
+<h3 id="understanding-the-source-code">Understanding the Source Code</h3>
+
+<p>Pay attention to the following main issues in the application source code (in the <code class="highlighter-rouge">inc/widget.h</code> and <code class="highlighter-rouge">src/widget.c</code> files), to understand how the application is designed and how it works. For source code details related to the UI, see <a href="#ui">Designing a Simple UI</a>.</p>
+
+<ul>
+  <li>
+    <p>The widget application is initialized to use the functions and data types of the <a href="../../api/wearable/latest/group__CAPI__WIDGET__APP__MODULE.html">Widget Application</a> API by including the <code class="highlighter-rouge">&lt;widget_app.h&gt;</code> header file in your application:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;widget_app.h&gt;
+</code></pre></div>    </div>
+
+    <p>All header files that you need are already included in the <code class="highlighter-rouge">widget.h</code> file, which is generated by the Tizen Studio when the template project is created.</p>
+  </li>
+  <li>
+    <p>The widget application life-cycle callbacks manage specific parts of the application life-cycle. They are set in the <a href="../../api/wearable/latest/structwidget__app__lifecycle__callback__s.html">widget_app_lifecycle_callback_s</a> structure, and the structure is passed to the <code class="highlighter-rouge">widget_app_main()</code> function of the Widget Application API to start the widget application event loop:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int
+main(int argc, char *argv[])
+{
+    widget_app_lifecycle_callback_s ops = {0,};
+    int ret;
+
+    ops.create = widget_app_create;
+    ops.terminate = widget_app_terminate;
+
+    ret = widget_app_main(argc, argv, &amp;ops, NULL);
+    if (ret != WIDGET_ERROR_NONE)
+        dlog_print(DLOG_ERROR, LOG_TAG, "widget_app_main() failed. Err = %d", ret);
+
+    return ret;
+}
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">create</code> event is triggered before the application main loop starts. In this callback, you can initialize any resources that can be shared among widget instances. Register the widget instance callback functions, and create a widget instance class and return a handle for it, so that the handle can be used for making widget instances.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static widget_class_h
+widget_app_create(void *user_data)
+{
+    /* Hook to take necessary actions before the main event loop starts */
+    widget_instance_lifecycle_callback_s ops = {NULL,};
+
+    return widget_app_class_create(ops, user_data);
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">terminate</code> event is triggered before the application ends. When you no longer need the widget application, use it to release the resources and terminate the application.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static void
+widget_app_terminate(void *user_data)
+{
+    /* Release all resources */
+}
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>The widget application provides a life-cycle and functions for making and managing a widget class. The application has one process, whose responsibility it is to make a class in the <code class="highlighter-rouge">widget_app_create()</code> callback function of the Widget Application API. With this class, the framework can make instances whenever applications for widget viewers (such as home screen or lock screen) request for a widget instance.</p>
+
+    <p>The widget instance has its own life-cycle, which is similar to the widget application. However, the widget instance is simply an object that is shown by the applications for widget viewers. Many widget instances can be running on the same widget application process.</p>
+
+    <p>To manage the widget instance life-cycle, add the relevant callbacks to the <code class="highlighter-rouge">widget_instance_lifecycle_callback_s</code> structure during the widget application initialization:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static widget_class_h
+widget_app_create(void *user_data)
+{
+    widget_instance_lifecycle_callback_s ops = {
+        .create = widget_instance_create,
+        .destroy = widget_instance_destroy,
+        .pause = widget_instance_pause,
+        .resume = widget_instance_resume,
+        .update = widget_instance_update,
+        .resize = widget_instance_resize,
+    };
+
+    return widget_app_class_create(ops, user_data);
+}
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">create</code> callback is triggered when the widget instance is created. You can use the callback to initialize resources for the widget instance and <a href="../../guides/app-management/widget-app.md#get_window">draw the UI</a>. If the bundle content is not <code class="highlighter-rouge">NULL</code>, restore the previous status.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_create(widget_context_h context, bundle *content,
+                       int w, int h, void *user_data)
+{
+    widget_instance_data_s *wid = (widget_instance_data_s*)
+                                  malloc(sizeof(widget_instance_data_s));
+    int ret;
+
+    if (content != NULL)
+        /* Recover the previous status with the bundle object */
+
+    /* Create the UI */
+
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">destroy</code> callback is triggered when the widget instance is destroyed. You can use the callback to release all widget resources. If the <code class="highlighter-rouge">reason</code> for the termination is not <a href="../../api/wearable/latest/group__CAPI__WIDGET__APP__MODULE.html#ga50c912e59019e4e719851bae110baa02">WIDGET_APP_DESTROY_TYPE_PERMANENT</a>, store the current status with the incoming bundle.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_destroy(widget_context_h context, widget_app_destroy_type_e reason,
+                        bundle *content, void *user_data)
+{
+    if (reason != WIDGET_APP_DESTROY_TYPE_PERMANENT)
+        /* Save the current status at the bundle object */
+
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">pause</code> callback is triggered when the widget instance is paused. You can use the callback to take the necessary actions when the widget instance becomes invisible. The framework can destroy a paused widget instance.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_pause(widget_context_h context, void *user_data)
+{
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">resume</code> callback is triggered when the widget instance is resumed. You can use the callback to take the necessary actions when the widget instance becomes visible.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_resume(widget_context_h context, void *user_data)
+{
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">update</code> callback is triggered when a widget update event is received. You can use the callback to take the necessary actions for the widget update. If the <code class="highlighter-rouge">force</code> parameter is <code class="highlighter-rouge">true</code>, the widget can be updated even in the pause state.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_update(widget_context_h context, bundle *content, int force, void *user_data)
+{
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Widget instances can have private data. The data usually includes view objects to make a screen for each widget instance. The framework provides an easy way to find private data from the widget context handle, which is provided as a parameter in the callback functions. The following example shows how to make private data and use it:</p>
+    <ol>
+      <li>
+        <p>You can define a private data structure and attach it to the widget instance by calling the <code class="highlighter-rouge">widget_app_context_set_tag()</code> function of the Widget Application API:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct widget_instance_data {
+    Evas_Object *win;
+    Evas_Object *conform;
+    Evas_Object *label;
+};
+typedef struct widget_instance_data widget_instance_data_s;
+
+static int
+widget_instance_create(widget_context_h context, bundle *content,
+                       int w, int h, void *user_data)
+{
+    widget_instance_data_s *wid = (widget_instance_data_s*)
+                                  malloc(sizeof(widget_instance_data_s));
+
+    ret = widget_app_get_elm_win(context, &amp;wid-&gt;win);
+
+    wid-&gt;label = elm_label_add(wid-&gt;conform);
+
+    widget_app_context_set_tag(context, wid);
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>You can get the private data from the widget instance by calling the <code class="highlighter-rouge">widget_app_context_get_tag()</code> function of the Widget Application API.</p>
+
+        <p>The following code within the <code class="highlighter-rouge">widget_instance_update()</code> callback is not included in the default application template in the Tizen Studio, but you can add it to test the data handling feature.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_update(widget_context_h context, bundle *content,
+                       int force, void *user_data)
+{
+    widget_instance_data_s *wid = NULL;
+    widget_app_context_get_tag(context, (void**)&amp;wid);
+    if (wid-&gt;label)
+        elm_object_text_set(wid-&gt;label, "Update Widget");
+
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>If you use private data, make sure that all the resources that you allocate are freed in the callback function for the widget instance destructor:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_destroy(widget_context_h context,
+                        widget_app_destroy_type_e reason, bundle *content, void *user_data)
+{
+    widget_instance_data_s *wid = NULL;
+    widget_app_context_get_tag(context, (void**)&amp;wid);
+
+    if (wid-&gt;win)
+        evas_object_del(wid-&gt;win);
+
+    free(wid);
+
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<p><a name="build"></a></p>
+<h2 id="building-your-application">Building Your Application</h2>
+
+<p>After you have created the application project, you can implement the required features. In this example, only the default features from the project template are used, and no code changes are required.</p>
+
+<p>When your application code is ready, you must build the application. The building process performs a validation check and compiles your files.</p>
+
+<p>You can build the application in the following ways:</p>
+
+<ul>
+  <li>
+    <p><strong>Automatically</strong></p>
+
+    <p>The automatic build means that the Tizen Studio automatically rebuilds the application whenever you change a source or resource file and save the application project.</p>
+
+    <p>To use the automatic build:</p>
+
+    <ol>
+      <li>Select the project in the <strong>Project Explorer</strong> view.</li>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Project &gt; Build Automatically</strong>.</p>
+
+        <p><img src="media/build_automatic_wn_widget.png" alt="Using the automatic build" /></p>
+
+        <p>A check mark appears next to the menu option.</p>
+      </li>
+    </ol>
+
+    <p>You can toggle the automatic build on and off by reselecting <strong>Project &gt; Build Automatically</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Manually</strong></p>
+
+    <p>The manual build means that you determine yourself when the application is built.</p>
+
+    <p>To manually build the application, right-click the project in the <strong>Project Explorer</strong> view and select <strong>Build Project</strong>.</p>
+
+    <p><strong>Figure: Manually building the application</strong></p>
+
+    <p><img src="media/build_manual_n.png" alt="Manually building the application" /></p>
+
+    <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+    <ul>
+      <li>In the Tizen Studio menu, select <strong>Project &gt; Build Project</strong>.</li>
+      <li>Press the <strong>F10</strong> key.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>You can have more than one build configuration. To see the current active configuration or change it, right-click the project in the <strong>Project Explorer</strong> view and select <strong>Build Configurations &gt; Set Active</strong>. The default configuration is <code class="highlighter-rouge">Debug</code>. For more information, see <a href="../../tutorials/process/building-app.md">Building Applications</a>.</p>
+
+<p>After you have built the application, run it.</p>
+
+<p><a name="run"></a></p>
+<h2 id="running-your-application">Running Your Application</h2>
+
+<p>You can run the application on the emulator or a real target device.</p>
+
+<p><a name="emulator"></a></p>
+<h3 id="running-on-the-emulator">Running on the Emulator</h3>
+
+<p>To run the application on the emulator:</p>
+
+<ol>
+  <li>Launch an emulator instance in the <a href="../../../tizen-studio/common-tools/emulator-manager.md">Emulator Manager</a>:
+    <ol>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Tools &gt; Emulator Manager</strong>.</p>
+
+        <p><img src="media/emulator_icon.png" alt="Emulator Manager" /></p>
+      </li>
+      <li>
+        <p>In the Emulator Manager, select a wearable emulator from the list and click <strong>Launch</strong>.</p>
+
+        <p>If no applicable emulator instance exists, <a href="../../../tizen-studio/common-tools/emulator-manager.md#create">create a new one</a>.</p>
+
+        <p><img src="media/emulator_instance_launch_wearable.png" alt="Launching the emulator" /></p>
+
+        <p>The emulator is launched in its own window. You can also see the new emulator instance and its folder structure in the <strong>Device Manager</strong>.</p>
+
+        <p><img src="media/emulator_window_wearable.png" alt="Emulator" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate a security profile.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in the Tizen Studio.</p>
+  </li>
+  <li>Run the application:
+    <ol>
+      <li>
+        <p>In the <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Native Application</strong>.</p>
+
+        <p><img src="media/app_run_n.png" alt="Running the application" /></p>
+
+        <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+        <ul>
+          <li>Press the <strong>Ctrl + F11</strong> key.</li>
+          <li>Click the run icon in the toolbar.</li>
+        </ul>
+
+        <p>If you have created multiple emulator instances, select the instance you want from the combo box in the toolbar before selecting to run the application. If you select an offline emulator, it is automatically launched when you select to run the application.</p>
+
+        <p><img src="media/app_run_multiple_emulators.png" alt="Selecting the emulator to use" /></p>
+      </li>
+      <li>
+        <p>Confirm that the application launches on the emulator.</p>
+
+        <p><img src="media/emulator_running_wn_widget.png" alt="Application running in the emulator" /></p>
+
+        <blockquote>
+          <p><strong>Note</strong><br />
+If the emulator display has switched off, you cannot see the application launch. To switch the display on, click the <strong>Power</strong> key (in the lower-right corner of the emulator).</p>
+        </blockquote>
+
+        <p>The above screen is shown through the Viewer, to allow you to develop a lone widget application for testing purposes.</p>
+
+        <p>To see the widget running on the home screen, add the widget there:</p>
+
+        <ol>
+          <li>Press the <strong>Back</strong> key (in the upper-right corner of the emulator device) to return to the home screen (showing a watch face).</li>
+          <li>Swipe the home screen right until you see <strong>+ Add widget</strong>. Select it.</li>
+          <li>Swipe right until you see your widget application. Select it.</li>
+        </ol>
+
+        <p><img src="media/widget_run_add_home_wn.png" alt="Adding to home screen" /></p>
+
+        <p>You can see the added widget on the home screen. To access the widget from the home screen, swipe right.</p>
+
+        <p><img src="media/emulator_running_wn_widget.png" alt="Home screen widget" /></p>
+
+        <p>While the application is running, the <strong>Log</strong> view in the Tizen Studio shows the log, debug, and exception messages from the methods defined in the log macros. To see the view, in the Tizen Studio menu, go to <strong>Window &gt; Show View &gt; Log</strong>.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>For more information on using the emulator features, see <a href="../../../tizen-studio/common-tools/emulator-control-panel.md">Using Emulator Control Keys, Menu, and Panel</a> and <a href="../../../tizen-studio/common-tools/emulator-features.md">Using Extended Emulator Features</a>.</p>
+
+<p><a name="target"></a></p>
+<h3 id="running-on-a-target-device">Running on a Target Device</h3>
+
+<p>To run the application on a target device:</p>
+
+<ol>
+  <li>Connect the wearable target device to your computer:
+    <ol>
+      <li>Define settings on the device:
+        <ul>
+          <li>
+            <p>Go to <strong>Settings &gt; Connections</strong>, and switch on Bluetooth.</p>
+
+            <p><img src="media/emulator_target_bt.png" alt="Switch on Bluetooth" /></p>
+
+            <p><img src="media/emulator_target_bt2.png" alt="Switch on Bluetooth" /></p>
+          </li>
+          <li>
+            <p>Go to <strong>Settings &gt; Connections</strong>, and switch on Wi-Fi.</p>
+
+            <p>The device and the computer must be connected to the same Wi-Fi network.</p>
+
+            <p>Note the IP address the device is using.</p>
+
+            <p><img src="media/emulator_target_wifi.png" alt="Switch on Wi-Fi" /></p>
+          </li>
+          <li>
+            <p>Go to <strong>Settings &gt; Gear info</strong>, and switch on the debugging mode.</p>
+
+            <p><img src="media/emulator_target_debug.png" alt="Switch on debugging" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>In the terminal, enter the following commands:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd tizen-sdk/tools
+./sdb connect &lt;IP address of Gear S2&gt;
+</code></pre></div>        </div>
+
+        <p>Use the IP address you noted before.</p>
+
+        <p>Instead of the terminal, you can also use the <a href="../wearable/first-app-wn.md#remote_device">Remote Device Manager</a> for the connection.</p>
+      </li>
+      <li>
+        <p>In the first attempt, the connection fails and the device asks for user confirmation. To allow Gear to read log data, copy files to and from your computer, and install the application manually, click the accept mark.</p>
+
+        <p><img src="media/remote_allow_gear_ww.png" alt="Allow Gear to access data" /></p>
+      </li>
+      <li>
+        <p>In the <strong>Device Manager</strong>, confirm that the device is connected (shown in the device list).</p>
+
+        <p><img src="media/remote_connected_ww.png" alt="Device is connected" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate an author certificate.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in the Tizen Studio.</p>
+  </li>
+  <li>Run the application:
+    <ol>
+      <li>In the <strong>Device Manager</strong>, select the device.</li>
+      <li>
+        <p>In <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Native Application</strong>.</p>
+
+        <p><img src="media/app_run_n.png" alt="Run the application on a target device" /></p>
+
+        <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+        <ul>
+          <li>Press the <strong>Ctrl + F11</strong> key.</li>
+          <li>Click the run icon in the toolbar.</li>
+        </ul>
+
+        <p>If you have both a connected device and existing emulator instances, select the device from the combo box in the toolbar before selecting to run the application.</p>
+
+        <p><img src="media/app_run_multiple_emulators.png" alt="Selecting the device to use" /></p>
+      </li>
+      <li>
+        <p>Confirm that the application launches on the target device.</p>
+
+        <p>Like with the <a href="#viewer">emulator</a>, you can add the widget to the home screen to easily access it.</p>
+      </li>
+    </ol>
+
+    <blockquote>
+      <p><strong>Note</strong><br />
+The application is launched using the default debug run configuration. To create and use another configuration:</p>
+      <ol>
+        <li>In the <code class="highlighter-rouge">Project Explorer</code> view, right-click the project and select <code class="highlighter-rouge">Run As &gt; Run Configurations</code>.</li>
+        <li>In the <code class="highlighter-rouge">Run Configurations</code> window, click the <code class="highlighter-rouge">New Launch Configuration</code> icon (<img src="media/run_new_config_wn.png" alt="New Launch Configuration icon" />), define the configuration details, and launch the application by clicking <code class="highlighter-rouge">Run</code>.
+<img src="media/run_configurations_wn_widget.png" alt="Run Configurations window" /></li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<p><a name="ui"></a></p>
+<h2 id="designing-a-simple-ui">Designing a Simple UI</h2>
+
+<p>The wearable widget application created with the <strong>Widget</strong> template has a simple user interface with a label component showing the <strong>Hello widget</strong> text. The UI is created using <a href="../../guides/ui/efl/introduction.md">EFL</a>.</p>
+
+<p><strong>Figure: User interface in the Widget template</strong></p>
+
+<p><img src="media/basic_app_running_wn_widget.png" alt="User interface in the Widget template" /></p>
+
+<h3 id="creating-the-basic-ui">Creating the Basic UI</h3>
+
+<p>The UI in the <strong>Widget</strong> template contains the following components:</p>
+
+<ul>
+  <li>The EFL UI always contains a window component, which is the root component of the entire UI.</li>
+  <li>The application uses the conformant component as a container for other UI components.</li>
+  <li>The label showing the <strong>Hello widget</strong> text is implemented with a label component.</li>
+</ul>
+
+<p>The UI is created in the <code class="highlighter-rouge">widget.c</code> file:</p>
+
+<ol>
+  <li>
+    <p>Data structure</p>
+
+    <p>A pointer to the UI components is stored in the <code class="highlighter-rouge">widget_instance_data_s</code> data structure:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;widget_app_efl.h&gt;
+
+struct widget_instance_data {
+    /* Window */
+    Evas_Object *win;
+    /* Conformant */
+    Evas_Object *conform;
+    /* Label */
+    Evas_Object *label;
+};
+typedef struct widget_instance_data widget_instance_data_s;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>UI creation</p>
+
+    <p>The <code class="highlighter-rouge">widget_app_create()</code> life-cycle callback is called when the application main loop starts. It registers the <code class="highlighter-rouge">widget_instance_create()</code> callback, which creates the UI when the widget instance starts.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static widget_class_h
+widget_app_create(void *user_data)
+{
+    /* Register system event handlers */
+
+    widget_instance_lifecycle_callback_s ops =
+    {
+        .create = widget_instance_create,
+        .destroy = widget_instance_destroy,
+        .pause = widget_instance_pause,
+        .resume = widget_instance_resume,
+        .update = widget_instance_update,
+    };
+
+    return widget_app_class_create(ops, user_data);
+}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>UI components</p>
+    <ol>
+      <li>
+        <p>The <code class="highlighter-rouge">widget_instance_create()</code> function creates the UI components: window, conformant, and label.</p>
+
+        <p>The function defines a pointer to fill in the <code class="highlighter-rouge">widget_instance_data_s</code> structure.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static int
+widget_instance_create(widget_context_h context, bundle *content,
+                       int w, int h, void *user_data)
+{
+    widget_instance_data_s *wid = (widget_instance_data_s*)
+                                  malloc(sizeof(widget_instance_data_s));
+
+    int ret;
+    if (content != NULL)
+        /* Recover the previous status with the bundle object */
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The window object for the widget is retrieved with the <code class="highlighter-rouge">widget_app_get_elm_win()</code> function of the <a href="../../api/wearable/latest/group__CAPI__WIDGET__APP__MODULE.html">Widget Application</a> API to create the UI on the home screen.</p>
+
+        <p>The <code class="highlighter-rouge">evas_object_resize()</code> function is used to resize the window to fit the screen.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /* Window */
+    ret = widget_app_get_elm_win(context, &amp;wid-&gt;win);
+    if (ret != WIDGET_ERROR_NONE) {
+        dlog_print(DLOG_ERROR, LOG_TAG, "failed to get window. err = %d", ret);
+
+        return WIDGET_ERROR_FAULT;
+    }
+
+    evas_object_resize(wid-&gt;win, w, h);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The conformant component is used as a container for the other UI components:</p>
+
+        <ul>
+          <li>The component is the first object added inside the window with the <code class="highlighter-rouge">elm_conformant_add()</code> function.</li>
+          <li>The conformant component is set as a resize object of the window by using the <code class="highlighter-rouge">elm_win_resize_object_add()</code> function. It means that the conformant size and position are controlled by the window component directly.</li>
+          <li>The <code class="highlighter-rouge">evas_object_show()</code> function makes the conformant component visible.</li>
+        </ul>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /* Conformant */
+    wid-&gt;conform = elm_conformant_add(wid-&gt;win);
+    evas_object_size_hint_weight_set(wid-&gt;conform, EVAS_HINT_EXPAND,
+                                     EVAS_HINT_EXPAND);
+    elm_win_resize_object_add(wid-&gt;win, wid-&gt;conform);
+    evas_object_show(wid-&gt;conform);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The label component for the text is added with the <code class="highlighter-rouge">elm_label_add()</code> function. The label is added inside the conformant component, which is the label’s parent.</p>
+
+        <p>The label is resized and moved, and its text is set with the <code class="highlighter-rouge">elm_object_text_set()</code> function.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /* Label */
+    wid-&gt;label = elm_label_add(wid-&gt;conform);
+    evas_object_resize(wid-&gt;label, w, h / 3);
+    evas_object_move(wid-&gt;label, w / 4, h / 3);
+    evas_object_show(wid-&gt;label);
+    elm_object_text_set(wid-&gt;label, "&lt;align=center&gt;Hello widget&lt;/align&gt;");
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>When all the UI components are ready, the <code class="highlighter-rouge">evas_object_show()</code> function makes the window component visible. This means that the window displays everything on the screen at once.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /* Show the window after the base GUI is set up */
+    evas_object_show(wid-&gt;win);
+
+    widget_app_context_set_tag(context, wid);
+
+    return WIDGET_ERROR_NONE;
+}
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="modifying-existing-components">Modifying Existing Components</h3>
+
+<p>When the basic UI exists, you can easily modify the components in the UI by using the component-specific functions, or more general Evas object functions.</p>
+
+<p>For example, the following modification to the label component changes the text color to green:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Label */
+wid-&gt;label = elm_label_add(wid-&gt;conform);
+evas_object_resize(wid-&gt;label, w, h / 3);
+evas_object_move(wid-&gt;label, w / 4, h / 3);
+evas_object_color_set(wid-&gt;label, 50, 255, 150, 255);
+evas_object_show(wid-&gt;label);
+elm_object_text_set(wid-&gt;label, "&lt;align=center&gt;Hello widget&lt;/align&gt;");
+</code></pre></div></div>
+
+<p><strong>Figure: Modified label component</strong></p>
+
+<p><img src="media/simple_ui_label_wn_widget.png" alt="Modified label component" /></p>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

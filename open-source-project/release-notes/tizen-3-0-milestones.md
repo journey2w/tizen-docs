@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 3.0 Milestones
+order: -300
+---
+
 # Tizen 3.0 Milestones
 
 Release Date: Sep 17, 2015

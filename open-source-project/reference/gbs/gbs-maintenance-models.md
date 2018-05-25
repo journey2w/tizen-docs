@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Maintenance Models Supported by GBS
+order: 3
+---
+
 # Maintenance Models Supported by GBS
 
 From a package maintenance point of view, packages can be divided into 2 categories:

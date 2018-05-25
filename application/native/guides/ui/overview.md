@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Overview
+order: 1
+---
+
 # User Interface
 
 The user interface features introduce how you can create a visual outlook for the UI application to ensure the best possible user experience.

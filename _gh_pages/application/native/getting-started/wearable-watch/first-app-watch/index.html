@@ -1,0 +1,3752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Creating Your First Tizen Wearable Native Watch Application &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/application/overview/">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/application/native/overview">Native Application</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/overview/">Overview</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/tutorials/overview">Tutorials</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/application/native/getting-started/mobile/first-app">Getting Started</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/guides/overview">API Guides</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/application/native/api/overview">API Reference</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/application/design/introduction">Design</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="creating-your-first-tizen-wearable-native-watch-application">Creating Your First Tizen Wearable Native Watch Application</h1>
+
+<p><strong>Welcome to Tizen wearable native watch application development!</strong></p>
+
+<p>A wearable native watch application is created using the C language, and can be run on Tizen wearable devices to display a customized watch face to the user.</p>
+
+<p>Study the following instructions to help familiarize yourself with the Tizen <a href="../../tutorials/process/app-dev-process.md">native application development process</a> as well as using the Tizen Studio and installing the created application on the emulator or target device. With the instructions, you can create and run a basic wearable native watch application, which displays some text and the current time on the screen:</p>
+
+<ol>
+  <li>
+    <p>Before you get started with developing Tizen applications, download and install the <a href="../../../tizen-studio/setup/download.md">Tizen Studio</a>.</p>
+
+    <p>For more information on the installation process, see the <a href="../../../tizen-studio/setup/install-sdk.md">installation guide</a>.</p>
+  </li>
+  <li>
+    <p><a href="#create">Create a wearable native watch project</a> using the Tizen Studio.</p>
+
+    <p>This step shows how you can use a predesigned project template that creates all the basic files and folders required for your project.</p>
+  </li>
+  <li>
+    <p><a href="#build">Build the application</a>.</p>
+
+    <p>After you have implemented code for the features you want, this step shows how you can build the application to validate and compile the code.</p>
+  </li>
+  <li>
+    <p><a href="#run">Run the application</a>.</p>
+
+    <p>This step shows how you can run the application on the emulator or a real target device.</p>
+  </li>
+  <li>
+    <p><a href="#build">Design a UI</a>.</p>
+
+    <p>This step shows how you can create the application UI and make small alterations to it to improve the usability of your application.</p>
+  </li>
+</ol>
+
+<p>When you are developing a more complex application, you can take advantage of the <a href="../../../tizen-studio/native-tools/cover-native.md">native tools included in the Tizen Studio</a> to ease the tasks of creating functionality and designing the application UI.</p>
+
+<p><a name="create"></a></p>
+<h2 id="creating-a-project">Creating a Project</h2>
+
+<p>The following example shows you how to create and configure a basic wearable native watch application project in the Tizen Studio. An application project contains all the files that make up an application.</p>
+
+<p>The following figure illustrates the application to be created. The application screen displays the <strong>Hello Watch</strong> text and the current time, which continues to be refreshed every second while the application runs.</p>
+
+<p><strong>Figure: Wearable native Watch application</strong></p>
+
+<p><img src="media/basic_app_running_wn_watch.png" alt="Wearable native Watch application" /></p>
+
+<p>To create the application project:</p>
+
+<ol>
+  <li>
+    <p>Launch the Tizen Studio.</p>
+  </li>
+  <li>
+    <p>Make sure the <strong>Native</strong> perspective is selected in the upper-right corner of the Tizen Studio window.</p>
+
+    <p><img src="media/change_perspective_n.png" alt="Checking the perspective" /></p>
+
+    <p>If not, select it. If the perspective is not visible, in the Tizen Studio menu, select <strong>Window &gt; Perspective &gt; Open Perspective &gt; Other &gt; Native</strong>, and click <strong>OK</strong>.</p>
+  </li>
+  <li>
+    <p>In the Tizen Studio menu, select <strong>File &gt; New &gt; Tizen Project</strong>.</p>
+
+    <p><img src="media/create_project_1.png" alt="Creating a new Tizen Native project" /></p>
+
+    <p>The Project Wizard opens.</p>
+  </li>
+  <li>
+    <p>In the Project Wizard, define the project details.</p>
+
+    <p>The Project Wizard is used to create the basic application skeleton with the required folder structure and mandatory files. You can easily create different applications by selecting an applicable template or sample for the Project Wizard to use.</p>
+
+    <ol>
+      <li>
+        <p>Select the <strong>Template</strong> project type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_type.png" alt="Selecting the project type" /></p>
+      </li>
+      <li>
+        <p>Select the profile (<strong>Wearable</strong>) and version from a drop-down list and click <strong>Next</strong>.</p>
+
+        <p>The version depends on the platform version you have installed and with which you are developing the application.</p>
+
+        <p><img src="media/create_project_wizard_version_wearable.png" alt="Selecting the profile and version" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Native Application</strong> application type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_app_wearable.png" alt="Selecting the application type" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Watch</strong> template and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_template_wn_watch.png" alt="Selecting the template" /></p>
+      </li>
+      <li>
+        <p>Define the project properties and click <strong>Finish</strong>.</p>
+
+        <p>You can enter the project name (3-50 characters) and the unique package ID. You can also select the location and working sets by clicking <strong>More properties</strong>.</p>
+
+        <p><img src="media/create_project_wizard_properties_wn_watch.png" alt="Defining properties" /></p>
+
+        <p>The Project Wizard sets up the project, creates the application files using the default content from the template, and closes. For more information on the Project Wizard and the available templates, see <a href="../../../tizen-studio/native-tools/project-wizard.md">Creating Tizen Projects with Tizen Project Wizard</a>.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>You can see the created project in the <strong>Project Explorer</strong> view. The most important files and folders include:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">inc</code>: Default folder for included source files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">res</code>: Folder for resource files used by the application only</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">shared</code>: Folder for resource files to be shared with other applications</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">src</code>: Folder for source code files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">lib</code>: Folder for external library files</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">tizen-manifest.xml</code>: Manifest file used by the platform to install and launch the application</p>
+  </li>
+</ul>
+
+<p><strong>Figure: Application in the Project Explorer</strong></p>
+
+<p><img src="media/basic_app_project_explorer_wn_watch.png" alt="Application in the Project Explorer" /></p>
+
+<blockquote>
+  <p><strong>Note</strong><br />
+You can <a href="#configuration">view and modify the application configuration</a> in the manifest editor. In this example, no configuration changes are required.</p>
+</blockquote>
+
+<p>Your application project is now ready for further actions. Next, build the application.</p>
+
+<p><a name="configuration"></a></p>
+<h3 id="managing-the-application-configuration">Managing the Application Configuration</h3>
+
+<p>To view and modify the application configuration:</p>
+
+<ol>
+  <li>
+    <p>In the <strong>Project Explorer</strong> view, double-click the <code class="highlighter-rouge">tizen-manifest.xml</code> file of the application. The Tizen Studio opens the file in the manifest editor.</p>
+  </li>
+  <li>
+    <p>In the manifest editor, view and modify the configuration details using the various tabs:</p>
+
+    <p><img src="media/basic_app_config_wn_watch.png" alt="Configuring the application" /></p>
+
+    <ul>
+      <li>
+        <p><strong>Overview</strong>: Define general information, such as the package, label, and icon of the application.</p>
+      </li>
+      <li>
+        <p><strong>Features</strong>: Define required software and hardware features. This information is used for application filtering in the Tizen Store.</p>
+      </li>
+      <li>
+        <p><strong>Privileges</strong>: Define the security-sensitive APIs or API groups accessed and used by the application.</p>
+      </li>
+      <li>
+        <p><strong>Localization</strong>: Define localized values for the application label, description, and icon.</p>
+      </li>
+      <li>
+        <p><strong>Advanced</strong>: Define advanced features, such as application metadata and some miscellaneous options.</p>
+      </li>
+      <li>
+        <p><strong>Source</strong>: View and edit the source code of the <code class="highlighter-rouge">tizen-manifest.xml</code> file. Changes made and saved on the other tabs are reflected in the source code and vice versa.</p>
+
+        <blockquote>
+          <p><strong>Note</strong><br />
+The <code class="highlighter-rouge">tizen-manifest.xml</code> file must conform to both the XML file format and the Tizen native application specification requirements. Editing the file in the <strong>Source</strong> tab is intended for advanced users only.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To save any changes, in the Tizen Studio menu, select <strong>File &gt; Save All</strong>.</p>
+  </li>
+</ol>
+
+<p>For more information on configuring the application, see <a href="../../tutorials/process/setting-properties.md#manifest">Setting the Application Manifest</a>.</p>
+
+<h3 id="understanding-the-source-code">Understanding the Source Code</h3>
+
+<p>Pay attention to the following main issues in the application source code (in the <code class="highlighter-rouge">inc/watch.h</code> and <code class="highlighter-rouge">src/watch.c</code> files), to understand how the application is designed and how it works. For source code details related to the UI, see <a href="#build_ui">Designing a Simple UI</a>.</p>
+
+<ul>
+  <li>
+    <p>The watch application is initialized to use the functions and data types of the <a href="../../api/wearable/latest/group__CAPI__WATCH__APP__MODULE.html">Watch Application</a> API by including the <code class="highlighter-rouge">&lt;watch_app.h&gt;</code> header file in your application:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;watch_app.h&gt;
+</code></pre></div>    </div>
+
+    <p>All header files that you need are already included in the <code class="highlighter-rouge">watch.h</code> file, which is generated by the Tizen Studio when the template project is created.</p>
+  </li>
+  <li>
+    <p>The life-cycle callbacks manage specific parts of the application life-cycle. They are set in the <a href="../../api/wearable/latest/structwatch__app__lifecycle__callback__s.html">watch_app_lifecycle_callback_s</a> structure, and the structure is passed to the <code class="highlighter-rouge">watch_app_main()</code> function of the Watch Application API to start the watch application event loop:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int
+  main(int argc, char *argv[])
+  {
+      appdata_s ad = {0,};
+      int ret = 0;
+
+      watch_app_lifecycle_callback_s event_callback = {0,};
+      app_event_handler_h handlers[5] = {NULL,};
+
+      event_callback.create = app_create;
+      event_callback.terminate = app_terminate;
+      event_callback.pause = app_pause;
+      event_callback.resume = app_resume;
+      event_callback.app_control = app_control;
+      event_callback.time_tick = app_time_tick;
+      event_callback.ambient_tick = app_ambient_tick;
+      event_callback.ambient_changed = app_ambient_changed;
+
+      ret = watch_app_main(argc, argv, &amp;event_callback, &amp;ad);
+      if (ret != APP_ERROR_NONE)
+          dlog_print(DLOG_ERROR, LOG_TAG, "watch_app_main() is failed. err = %d", ret);
+
+      return ret;
+  }
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">create</code> event is triggered before the application main loop starts. In this callback, you can initialize the application resources, such as create windows and data structures.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static bool
+app_create(int width, int height, void *data)
+{
+    /*
+       Hook to take necessary actions before the main event loop starts
+       Initialize UI resources and application's data
+       If this function returns true, the main loop of application starts
+       If this function returns false, the application is terminated
+    */
+    appdata_s *ad = data;
+
+    create_base_gui(ad, width, height);
+
+    return true;
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">time_tick</code> event is triggered at least once per second. The watch applications can get the current time from the <code class="highlighter-rouge">watch_time</code> time handle to draw a normal watch.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  static void
+  app_time_tick(watch_time_h watch_time, void *data)
+  {
+      /* Called each second while your app is visible; update the watch UI */
+      appdata_s *ad = data;
+      update_watch(ad, watch_time, 0);
+  }
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Note</strong><br />
+For more information on the application life-cycle callbacks, see <a href="../../guides/app-management/applications.md">Applications</a>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>An ambient mode is available on a low-powered wearable device. In this mode, the watch application shows a limited UI and receives only the ambient tick event every minute to reduce power consumption.</p>
+
+    <p>The details of the limited UI drawn in the ambient mode depend on the device. In addition, due to the ambient mode being a low power mode, there are limits to the colors that can be shown on the screen. Usually, when designing the ambient mode UI, draw it with limited colors (cyan, magenta, yellow, red, green, blue, black and white), and use less than 15% of the pixels on the screen. If you do not want to draw your own ambient mode UI, set the <code class="highlighter-rouge">ambient-support</code> attribute to <code class="highlighter-rouge">false</code> in the watch application manifest file to allow the platform to show a default ambient mode UI.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>To use the ambient mode, the user must enable it in the device settings. In addition, on the Gear S2 device, the ambient mode activates only when you are wearing the watch on the wrist.</p>
+    </blockquote>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">ambient_tick</code> callback is triggered every minute while the device is in the ambient mode. You can use the callback to update the time on your watch application in the ambient mode. In this callback, do not perform time-consuming tasks and always update the UI as quickly as possible. The platform can put the device to sleep shortly after the ambient tick expires.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static void
+app_ambient_tick(watch_time_h watch_time, void *data)
+{
+    /* Called at each minute while the device is in ambient mode. Update watch UI. */
+    appdata_s *ad = data;
+    update_watch(ad, watch_time, 1);
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">ambient_changed</code> callback is triggered when the ambient mode is enabled or disabled on the device. You can use the callback to initialize your ambient mode UI.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  static void
+  app_ambient_changed(bool ambient_mode, void *data)
+  {
+      if (ambient_mode)
+          /* Prepare to enter the ambient mode */
+      else
+          /* Prepare to exit the ambient mode */
+  }
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><a name="build"></a></p>
+<h2 id="building-your-application">Building Your Application</h2>
+
+<p>After you have created the application project, you can implement the required features. In this example, only the default features from the project template are used, and no code changes are required.</p>
+
+<p>When your application code is ready, you must build the application. The building process performs a validation check and compiles your files.</p>
+
+<p>You can build the application in the following ways:</p>
+
+<ul>
+  <li>
+    <p><strong>Automatically</strong></p>
+
+    <p>The automatic build means that the Tizen Studio automatically rebuilds the application whenever you change a source or resource file and save the application project.</p>
+
+    <p>To use the automatic build:</p>
+
+    <ol>
+      <li>Select the project in the <strong>Project Explorer</strong> view.</li>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Project &gt; Build Automatically</strong>.</p>
+
+        <p><img src="media/build_automatic_wn_watch.png" alt="Using the automatic build" /></p>
+
+        <p>A check mark appears next to the menu option.</p>
+      </li>
+    </ol>
+
+    <p>You can toggle the automatic build on and off by reselecting <strong>Project &gt; Build Automatically</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Manually</strong></p>
+
+    <p>The manual build means that you determine yourself when the application is built.</p>
+
+    <p>To manually build the application, right-click the project in the <strong>Project Explorer</strong> view and select <strong>Build Project</strong>.</p>
+
+    <p><strong>Figure: Manually building the application</strong></p>
+
+    <p><img src="media/build_manual_n.png" alt="Manually building the application" /></p>
+
+    <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+    <ul>
+      <li>In the Tizen Studio menu, select <strong>Project &gt; Build Project</strong>.</li>
+      <li>Press the <strong>F10</strong> key.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>You can have more than one build configuration. To see the current active configuration or change it, right-click the project in the <strong>Project Explorer</strong> view and select <strong>Build Configurations &gt; Set Active</strong>. The default configuration is <code class="highlighter-rouge">Debug</code>. For more information, see <a href="../../tutorials/process/building-app.md">Building Applications</a>.</p>
+
+<p>After you have built the application, run it.</p>
+
+<p><a name="run"></a></p>
+<h2 id="running-your-application">Running Your Application</h2>
+
+<p>You can run the application on the emulator or a real target device.</p>
+
+<p><a name="emulator"></a></p>
+<h3 id="running-on-the-emulator">Running on the Emulator</h3>
+
+<p>To run the application on the emulator:</p>
+
+<ol>
+  <li>Launch an emulator instance in the <a href="../../../tizen-studio/common-tools/emulator-manager.md">Emulator Manager</a>:
+    <ol>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Tools &gt; Emulator Manager</strong>.</p>
+
+        <p><img src="media/emulator_icon.png" alt="Emulator Manager" /></p>
+      </li>
+      <li>
+        <p>In the Emulator Manager, select a wearable emulator from the list and click <strong>Launch</strong>.</p>
+
+        <p>If no applicable emulator instance exists, <a href="../../../tizen-studio/common-tools/emulator-manager.md#create">create a new one</a>.</p>
+
+        <p><img src="media/emulator_instance_launch_wearable.png" alt="Launching the emulator" /></p>
+
+        <p>The emulator is launched in its own window. You can also see the new emulator instance and its folder structure in the <strong>Device Manager</strong>.</p>
+
+        <p><img src="media/emulator_window_wearable.png" alt="Emulator" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate a security profile.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in the Tizen Studio.</p>
+  </li>
+  <li>Run the application:
+    <ol>
+      <li>
+        <p>In the <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Native Application</strong>.</p>
+
+        <p><img src="media/app_run_n.png" alt="Running the application" /></p>
+
+        <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+        <ul>
+          <li>Press the <strong>Ctrl + F11</strong> key.</li>
+          <li>Click the run icon in the toolbar.</li>
+        </ul>
+
+        <p>If you have created multiple emulator instances, select the instance you want from the combo box in the toolbar before selecting to run the application. If you select an offline emulator, it is automatically launched when you select to run the application.</p>
+
+        <p><img src="media/app_run_multiple_emulators.png" alt="Selecting the emulator to use" /></p>
+      </li>
+      <li>
+        <p>Confirm that the application launches on the emulator.</p>
+
+        <p><img src="media/watch_run_face_wn.png" alt="Successful installation" /></p>
+
+        <blockquote>
+          <p><strong>Note</strong><br />
+If the emulator display has switched off, you cannot see the application launch. To switch the display on, click the <strong>Power</strong> key (in the lower-right corner of the emulator).</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Change the watch face.<a name="watchface"></a></p>
+
+        <p>To change the watch face and make the installed watch application visible:</p>
+
+        <p><img src="media/watch_run_change_wn.png" alt="Changing the watch face" /></p>
+
+        <ol>
+          <li>If the emulator display has been switched off, activate it by pressing the <strong>Power</strong> key (in the lower-right corner of the emulator).</li>
+          <li>On the home screen (showing the default watch face), press the <strong>Power</strong> key.</li>
+          <li>In the Recent Apps screen, select <strong>Settings &gt; Watch faces and styles &gt; Watch faces</strong>.</li>
+          <li>
+            <p>Swipe right until you find your application icon, and select it.</p>
+
+            <p>The <strong>Clock changed</strong> message is displayed.</p>
+          </li>
+          <li>
+            <p>Press the <strong>Back</strong> key (in the upper-right corner of the emulator device) multiple times, until the home screen with your new watch face is shown.</p>
+
+            <p><img src="media/watch_run_face_wn.png" alt="Application running in the emulator" /></p>
+          </li>
+        </ol>
+
+        <p>While the application is running, the <strong>Log</strong> view in the Tizen Studio shows the log, debug, and exception messages from the methods defined in the log macros. To see the view, in the Tizen Studio menu, go to <strong>Window &gt; Show View &gt; Log</strong>.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>For more information on using the emulator features, see <a href="../../../tizen-studio/common-tools/emulator-control-panel.md">Using Emulator Control Keys, Menu, and Panel</a> and <a href="../../../tizen-studio/common-tools/emulator-features.md">Using Extended Emulator Features</a>.</p>
+
+<p><a name="target"></a></p>
+<h3 id="running-on-a-target-device">Running on a Target Device</h3>
+
+<p>To run the application on a target device:</p>
+
+<ol>
+  <li>Connect the wearable target device to your computer:
+    <ol>
+      <li>Define settings on the device:
+        <ul>
+          <li>
+            <p>Go to <strong>Settings &gt; Connections</strong>, and switch on Bluetooth.</p>
+
+            <p><img src="media/emulator_target_bt.png" alt="Switch on Bluetooth" /></p>
+
+            <p><img src="media/emulator_target_bt2.png" alt="Switch on Bluetooth" /></p>
+          </li>
+          <li>
+            <p>Go to <strong>Settings &gt; Connections</strong>, and switch on Wi-Fi.</p>
+
+            <p>The device and the computer must be connected to the same Wi-Fi network.</p>
+
+            <p>Note the IP address the device is using.</p>
+
+            <p><img src="media/emulator_target_wifi.png" alt="Switch on Wi-Fi" /></p>
+          </li>
+          <li>
+            <p>Go to <strong>Settings &gt; Gear info</strong>, and switch on the debugging mode.</p>
+
+            <p><img src="media/emulator_target_debug.png" alt="Switch on debugging" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>In the terminal, enter the following commands:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd tizen-sdk/tools
+ ./sdb connect &lt;IP address of Gear S2&gt;
+</code></pre></div>        </div>
+
+        <p>Use the IP address you noted before.</p>
+
+        <p>Instead of the terminal, you can also use the <a href="../wearable/first-app-wn.md#remote_device">Remote Device Manager</a> for the connection.</p>
+      </li>
+      <li>
+        <p>In the first attempt, the connection fails and the device asks for user confirmation. To allow Gear to read log data, copy files to and from your computer, and install the application manually, click the accept mark.</p>
+
+        <p><img src="media/remote_allow_gear_ww.png" alt="Allow Gear to access data" /></p>
+      </li>
+      <li>
+        <p>In the <strong>Device Manager</strong>, confirm that the device is connected (shown in the device list).</p>
+
+        <p><img src="media/remote_connected_ww.png" alt="Device is connected" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate an author certificate.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in the Tizen Studio.</p>
+  </li>
+  <li>Run the application:
+    <ol>
+      <li>In the <strong>Device Manager</strong>, select the device.</li>
+      <li>
+        <p>In <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Native Application</strong>.</p>
+
+        <p><img src="media/app_run_n.png" alt="Run the application on a target device" /></p>
+
+        <p>Alternatively, you can also select the project in the <strong>Project Explorer</strong> view and do one of the following:</p>
+
+        <ul>
+          <li>Press the <strong>Ctrl + F11</strong> key.</li>
+          <li>Click the run icon in the toolbar.</li>
+        </ul>
+
+        <p>If you have both a connected device and existing emulator instances, select the device from the combo box in the toolbar before selecting to run the application.</p>
+
+        <p><img src="media/app_run_multiple_emulators.png" alt="Selecting the device to use" /></p>
+      </li>
+      <li>
+        <p>Confirm that the application launches on the target device.</p>
+
+        <p>Like with the <a href="#watchface">emulator</a>, you can change the watch face in the device settings to see the watch application on the home screen.</p>
+      </li>
+    </ol>
+
+    <blockquote>
+      <p><strong>Note</strong><br />
+The application is launched using the default debug run configuration. To create and use another configuration:</p>
+      <ol>
+        <li>In the <code class="highlighter-rouge">Project Explorer</code> view, right-click the project and select <code class="highlighter-rouge">Run As &gt; Run Configurations</code>.</li>
+        <li>In the <code class="highlighter-rouge">Run Configurations</code> window, click the <code class="highlighter-rouge">New Launch Configuration</code> icon (<img src="media/run_new_config_wn.png" alt="New Launch Configuration icon" />), define the configuration details, and launch the application by clicking <code class="highlighter-rouge">Run</code>.
+<img src="media/run_configurations_wn_watch.png" alt="Run Configurations window" /></li>
+      </ol>
+    </blockquote>
+  </li>
+</ol>
+
+<p><a name="build_ui"></a></p>
+<h2 id="designing-a-simple-ui">Designing a Simple UI</h2>
+
+<p>The wearable watch application created with the <strong>Watch</strong> template has a simple user interface with a label component showing the <strong>Hello Watch</strong> text and the current time (hour, minute, and second). The UI is created using <a href="../../guides/ui/efl/introduction.md">EFL</a>.</p>
+
+<p>In the ambient mode, the <strong>Watch</strong> template UI is identical to the normal UI, except that is shows the current time without the seconds.</p>
+
+<p><strong>Figure: User interface in the Watch template (ambient mode on the right)</strong></p>
+
+<p><img src="media/simple_ui_basic_wn_watch.png" alt="User interface in the Watch template (ambient mode on the right)" /></p>
+
+<h3 id="creating-the-basic-ui">Creating the Basic UI</h3>
+
+<p>The UI in the <strong>Watch</strong> template contains the following components:</p>
+
+<ul>
+  <li>The EFL UI always contains a window component, which is the root component of the entire UI.</li>
+  <li>The application uses the conformant component as a container for other UI components.</li>
+  <li>The label showing the <strong>Hello Watch</strong> text and the current time is implemented with a label component.</li>
+</ul>
+
+<p>The UI is created in the <code class="highlighter-rouge">watch.c</code> file:</p>
+
+<ol>
+  <li>
+    <p>Data structure</p>
+
+    <p>A pointer to the UI components is stored in the <code class="highlighter-rouge">appdata_s</code> data structure:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct appdata {
+    /* Window */
+    Evas_Object *win;
+    /* Conformant */
+    Evas_Object *conform;
+    /* Label */
+    Evas_Object *label;
+};
+typedef struct appdata appdata_s;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>UI creation</p>
+
+    <p>The <code class="highlighter-rouge">app_create()</code> life-cycle callback is called when the application main loop starts, and it calls the <code class="highlighter-rouge">create_base_gui()</code> function to create the UI:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> static bool
+ app_create(int width, int height, void *data)
+ {
+     /* Define system callbacks */
+
+     appdata_s *ad = data;
+
+     create_base_gui(ad, width, height);
+
+     return true;
+ }
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>UI components</p>
+    <ol>
+      <li>
+        <p>The <code class="highlighter-rouge">create_base_gui()</code> function creates the UI components: window, conformant, and label.</p>
+
+        <p>The function receives a pointer to fill in the <code class="highlighter-rouge">appdata_s</code> structure.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static void
+create_base_gui(appdata_s *ad, int width, int height)
+{
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The window object of the idle screen is retrieved with the <code class="highlighter-rouge">watch_app_get_elm_win()</code> function of the <a href="../../../api/wearable/latest/group__CAPI__WATCH__APP__MODULE.html">Watch Application</a> API.</p>
+
+        <p>The <code class="highlighter-rouge">watch_time_h</code> handle is created for managing the current time, and the <code class="highlighter-rouge">evas_object_resize()</code> function is used to resize the window to fit the screen.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     int ret;
+     watch_time_h watch_time = NULL;
+
+     ret = watch_app_get_elm_win(&amp;ad-&gt;win);
+
+     if (ret != APP_ERROR_NONE) {
+         dlog_print(DLOG_ERROR, LOG_TAG, "failed to get window. err = %d", ret);
+
+         return;
+     }
+
+     evas_object_resize(ad-&gt;win, width, height);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The conformant component is used as a container for the other UI components:</p>
+
+        <ul>
+          <li>The component is the first object added inside the window with the <code class="highlighter-rouge">elm_conformant_add()</code> function.</li>
+          <li>The conformant component is set as a resize object of the window by using the <code class="highlighter-rouge">elm_win_resize_object_add()</code> function. It means that the conformant size and position are controlled by the window component directly.</li>
+          <li>The <code class="highlighter-rouge">evas_object_show()</code> function makes the conformant component visible.</li>
+        </ul>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     ad-&gt;conform = elm_conformant_add(ad-&gt;win);
+     evas_object_size_hint_weight_set(ad-&gt;conform, EVAS_HINT_EXPAND,
+                                      EVAS_HINT_EXPAND);
+     elm_win_resize_object_add(ad-&gt;win, ad-&gt;conform);
+     evas_object_show(ad-&gt;conform);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The label component for the text and time is added with the <code class="highlighter-rouge">elm_label_add()</code> function. The label is added inside the conformant component, which is the label’s parent.</p>
+
+        <p>The label is resized and moved so that it is located below the first third of the screen height.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     ad-&gt;label = elm_label_add(ad-&gt;conform);
+     evas_object_resize(ad-&gt;label, width, height / 3);
+     evas_object_move(ad-&gt;label, 0, height / 3);
+     evas_object_show(ad-&gt;label);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">watch_time_get_current_time()</code> function retrieves the current time, and the <code class="highlighter-rouge">update_watch()</code> function uses the current time to set the label component content. Finally, the <code class="highlighter-rouge">watch_time_h</code> handle is deleted.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     ret = watch_time_get_current_time(&amp;watch_time);
+
+     if (ret != APP_ERROR_NONE)
+         dlog_print(DLOG_ERROR, LOG_TAG,
+                    "failed to get current time. err = %d", ret);
+
+     update_watch(ad, watch_time, 0);
+     watch_time_delete(watch_time);
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>When all the UI components are ready, the <code class="highlighter-rouge">evas_object_show()</code> function makes the window component visible. This means that the window displays everything on the screen at once.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     evas_object_show(ad-&gt;win);
+ }
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="modifying-existing-components">Modifying Existing Components</h3>
+
+<p>When the basic UI exists, you can easily modify the components in the UI by using the component-specific functions, or more general Evas object functions.</p>
+
+<p>For example, the following modification to the label component changes the text color to red:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ad-&gt;label = elm_label_add(ad-&gt;conform);
+    evas_object_color_set(ad-&gt;label, 255, 0, 0, 255);
+    evas_object_resize(ad-&gt;label, width, height / 3);
+    evas_object_move(ad-&gt;label, 0, height / 3);
+    evas_object_show(ad-&gt;label);
+</code></pre></div></div>
+
+<p><strong>Figure: Modified label component</strong></p>
+
+<p><img src="media/simple_ui_label_wn_watch.png" alt="Modified label component" /></p>
+
+<h3 id="showing-the-current-time">Showing the Current Time</h3>
+
+<p>You can update the time on the screen with the <code class="highlighter-rouge">time_tick</code> (in the normal mode) or <code class="highlighter-rouge">ambient_tick</code> (in the ambient mode) callback:</p>
+
+<ol>
+  <li>
+    <p>Both callbacks contain the current time handle, and call the <code class="highlighter-rouge">update_watch()</code> function to update the label content on the screen:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static void
+app_time_tick(watch_time_h watch_time, void *data)
+{
+    appdata_s *ad = data;
+    update_watch(ad, watch_time, 0);
+}
+
+static void
+app_ambient_tick(watch_time_h watch_time, void *data)
+{
+    appdata_s *ad = data;
+    update_watch(ad, watch_time, 1);
+}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In the <code class="highlighter-rouge">update_watch()</code> function, the <code class="highlighter-rouge">watch_time_h</code> handle is used to retrieve the current time elements (hour, minute, and second) with the <code class="highlighter-rouge">watch_time_get_hour24()</code>, <code class="highlighter-rouge">watch_time_get_minute()</code>, and <code class="highlighter-rouge">watch_time_get_second()</code> functions of the <a href="../../api/wearable/latest/group__CAPI__WATCH__APP__MODULE.html">Watch Application</a> API.</p>
+
+    <p>The text for the label component is defined (based on whether the normal or ambient mode is used), and set with the <code class="highlighter-rouge">elm_object_text_set()</code> function.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> static bool
+ update_watch(appdata_s *ad, watch_time_h watch_time, int ambient)
+ {
+     char watch_text[TEXT_BUF_SIZE];
+     int hour24;
+     int minute;
+     int second;
+     if (watch_time == NULL)
+         return;
+
+     watch_time_get_hour24(watch_time, &amp;hour24);
+     watch_time_get_minute(watch_time, &amp;minute);
+     watch_time_get_second(watch_time, &amp;second);
+     if (!ambient) {
+         snprintf(watch_text, TEXT_BUF_SIZE,
+                  "&lt;align=center&gt;Hello Watch&lt;br/&gt;%02d:%02d:%02d&lt;/align&gt;",
+                  hour24, minute, second);
+     } else {
+         snprintf(watch_text, TEXT_BUF_SIZE,
+                  "&lt;align=center&gt;Hello Watch&lt;br/&gt;%02d:%02d&lt;/align&gt;",
+                  hour24, minute);
+     }
+
+     elm_object_text_set(ad-&gt;label, watch_text);
+ }
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

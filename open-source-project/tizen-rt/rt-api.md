@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen RT API
+order: 4
+---
+
 # Tizen RT API
 
 The Tizen RT API consists of 2 components:

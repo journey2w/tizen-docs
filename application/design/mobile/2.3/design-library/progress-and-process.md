@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Progress and Process
+order: 1
+---
+
 # Progress and Process
 
 

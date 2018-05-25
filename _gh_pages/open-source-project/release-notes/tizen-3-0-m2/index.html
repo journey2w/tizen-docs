@@ -1,0 +1,4568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Tizen 3.0 Public M2 &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/developing/installing">Developing</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-4-0-m2/">Tizen 4.0 Public M2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m4/">Tizen 3.0 Public M4</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m3/">Tizen 3.0 Public M3</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/release-notes/tizen-3-0-m2/">Tizen 3.0 Public M2</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-milestones/">Tizen 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-4/">Tizen 2.4.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-2/">Tizen 2.3.2 for Wearable</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-1/">Tizen 2.3.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3/">Tizen 2.3.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2-1/">Tizen 2.2.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2/">Tizen 2.2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-1/">Tizen 2.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-0/">Tizen 2.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-1-0/">Tizen 1.0 Release Notes</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-common-milestones/">Tizen Common milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-ivi-3-0-milestones/">Tizen IVI 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="tizen-30-public-m2">Tizen 3.0 Public M2</h1>
+
+<p>Release Date: Jan 18, 2017</p>
+
+<p>Tizen 3.0 adopts various new features, such as high-performance graphics, the latest Web technology, improved security, and multi-user support.</p>
+
+<h2 id="release-details">Release Details</h2>
+
+<ul>
+  <li>
+    <p><a href="http://review.tizen.org/git/">Getting source code</a> (Tizen 3.0 M2 source codes are under <strong>tizen_3.0_m2</strong> branch.)</p>
+  </li>
+  <li>
+    <p><a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2">Getting binaries and images</a></p>
+
+    <ul>
+      <li>Base: <a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-base/tizen-3.0.m2-base_20170104.1/">http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-base/tizen-3.0.m2-base_20170104.1/</a></li>
+      <li>TV: <a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-tv/tizen-3.0.m2-tv_20170111.1/">http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-tv/tizen-3.0.m2-tv_20170111.1/</a></li>
+      <li>Common: <a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2/common_artik/tizen-common-artik_20170111.3/">http://download.tizen.org/releases/milestone/tizen/3.0.m2/common_artik/tizen-common-artik_20170111.3/</a></li>
+      <li>Mobile: <a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-mobile/tizen-3.0.m2-mobile_20170111.1/">http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-mobile/tizen-3.0.m2-mobile_20170111.1/</a></li>
+      <li>Wearable: <a href="http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-wearable/tizen-3.0.m2-wearable_20170111.1/">http://download.tizen.org/releases/milestone/tizen/3.0.m2/3.0.m2-wearable/tizen-3.0.m2-wearable_20170111.1/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="../developing/flashing.md">How to flash to a device</a></p>
+  </li>
+</ul>
+
+<h2 id="release-notes">Release Notes</h2>
+
+<h3 id="system-kernel-and-system-framework">System (Kernel and System Framework)</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Systemd/Service initialization time enhancement
+    <ul>
+      <li>First service launch time has been improved by optimizing the unit/smack initialization time.</li>
+      <li>Service initialization time has been improved by utilizing tmpfiled.</li>
+    </ul>
+  </li>
+  <li>Directory hierarchy enhancement and compatibility support
+    <ul>
+      <li>System directory structure has been refined to support read-only directories and multi-user.</li>
+      <li>Hard-coded path in source code has been removed.</li>
+      <li>Support for a platform default user has been added.</li>
+      <li>Support for 2.4 content and application directories has been added.</li>
+    </ul>
+  </li>
+  <li>Storage API and block module enhancement
+    <ul>
+      <li>USB/SD Card external storage has been enumerated with the libstorage API.</li>
+      <li>Support for multiple partitions and devices has been added.</li>
+      <li>Block dbus connection has been separated to a special-purpose block module.</li>
+    </ul>
+  </li>
+  <li>Device HAL upgrade
+    <ul>
+      <li>Common device HAL structure has been added.</li>
+      <li>USB configfs is supported.</li>
+      <li>Default device adaptation layer for a standard kernel interface has been added.</li>
+    </ul>
+  </li>
+  <li>Power management enhancement
+    <ul>
+      <li>Dynamic power state transition has been added.</li>
+      <li>Power state actor for supporting several profiles and devices has been added.</li>
+    </ul>
+  </li>
+  <li>Debug and fail-safe handling system enhancement
+    <ul>
+      <li>New kmsg and pipe log backend have been added.</li>
+      <li>The kmsg, pipe, and Android™ logger backends are supported.</li>
+      <li>Runtime watchdog functionality has been added.</li>
+      <li>Callstack generation based on ptrace is supported as an option to eliminate the double crash issue.</li>
+    </ul>
+  </li>
+  <li>Feedback system enhancement
+    <ul>
+      <li>Feedback daemon to support multiple patterns has been added.</li>
+      <li>Various patterns are supported, such as a combination of duration and waiting.</li>
+    </ul>
+  </li>
+  <li>System information enhancement
+    <ul>
+      <li>GDBM backend to support a light-weight system registry to improve performance has been added.</li>
+    </ul>
+  </li>
+  <li>Cynara-based dbus policy support through dbus-daemon
+    <ul>
+      <li>Privilege-based access check has been added.</li>
+    </ul>
+  </li>
+  <li>New APIs
+    <ul>
+      <li>IR device APIs have been added.</li>
+      <li>USB Host APIs have been added.</li>
+      <li>Battery and charger status APIs have been added.</li>
+      <li>Detailed build information has been added.</li>
+      <li>CPU frequency APIs have been added.</li>
+      <li>Storage change event handler API has been added.</li>
+    </ul>
+  </li>
+  <li>Major open-source component upgrades and changes
+    <ul>
+      <li>Systemd version has been upgraded from v216 to v219.</li>
+      <li>Pwdutils has been replaced with shadow-utils.</li>
+      <li>Libfuse version has been upgraded to 2.9.6.</li>
+      <li>Fsck-msdos and newfs-msdos have been separated from deviced.</li>
+      <li>The libdbus version has been upgraded to 1.10.6.</li>
+      <li>In TV, the kdbus version has been upgraded to V4.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="system-base">System (Base)</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Base library upgrade
+    <ul>
+      <li>Address sanitizer building is supported.</li>
+      <li>ICU binary data file has been changed to text data file.</li>
+      <li>unzip has been patched for CVE-2015-7697.</li>
+      <li>expat version has been upgraded to 2.2.0.
+        <ul>
+          <li>CVE-2016-4472</li>
+        </ul>
+      </li>
+      <li>iniparser version has been upgraded to 3.2.</li>
+    </ul>
+  </li>
+  <li>System-settings API enhancement
+    <ul>
+      <li>Functions for adding or deleting string-list type data for ringtone-list (internal json handling) have been added.</li>
+    </ul>
+  </li>
+  <li>i18n (base-utils) API enhancement
+    <ul>
+      <li>Detect host time zone function has been added.</li>
+      <li>Ucalendar wrapper API has been added.</li>
+      <li>Utmscale wrapper API has been added.</li>
+      <li>Ushape wrapper API has been added.</li>
+      <li>Ubidi wrapper API has been added.</li>
+    </ul>
+  </li>
+  <li>Vconf-internal-keys one-branch policy adoption
+    <ul>
+      <li>Type check XML scheme validation for ‘type’ specifier at build-time has been added.</li>
+      <li>‘layer’ by automation has been removed.</li>
+    </ul>
+  </li>
+  <li>tzdata-update parser plugin addition
+    <ul>
+      <li>Support for updating tzdata at runtime by downloadable application has been added.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="application-framework">Application Framework</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Application
+    <ul>
+      <li>An event API to keep last event data has been added.</li>
+      <li>Support for text input delegation has been added.</li>
+      <li>Several new operations have been added.</li>
+    </ul>
+  </li>
+  <li>Application IPC
+    <ul>
+      <li>Data control data change notification API has been added.</li>
+      <li>Support for data control bulk management has been added.</li>
+    </ul>
+  </li>
+  <li>Application package installer
+    <ul>
+      <li>The optional mount installation feature has been added.</li>
+      <li>Separate permission for users for installing global applications and user-private applications has been added. Only admin users can install global applications.</li>
+      <li>Support for listening for the disable/enable application event has been added.</li>
+      <li>A filter property for application information has been added.</li>
+    </ul>
+  </li>
+  <li>Application launcher
+    <ul>
+      <li>Application background launch mode has been added.</li>
+      <li>Support for color-depth on splash screens has been added.</li>
+    </ul>
+  </li>
+  <li>Notification
+    <ul>
+      <li>Support for direct reply has been added.</li>
+      <li>Support for notification template has been added.</li>
+    </ul>
+  </li>
+  <li>Widget
+    <ul>
+      <li>Support for multiple widgets has been added.</li>
+      <li>Widget framework has been rewritten to support the multiple viewer concept.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>As a common feature, multi-user support has been added.</p>
+
+<h3 id="graphics-system">Graphics System</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Extended Wayland protocols
+    <ul>
+      <li>tws_service_screensaver_manager allows a client screensaver manager to register itself and control a user-configurable period of inactivity.</li>
+      <li>tws_service_screensaver sets the screensaver surface, which can be shown after a user-configurable period of inactivity.</li>
+      <li>tizen_launchscreen allows the application manager to show a default splash image of the application before displaying the application window.</li>
+      <li>tizen-clipboard allows the application to communicate with the system clipboard.</li>
+      <li>tizen-remote-surface allows a client to provide its offscreen buffer to other clients.</li>
+      <li>tizen_video and tizen_video_object allow a client to show video content through a hardware overlay.</li>
+      <li>wl_tbm_queue is extended to support selective-composite mode on the fixed-framebuffer target.</li>
+      <li>Tizen keyrouter allows applications to grab 1 or more hardware keys with a single request.</li>
+      <li>tizen_input_device_manager has been added to support input device identification from input events and additional axis information, such as touch pressure and size, for applications.</li>
+    </ul>
+  </li>
+  <li>Enlightenment Wayland display server
+    <ul>
+      <li>X server has been replaced with Wayland in this version.</li>
+      <li>Full specification of the Wayland protocol has been implemented based on Enlightenment 0.20.0.</li>
+      <li>Desktop features (gadget, widget, and file manager) have been removed from Enlightenment (cleanup).</li>
+      <li>The following plug-in submodules are provided:
+        <ul>
+          <li>e-mod-tizen-wm-policy controls the appearance and stack of the application window.</li>
+          <li>e-mod-tizen-keyrouter supports the hardware key grab/ungrab feature.</li>
+          <li>e-mod-tizen-devicemgr manages hardware device-related operations, such as DPMS, input device, output device, and video layer controls.</li>
+          <li>e-mod-tizen-processmgr communicates with resourced to provide changed information for the application window.</li>
+          <li>e-mod-tizen-wl-textinput manages virtual keyboard operations.</li>
+          <li>wl_desktop_shell handles the Wayland xdg-shell protocol, which supports general window operations, such as move, resize, and maximized.</li>
+          <li>bufferqueue handles ecore-buffer to support the sharing of the UI buffer between clients.</li>
+        </ul>
+      </li>
+      <li>Support for launching an application in the background has been added.</li>
+      <li>Support for a visibility event for the splash image has been added.</li>
+      <li>Support for floating mode windows has been added.</li>
+      <li>Support for the screensaver has been added.</li>
+      <li>Support for hardware compositing has been added and enabled on both GL and software engines.</li>
+      <li>Support for the system clipboard window has been added.</li>
+      <li>Support for sharing an offscreen buffer between clients through the tizen-remote-surface has been added.</li>
+      <li>Support for buffer flush has been added, allowing a suspended application to free its window buffer.</li>
+      <li>wl_drm has been removed from the enlightenment core module and moved to e_comp_drm. It is responsible for initializing the ecore_drm and evas_gl_drm engine.</li>
+      <li>Touch cancel and visibility events have been added to libpepper-efl.</li>
+      <li>To reduce memcpy time, openmp is used for copying framebuffer contents while changing the compositing mode.</li>
+      <li>Support for a hardware cursor has been added. It enables the display server to improve rendering performance when moving the mouse pointer, if the target supports a hardware cursor.</li>
+      <li>Support for setting a quickpanel handler has been added, allowing the external Enlightenment module to change the behavior of the quickpanel according to the UX.</li>
+      <li>Wayland debugging information can be acquired with debugging tools. The following information is included:
+        <ul>
+          <li>Window geometries</li>
+          <li>Window stacks</li>
+          <li>Resource allocation status</li>
+          <li>FPS (frame per second) value</li>
+          <li>Wayland protocol messages with user-defined filters</li>
+          <li>List of input devices and related information</li>
+          <li>Key grab status for each hardware key</li>
+          <li>Keymap information</li>
+          <li>List of output devices and related information</li>
+          <li>List of composite objects and related information</li>
+        </ul>
+      </li>
+      <li>Easy keymap customization
+        <ul>
+          <li>Keymap customization has been enabled and is easily applicable by creating a new key layout file or modifying an existing key layout file.</li>
+          <li>A key layout file is a text file format which includes:
+            <ul>
+              <li>Definition of keynames and mapping between a keyname and a keycode</li>
+              <li>Repeat configuration and privilege check Boolean values for each key</li>
+            </ul>
+          </li>
+          <li>Prebuilt keymap cache support
+            <ul>
+              <li>1 or more keymap caches can be generated at build time and installed.</li>
+              <li>There is no need to compile a keymap at boot time and runtime by using existing keymap caches.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Touch event cancellation
+        <ul>
+          <li>A cancellation event can be created and sent to the current touch surface when 1 of the following events takes place:
+            <ul>
+              <li>Window stack changes</li>
+              <li>LCD/display is switched off</li>
+              <li>Touch gesture is recognized</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Input device/event block/unblock support
+        <ul>
+          <li>Each type of input device or each input event can be blocked by the client request only when the client has the proper privilege for the request.</li>
+        </ul>
+      </li>
+      <li>Input device identification support
+        <ul>
+          <li>Source input device information can be acquired from an input event, such as Ecore or Evas event, in an application.</li>
+          <li>The information includes the name, description, and device type of the source input device.</li>
+        </ul>
+      </li>
+      <li>Keygrab support for an array of keys
+        <ul>
+          <li>Series of key grab requests can be created and sent for multiple keys in a window surface with a single API call.</li>
+        </ul>
+      </li>
+      <li>Mouse input event generation API support
+        <ul>
+          <li>The request for generating mouse input events on the server side can be created only when the client has the proper privilege for the request.</li>
+        </ul>
+      </li>
+      <li>Additional input device axes support for touchscreen
+        <ul>
+          <li>Axis information can be acquired from an input event, such as an Ecore or Evas event, in an application.</li>
+          <li>Axis information includes the pressure, angle, and radius of each contacting finger on the touchscreen.</li>
+        </ul>
+      </li>
+      <li>Key event repeat support
+        <ul>
+          <li>Server informs clients about the keyboard’s repeat_info (rate/delay).</li>
+          <li>Generating repeated key events is performed on the client side.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>libpepper-efl
+    <ul>
+      <li>libpepper-efl has been released.</li>
+      <li>libpepper-efl is a lightweight and flexible library for developing EFL host applications, which support the embedded Wayland compositor.</li>
+    </ul>
+  </li>
+  <li>Tizen ws shell
+    <ul>
+      <li>API to support controlling of the quickpanel service window has been added.</li>
+    </ul>
+  </li>
+  <li>efl-util
+    <ul>
+      <li>API to support controlling of the screen brightness through the application window has been added.</li>
+      <li>Behavior of the following APIs has been changed to support synchronous operation:
+        <ul>
+          <li><code class="highlighter-rouge">efl_util_set_notification_window_level()</code></li>
+          <li><code class="highlighter-rouge">efl_util_set_window_screen_mode()</code></li>
+        </ul>
+      </li>
+      <li>The following APIs have been deprecated:
+        <ul>
+          <li><code class="highlighter-rouge">efl_util_set_notification_window_level_error_cb()</code></li>
+          <li><code class="highlighter-rouge">efl_util_unset_notification_window_level_error_cb()</code></li>
+          <li><code class="highlighter-rouge">efl_util_set_window_screen_mode_error_cb()</code></li>
+          <li><code class="highlighter-rouge">efl_util_unset_window_screen_mode_error_cb()</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen HAL
+    <ul>
+      <li>Tizen display HAL
+        <ul>
+          <li>TDM (Tizen Display Manager) support has been added.</li>
+          <li>Reference implementation of Exynos and Sprd tdm backend has been provided.</li>
+        </ul>
+      </li>
+      <li>Tizen buffer HALTBM (Tizen Buffer Manager) version 2.0 is supported:
+        <ul>
+          <li>The tbm_surface_queue has been provided.</li>
+          <li>TGL has been removed at the frontend.</li>
+          <li>Backend deals with the authentication of the buffer manager device, such as a DRM kernel module.</li>
+          <li>Reference implementation of Exynos and Sprd tbm backend has been provided.</li>
+          <li>Backend interface has been changed.</li>
+        </ul>
+      </li>
+      <li>Tizen EGL porting layer
+        <ul>
+          <li>TPL-EGL 1.0 support has been added.</li>
+          <li>TPL (Tizen Porting Layer) is an abstraction layer for surface and buffer management on the Tizen platform, aimed to implement the EGL™ porting layer of the OpenGL® ES driver over various display protocols.</li>
+          <li>Supported EGL™ backends:
+            <ul>
+              <li>Wayland, gbm, tbm</li>
+            </ul>
+          </li>
+          <li>Buffer management and Wayland protocol of Vulkan WSI Tizen are supported.</li>
+          <li>Emulator GL Driver (emulator-yagl) supports the libtpl-egl backend.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Vulkan WSI Tizen
+    <ul>
+      <li>The Vulkan WSI (Window System Integration) Layer for Tizen wraps vendor Vulkan® ICDs and provides the WSI (Window-System Interface) for Tizen.</li>
+      <li>The VK_KHR_wayland_surface is supported.</li>
+    </ul>
+  </li>
+  <li>CoreGL
+    <ul>
+      <li>CoreGL is an OpenGL® ES injection layer.</li>
+      <li>CoreGL provides the following capabilities:
+        <ul>
+          <li>Support for driver-independent optimization (FastPath)</li>
+          <li>EGL™/OpenGL® ES debugging</li>
+          <li>Performance logging</li>
+        </ul>
+      </li>
+      <li>Supported versions:
+        <ul>
+          <li>EGL™ 1.4</li>
+          <li>OpenGL® ES 1.1, 2.0, 3.0, 3.1, 3.2</li>
+        </ul>
+      </li>
+      <li>OpenGL® ES/EGL™ development headers are provided.
+        <ul>
+          <li>Khronos OpenGL® ES/EGL™ headers (Khronos released on Oct 24 2016)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>DALi (3D UI Toolkit) enhancement
+    <ul>
+      <li>Wearable profile support has been added.
+        <ul>
+          <li>Wearable watch application template has been added.</li>
+        </ul>
+      </li>
+      <li>Image
+        <ul>
+          <li>Support for N-patch and ASTC native compressed image formats has been added.</li>
+          <li>Support for texture wrapping modes has been added.</li>
+          <li>Support for image fitting modes has been added.</li>
+          <li>Support for PixelArea and pre-multiplied alpha in ImageView has been added.</li>
+        </ul>
+      </li>
+      <li>Text
+        <ul>
+          <li>TextEditor for multi-line and multi-language edition has been added.</li>
+          <li>Support for markup processing in TextField has been added.</li>
+          <li>Support for auto scrolling in TextLabel has been added.</li>
+          <li>ControlStyleManager has been added.</li>
+          <li>FlexContainer has been added.</li>
+          <li>Slider has been added.</li>
+          <li>VideoView has been added.</li>
+          <li>Model3dView control for full 3D model rendering support has been added.</li>
+          <li>PageTurn control for the page turn function rendering support has been added.</li>
+          <li>Support for child property registration has been added.</li>
+          <li>Support for control background rendering without creating an extra actor has been added.</li>
+        </ul>
+      </li>
+      <li>3D rendering and animation
+        <ul>
+          <li>Wayland rendering backend has been added.</li>
+          <li>Renderer API and Visual properties for low-level control including culling, blending, depth, and stencil testing have been added.</li>
+          <li>Support for setting the animation loop count has been added.</li>
+          <li>Support for getting the animation state has been added.</li>
+          <li>Support for the <code class="highlighter-rouge">REQUIRES_SYNC</code> property to enable and disable GL sync in RenderTask has been added.</li>
+          <li>Support for ostream writers have been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>SDL 2.0 (Simple DirectMedia Layer)
+    <ul>
+      <li>Tizen backend
+        <ul>
+          <li>Support for Tizen App life-cycle management has been added.</li>
+          <li>Support for Tizen App Core event has been added.</li>
+          <li>Support for touch and key event has been added.</li>
+          <li>Support for window system based on Ecore_Wl has been added.</li>
+          <li>Support for input with Tizen ISF has been added.</li>
+          <li>Support for dlog has been added.</li>
+          <li>Support for cursor has been added.</li>
+        </ul>
+      </li>
+      <li>Additional features
+        <ul>
+          <li>Support for SDL timer with vblank has been added.</li>
+          <li>Support for rotation has been added.</li>
+        </ul>
+      </li>
+      <li>Vulkan®
+        <ul>
+          <li>Support for using Vulkan® directly (without wrapper) has been added.</li>
+          <li>Support for using WSI wrapper functions to avoid window system dependency has been added.</li>
+          <li>Support for avoid window system dependency in SDL has been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Evas render engine enhancement
+    <ul>
+      <li>Evas GL
+        <ul>
+          <li>Support for OpenGL® ES 3.1 has been added.</li>
+        </ul>
+      </li>
+      <li>Optimization texture uploading
+        <ul>
+          <li>To avoid COW case, texture uploading optimization has been added.</li>
+        </ul>
+      </li>
+      <li>Runtime shading
+        <ul>
+          <li>Downstream runtime shading has been added.</li>
+        </ul>
+      </li>
+      <li>Offscreen backend
+        <ul>
+          <li>Evas TBM surface SW/GL backends have been added.</li>
+          <li>Ecore-Evas TBM surface SW/GL modules have been added.</li>
+        </ul>
+      </li>
+      <li>Native surface set
+        <ul>
+          <li>Support for wl_buffer for Evas GL_DRM/wayland backend has been added.</li>
+        </ul>
+      </li>
+      <li>Wayland-shm with TBM
+        <ul>
+          <li>Support for TBM surface in Evas wayland-shm backend has been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Open-source component upgrade
+    <ul>
+      <li>Wayland version has been upgraded to 1.8.0.</li>
+      <li>Enlightenment version has been upgraded to 0.20.0.</li>
+      <li>Cairo version has been upgraded from 1.12.14 to 1.14.2.</li>
+      <li>Vulkan-LoaderAndValidationLayers version has been upgraded to 1.0.29.</li>
+      <li>SDL 2.0.4 has been added.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>Fixed the copy and paste operation failure caused by the broken pipe on the server side.</li>
+  <li>Fixed the first screen resizing during application launch.
+    <ul>
+      <li>The root cause was a lack of synchronization between EFL and Wayland for the first scene drawing.</li>
+    </ul>
+  </li>
+  <li>Fixed the IME rotation problem, which was caused by a lack of synchronization between the display server and client for the window rotation.</li>
+  <li>Fixed the server-side handler for the ping-pong protocol, which was not working properly.</li>
+</ul>
+
+<p><strong>Known Issues</strong></p>
+
+<ul>
+  <li>
+    <p>DALi control vibration is not supported.</p>
+  </li>
+  <li>
+    <p>SDL indicator is not fully verified.</p>
+  </li>
+</ul>
+
+<h3 id="ui-framework">UI Framework</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>EFL upgrade (from 1.13 to 1.16)
+    <ul>
+      <li>Wayland-backed has been enabled.</li>
+      <li>efl-misc has replaced elm-misc.</li>
+      <li>efl-modules has replaced elm-modules.</li>
+      <li>e17-extra-config-modules has been removed.</li>
+      <li>A new efl-config daemon configures scalable UI setting at boot time.</li>
+      <li>The notify style name for popup has been changed (popup to popup/default).</li>
+      <li>The default scroller for popup has been removed. The application must call the <code class="highlighter-rouge">elm_popup_scrollable_set(popup, EINA_TRUE)</code> function.</li>
+      <li>Item style for ctxpopup has been changed. Use the list item instead of box.</li>
+      <li>The minimum size of a genlist item is not defined. If necessary, the application must specify the minimum size of the genlist item by itself.</li>
+      <li>In mobile, the default theme has been refined.</li>
+      <li>In mobile, LazEDC and color class have been applied to default theme.</li>
+      <li>EDC support for SVG files has been added.</li>
+      <li>EFL vector support for GL and SW backend have been added.</li>
+      <li>In mobile, CBHM (ClipBoard History Manager) has been integrated.</li>
+      <li>In mobile, view manager has been added.</li>
+      <li>Customization APIs have been added.</li>
+    </ul>
+  </li>
+  <li>Text input
+    <ul>
+      <li>Input framework has been changed from X-based to Wayland-based.</li>
+      <li>In mobile, 3 input languages have been added (Irish, Uzbek, and Hindi).<br />
+The supported languages are: Azerbaijani, Bulgarian, Catalan, Czech, Danish, Greek, German, English (US), Spanish, Estonian, Basque, Finnish, French, Irish, Galician, Croatian, Hungarian, Armenian, Icelandic, Italian, Japanese, Georgian, Kazakh, Korean, Lithuanian, Latvian, Macedonian, Norwegian, Dutch, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Turkish, Ukrainian, Uzbek, Chinese, Chinese (Hong Kong), Chinese (Taiwan), Hindi, and Albanian.</li>
+      <li>The scim-launcher process has been integrated to scim-helper-launcher process.</li>
+      <li>In wearable, the input delegator window has been added.</li>
+      <li>Synchronous <code class="highlighter-rouge">get_surrounding_text()</code> API support has been added.</li>
+    </ul>
+  </li>
+  <li>Voice interaction
+    <ul>
+      <li>The speech-to-text feature has been enabled.</li>
+      <li>The server-based speech-to-text engine has been included as a default engine.</li>
+      <li>Support for third-party speech-to-text/text-to-speech engines has been added.</li>
+      <li>Support for the voice control framework has been added.</li>
+      <li>The supported languages of the TTS engine have been extended to 28 languages.<br />
+The supported languages are: English (US), English (UK), English (India), Korean, Spanish, Mexican Spanish, French, German, Italian, Russian, Brazilian Portuguese, Portugal Portuguese, Chinese, Chinese (Hong Kong), Chinese (Taiwan), Japanese, Hindi, Czech, Dutch, Danish, Finnish, Greek, Hungarian, Norwegian, Polish, Slovak, Swedish, and Turkish.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>Many bugs have been resolved.</li>
+</ul>
+
+<p><strong>Known Issues</strong></p>
+
+<ul>
+  <li>EFL
+    <ul>
+      <li>EFL abort on error is enabled by default.</li>
+      <li>Joystick currently does not work.</li>
+    </ul>
+  </li>
+  <li>Accessibility
+    <ul>
+      <li>Screen reader functionality has not been fully tested.</li>
+    </ul>
+  </li>
+  <li>Clipboard
+    <ul>
+      <li>CBHM (ClipBoard History Manager) has not been fully tested.</li>
+    </ul>
+  </li>
+  <li>View manager
+    <ul>
+      <li>View manager has not been fully tested.</li>
+    </ul>
+  </li>
+  <li>Customization API
+    <ul>
+      <li>In wearable, the theme is not ready for customization.</li>
+    </ul>
+  </li>
+  <li>Focused UI has not been fully tested.</li>
+  <li>UI mirroring has not been fully tested.</li>
+  <li>Tizen 3.0 UX has not been fully implemented, especially visual interactions.</li>
+</ul>
+
+<h3 id="multimedia-framework">Multimedia Framework</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Open-source component upgrade
+    <ul>
+      <li>GStreamer has been upgraded from 1.4.5 to 1.6.1.</li>
+      <li>Pulseaudio has been upgraded from 4.0 to 5.0.</li>
+      <li>Alsa-lib has been upgraded from 1.0.25 to 1.0.28.</li>
+      <li>OpenAL has been upgraded from 1.13 to 1.17.2.</li>
+      <li>libsndfile has been upgraded from 1.0.25 to 1.0.26.</li>
+      <li>libjpeg-turbo has been upgraded from 1.3.1 to 1.4.2.</li>
+      <li>libpng has been upgraded from 1.6.13 to 1.6.21.</li>
+      <li>giflib has been upgraded from 4.1.6 to 5.1.2.</li>
+      <li>tiff has been upgraded from 4.0.3 to 4.0.6.</li>
+    </ul>
+  </li>
+  <li>Player
+    <ul>
+      <li>Internal method to provide a player service has been changed from library to server-client.</li>
+      <li>Module to set the sound policy has been changed.
+        <ul>
+          <li>Most interrupt callback code has been deprecated, except for the resource conflict.</li>
+          <li>API for setting the sound type has been deprecated.</li>
+          <li>API to set the sound stream info has been added.</li>
+        </ul>
+      </li>
+      <li>Error code (<code class="highlighter-rouge">PLAYER_ERROR_BUFFER_SPACE</code>) for the data push API has been added.</li>
+      <li>Default buffering storage has been changed from file to memory.</li>
+      <li>The performance has been optimized by removing unnecessary IPC when rendering video.</li>
+      <li>API to set the region of interest area in the display has been added.</li>
+      <li>The <code class="highlighter-rouge">player_completed_cb()</code>, <code class="highlighter-rouge">player_error_cb()</code>, and <code class="highlighter-rouge">player_prepared_cb()</code> functions have been made to invoke by default context.</li>
+      <li>Error return value of <code class="highlighter-rouge">player_create()</code> API and display-related APIs has been added.</li>
+      <li>In wearable, the Evas display type has been added.</li>
+    </ul>
+  </li>
+  <li>Radio (in mobile and wearable)
+    <ul>
+      <li>API to set or get the volume has been added.</li>
+      <li>Pre-state of <code class="highlighter-rouge">radio_scan_start()</code> API has been changed.</li>
+    </ul>
+  </li>
+  <li>Media tool
+    <ul>
+      <li>APIs to support container type have been added.</li>
+      <li>API to get a flag for the buffer stream information has been added.</li>
+      <li>API to set the video frame rate has been added.</li>
+      <li>API to get the video frame rate has been added.</li>
+      <li>Media packet pool APIs to reuse allocated media packets have been added.</li>
+    </ul>
+  </li>
+  <li>Media codec
+    <ul>
+      <li>API to get media packet pool has been added.</li>
+    </ul>
+  </li>
+  <li>Media streamer
+    <ul>
+      <li>Another player service type to allow the user to design a player structure according to their requirements has been added.</li>
+    </ul>
+  </li>
+  <li>Media demuxer
+    <ul>
+      <li>Demuxing service for a multiplexed media stream has been added.</li>
+    </ul>
+  </li>
+  <li>Media muxer
+    <ul>
+      <li>Muxing service to create audio/video content with a given type of container format has been added.</li>
+    </ul>
+  </li>
+  <li>Audio
+    <ul>
+      <li>API to free the device list has been added.</li>
+      <li>API to manage audio stream focus has been added.</li>
+      <li>API to manage stream based routing has been added.</li>
+      <li>API to manage audio devices has been added.</li>
+      <li>Old Session/Routing API has been deprecated.</li>
+      <li>Enumeration to support Bluetooth SCO has been added.</li>
+      <li>Feature to support power-off mute control has been added.</li>
+      <li>Feature to support transfer Bluetooth property (wideband, nrec) has been added.</li>
+      <li>API to query current media playback device has been added.</li>
+      <li>API to query whether stream is connected to specific device has been added.</li>
+      <li>Feature to support auto-last-connected device policy has been added.</li>
+      <li>Feature to support fading audio in pulseaudio has been added.</li>
+      <li>Feature to protect infinite power consumption caused by improper use of audio APIs has been added.</li>
+      <li>Sound-Server has been changed to operate as an on-demand process.</li>
+      <li>In TV, a feature to support vconf in pulseaudio has been added.</li>
+      <li>In TV, a feature to use of tizen-audio-sink/source has been added.</li>
+    </ul>
+  </li>
+  <li>Camera
+    <ul>
+      <li>Internal method has been changed to provide a camera service from library to server-client.</li>
+      <li>Error enumerations for the sound policy have been deprecated.</li>
+      <li>Error enumerations for resource conflict have been added.</li>
+      <li>API to get the flash state set by the Camera API has been added.</li>
+      <li>API to get the camera facing direction has been added.</li>
+      <li>APIs for the encoded preview format (H.264) have been added.</li>
+      <li>APIs to set and get pan have been added.</li>
+      <li>APIs to set and get tilt have been added.</li>
+      <li>APIs to set and get display ROI (region of interest) area have been added.</li>
+    </ul>
+  </li>
+  <li>Recorder
+    <ul>
+      <li>Internal method to provide a recorder service has been changed from library to server-client.</li>
+      <li>Error enumerations for the sound policy have been deprecated.</li>
+      <li>Error enumerations for resource conflict have been added.</li>
+      <li>API to set the sound stream information has been added.</li>
+      <li>File format (MPEG2TS) has been added.</li>
+      <li>Audio codec (MP3) has been added.</li>
+    </ul>
+  </li>
+  <li>Media content
+    <ul>
+      <li>Multi-user support has been added.</li>
+      <li>New information for detecting and tracking faces on images with media vision has been added.</li>
+      <li>The getter API return value “Unknown” has been modified to an empty string (“”) for the following properties:
+        <ul>
+          <li>Title, description, album, artist, album_artist, genre, composer, year, copyright, track_num</li>
+        </ul>
+      </li>
+      <li>The get thumbnail path API default return value has been modified from a default path to an empty string (“”).</li>
+      <li>Thumbnails are no longer extracted automatically by the framework. The application must request thumbnail creation if a thumbnail is needed.</li>
+      <li>API to start and cancel face detection for media has been added.</li>
+      <li>API to get 360 content for image and mp4 files has been added.</li>
+    </ul>
+  </li>
+  <li>Media controller
+    <ul>
+      <li>Multi-user support has been added.</li>
+    </ul>
+  </li>
+  <li>Image util
+    <ul>
+      <li>PNG, GIF, BMP encoding/decoding support has been added.</li>
+      <li>JPEG encoding/decoding has been modified to use a handle.</li>
+      <li>JPEG encoding/decoding APIs have been deprecated.</li>
+    </ul>
+  </li>
+  <li>Thumbnail util
+    <ul>
+      <li>The <code class="highlighter-rouge">http://tizen.org/privilege/content.write</code> privilege has been removed.</li>
+    </ul>
+  </li>
+  <li>Metadata extractor
+    <ul>
+      <li>Attribute enums have been added.</li>
+      <li>Audio codec, video codec, and 360 attributes have been added.</li>
+    </ul>
+  </li>
+  <li>Screen mirroring
+    <ul>
+      <li>Support for transfer data streaming from the source device has been added.</li>
+    </ul>
+  </li>
+  <li>Mediavision
+    <ul>
+      <li>Face detection, recognition, and tracking have been added.</li>
+      <li>Image detection, recognition, and tracking have been added.</li>
+      <li>Surveillance has been added.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>Many bugs have been fixed.</li>
+</ul>
+
+<h3 id="network-and-connectivity">Network and Connectivity</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Data network</li>
+  <li>In mobile and wearable, SoftAP (Software-enabled Access Point) has been added.</li>
+  <li>In mobile, wearable, and TV, support for multi-instance in applications has been added to the WiFi Manager API.</li>
+  <li>In mobile and TV, the default VPN to build up the VPN default setting has been added.</li>
+  <li>In mobile, wearable, and TV, NSD (Network Service Discovery) has been added.</li>
+  <li>In mobile, the additional AP router function (such as port forwarding, 802.11 mode/channel, and dhcp range) has been added to the tethering module.</li>
+  <li>In mobile and wearable, APIs for HTTP have been added to the curl wrapper.</li>
+  <li>In mobile, the Wi-Fi TDLS (Tunneled Direct Link Setup) has been added.</li>
+  <li>In mobile, the tethering configuration has been added.</li>
+  <li>In mobile and TV, the VPN service to build up a VPN client has been added.</li>
+  <li>In mobile and wearable, an additional connection type has been added to handle a gadget connection.</li>
+  <li>In mobile and TV, the IPC of the wifi direct manager has been changed from socket to d-bus.</li>
+  <li>In mobile and wearable, the privilege for the <code class="highlighter-rouge">wifi_ap_create()</code> function has been removed.</li>
+  <li>In mobile and TV, an API for wifi-direct peer signal strength has been added.</li>
+  <li>In mobile and TV, APIs for connection to get/set cellular pdn type have been added.</li>
+  <li>In mobile and wearable, HTTP uploading file/cancel APIs have been added.</li>
+  <li>Connectivity
+    <ul>
+      <li>MTP initiator has been added.</li>
+      <li>MTP initiator APIs are provided.</li>
+      <li>In mobile and wearable, the NFC preferred application has been added.</li>
+      <li>In mobile and wearable, the NFC internal API for HCE operation and the pkgmgr-plugin-nfc package has been added.</li>
+      <li>In mobile and wearable, the NFC appcontrol operations have been modified for the Tap&amp;Pay menu.</li>
+      <li>In mobile and wearable, the NFC client library has been merged to the CAPI layer because of a smack issue.</li>
+      <li>BLE GATT server behavior has been improved.</li>
+      <li>BLE GATT server API has been added.</li>
+      <li>BLE GATT server API, write request has been modified for the response_needed option. In TV, the BLE IPSP function is supported.</li>
+    </ul>
+  </li>
+  <li>IoTCon
+    <ul>
+      <li>IoTCon has been newly added to support IoTivity 1.2.1.</li>
+      <li>IoTivity security has been enabled.</li>
+      <li>APIs for resource finding and registration have been added.</li>
+      <li>APIs for resource requests and responses have been added.</li>
+      <li>APIs for resource observation and presence have been added.</li>
+    </ul>
+  </li>
+  <li>Telephony
+    <ul>
+      <li>In mobile and wearable, the CDMA/LTE network info getter API has been added.</li>
+      <li>In mobile and wearable, the lac/cell ID network API privilege has been changed.</li>
+      <li>In mobile, support for the do-not-disturb feature has been added.</li>
+    </ul>
+  </li>
+  <li>Major open-source component upgrades and changes
+    <ul>
+      <li>Curl has been upgraded from 7.40 to 7.50.2 for stability.</li>
+      <li>Dnsmasq has been upgraded from 2.57 to 2.74 for stability.</li>
+      <li>wpa_supplicant has been upgraded from 2.4 to 2.5 for the d-bus interface.</li>
+      <li>libidn has been upgraded from 1.15 to 1.16 for stability.</li>
+      <li>Libcap has been upgraded from 2.21 to 2.24 for stability.</li>
+      <li>Gnutls has been upgraded from 3.3.5 to 3.4.11 for stability.</li>
+      <li>Gssdp has been upgraded from 0.8.2 to 0.14.4 for stability.</li>
+      <li>Gupnp has been upgraded from 0.14.1 to 0.20.4 for stability.</li>
+      <li>Iproute2 has been upgraded from 3.4.0 to 3.9.0 for stability</li>
+      <li>Nghttp2 has been upgraded from 0.7.3 to 1.0.0 for stability.</li>
+      <li>libmtp has been upgraded from 1.1.9 to 1.1.11 for stability.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>BLE GATT privilege handling has been fixed.</li>
+  <li>In mobile and wearable, the memory leak in the NFC/Smartcard daemon has been fixed.</li>
+  <li>Memory leak in the wifi-direct manager and popup has been fixed.</li>
+  <li>Memory leak in net-config and mobileap-agent has been fixed.</li>
+  <li>Memory leak in bt-agent and bt-service has been fixed.</li>
+  <li>TLS session cache operation to handle TLS resumption has been fixed.</li>
+  <li>Chained certificate verification to handle intermediate CA list has been fixed.</li>
+  <li>UID/GID of MTP Initiator has been changed from system to network_fw.</li>
+  <li>MTP Initiator critical section issues have been fixed.</li>
+</ul>
+
+<h3 id="security">Security</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Access control
+    <ul>
+      <li>The smack usage has been changed from many domains to 3 domains for maintainability.</li>
+      <li>The security-manager package has been added.
+        <ul>
+          <li>When an application installs, smack labels and rules are added.</li>
+          <li>When an application installs, the application is added to a proper group if needed.</li>
+        </ul>
+      </li>
+      <li>The libprivilege-control package has been removed.
+        <ul>
+          <li>Functionalities have been moved to security-manager.</li>
+        </ul>
+      </li>
+      <li>The security-server package has been removed.
+        <ul>
+          <li>Functionalities have been moved to security-manager and cynara.</li>
+        </ul>
+      </li>
+      <li>Support for application shared directory has been added for backward compatibility.</li>
+      <li>Support for application private sharing APIs has been added for backward compatibility.</li>
+      <li>All smack rules generated by security-manager have been merged to 1 file to improve performance of smack rule loading.</li>
+      <li>libnss_securitymanager has been implemented.
+        <ul>
+          <li>The user session daemon has been inserted to proper groups.</li>
+        </ul>
+      </li>
+      <li>A new smack domain, User::Shell, has been created to protect system resources from sdb shell, and restrict permissions of sdb shell</li>
+      <li>In mobile and wearable, the smack onlycap feature has been enabled.
+        <ul>
+          <li>A new smack domain, System::Privileged, has been created.</li>
+          <li>Only a process with the System::Privileged label can have <code class="highlighter-rouge">CAP_MAC_ADMIN</code> and <code class="highlighter-rouge">CAP_MAC_OVERRIDE</code>.</li>
+        </ul>
+      </li>
+      <li>In mobile and wearable, platform upgrade functionalities are supported.
+        <ul>
+          <li>The user/global application list has been moved to <code class="highlighter-rouge">/opt/var</code>.</li>
+        </ul>
+      </li>
+      <li>In TV, the <code class="highlighter-rouge">internet</code> privilege is not checked.</li>
+    </ul>
+  </li>
+  <li>Application privilege
+    <ul>
+      <li>The cynara package has been added.
+        <ul>
+          <li>When an application requests a service, it checks whether an application has the proper privilege.</li>
+        </ul>
+      </li>
+      <li>Web privilege management method has been changed.</li>
+      <li>The cynara package has been divided into 3 sub-packages to avoid build dependency.</li>
+      <li>Cynara monitor APIs for gathering privacy usage information have been added.</li>
+      <li>In mobile and wearable, privacy setting application has been added.
+        <ul>
+          <li>If the user does not want to grant specific privileges to an application, they can disable the privileges.</li>
+        </ul>
+      </li>
+      <li>In mobile and wearable, a user confirmation step has been added.
+        <ul>
+          <li>If an application uses privacy-related privilege, user confirmation is required.</li>
+        </ul>
+      </li>
+      <li>In TV, the <code class="highlighter-rouge">GetConnectionCredentials()</code> method in gdbus helpers is used for kdbus support.</li>
+    </ul>
+  </li>
+  <li>Privilege list
+    <ul>
+      <li>In mobile, the following privileges have been added:
+        <ul>
+          <li>Native
+            <ul>
+              <li><code class="highlighter-rouge">antivirus.admin</code>, <code class="highlighter-rouge">antivirus.scan</code>, <code class="highlighter-rouge">antivirus.webprotect</code>, <code class="highlighter-rouge">appdir.sharedata</code>, <code class="highlighter-rouge">d2d.datasharing</code>, <code class="highlighter-rouge">dpm.bluetooth</code>, <code class="highlighter-rouge">dpm.browser</code>, <code class="highlighter-rouge">dpm.camera</code>, <code class="highlighter-rouge">dpm.clipboard</code>, <code class="highlighter-rouge">dpm.debugging</code>, <code class="highlighter-rouge">dpm.email</code>, <code class="highlighter-rouge">dpm.location</code>, <code class="highlighter-rouge">dpm.lock</code>, <code class="highlighter-rouge">dpm.message</code>, <code class="highlighter-rouge">dpm.microphone</code>, <code class="highlighter-rouge">dpm.password</code>, <code class="highlighter-rouge">dpm.security</code>, <code class="highlighter-rouge">dpm.storage</code>, <code class="highlighter-rouge">dpm.usb</code>, <code class="highlighter-rouge">dpm.wifi</code>, <code class="highlighter-rouge">dpm.wipe</code>, <code class="highlighter-rouge">dpm.zone</code>, <code class="highlighter-rouge">fido.client</code>, <code class="highlighter-rouge">location.coarse</code>, <code class="highlighter-rouge">use_ir</code>, and <code class="highlighter-rouge">vpnservice</code></li>
+            </ul>
+          </li>
+          <li>Web
+            <ul>
+              <li><code class="highlighter-rouge">d2d.datasharing</code> and <code class="highlighter-rouge">widget.viewer</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>In mobile, the following privileges have been deprecated:
+        <ul>
+          <li>Native
+            <ul>
+              <li><code class="highlighter-rouge">keymanager</code> and <code class="highlighter-rouge">minicontrol.provider</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>In wearable, the following privileges have been added:
+        <ul>
+          <li>Native
+            <ul>
+              <li><code class="highlighter-rouge">account.read</code>, <code class="highlighter-rouge">account.write</code>, <code class="highlighter-rouge">antivirus.admin</code>, <code class="highlighter-rouge">antivirus.scan</code>, <code class="highlighter-rouge">antivirus.webprotect</code>, <code class="highlighter-rouge">appdir.shareddata</code>, <code class="highlighter-rouge">appmanager.kill.bgapp</code>, <code class="highlighter-rouge">calendar.read</code>, <code class="highlighter-rouge">calendar.write</code>, <code class="highlighter-rouge">contact.read</code>, <code class="highlighter-rouge">contact.write</code>, <code class="highlighter-rouge">d2d.datasharing</code>, <code class="highlighter-rouge">dpm.bluetooth</code>, <code class="highlighter-rouge">dpm.browser</code>, <code class="highlighter-rouge">dpm.camera</code>, <code class="highlighter-rouge">dpm.clipboard</code>, <code class="highlighter-rouge">dpm.debugging</code>, <code class="highlighter-rouge">dpm.email</code>, <code class="highlighter-rouge">dpm.location</code>, <code class="highlighter-rouge">dpm.lock</code>, <code class="highlighter-rouge">dpm.message</code>, <code class="highlighter-rouge">dpm.microphone</code>, <code class="highlighter-rouge">dpm.password</code>, <code class="highlighter-rouge">dpm.security</code>, <code class="highlighter-rouge">dpm.storage</code>, <code class="highlighter-rouge">dpm.usb</code>, <code class="highlighter-rouge">dpm.wifi</code>, <code class="highlighter-rouge">dpm.wipe</code>, <code class="highlighter-rouge">dpm.zone</code>, <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">fido.client</code>, <code class="highlighter-rouge">ime</code>, <code class="highlighter-rouge">imemanager</code>, <code class="highlighter-rouge">inputgenerator</code>, <code class="highlighter-rouge">keygrab</code>, <code class="highlighter-rouge">location.coarse</code>, <code class="highlighter-rouge">mediacontroller.client</code>, <code class="highlighter-rouge">mediacontroller.server</code>, <code class="highlighter-rouge">packagemanager.clearcache</code>, <code class="highlighter-rouge">systemmonitor</code>, and <code class="highlighter-rouge">use_ir</code></li>
+            </ul>
+          </li>
+          <li>Web
+            <ul>
+              <li><code class="highlighter-rouge">bluetooth</code>, <code class="highlighter-rouge">d2d.datasharing</code>, <code class="highlighter-rouge">ime</code>, <code class="highlighter-rouge">led</code>, <code class="highlighter-rouge">mediacontroller.client</code>, and <code class="highlighter-rouge">mediacontroller.server</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>In wearable, the following privileges have been deprecated:
+        <ul>
+          <li>Native
+            <ul>
+              <li><code class="highlighter-rouge">keymanager</code> and <code class="highlighter-rouge">keymanager.admin</code></li>
+            </ul>
+          </li>
+          <li>Web
+            <ul>
+              <li><code class="highlighter-rouge">bluetooth.admin</code>, <code class="highlighter-rouge">bluetooth.gap</code>, <code class="highlighter-rouge">bluetooth.health</code>, and <code class="highlighter-rouge">bluetooth.spp</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>In TV, the following privileges have been added:
+        <ul>
+          <li>Web
+            <ul>
+              <li><code class="highlighter-rouge">bluetooth</code>, <code class="highlighter-rouge">d2d.datasharing</code>, and <code class="highlighter-rouge">volume.set</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>In TV, the following privileges have been deprecated:
+        <ul>
+          <li>Web
+            <ul>
+              <li><code class="highlighter-rouge">keymanager</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Root daemon minimization
+    <ul>
+      <li>Converted root daemons to non-root permission to prevent potential attacks.</li>
+      <li>Unlike the system process in Tizen 2.4, each daemon has a separate ID.
+        <ul>
+          <li>The following IDs are defined in Tizen 3.0:
+            <ul>
+              <li>app_fw, application, broadcasting, graphic, location, messaging, multimedia_fw, network_fw, scm, sdk, security_fw, sensor, service_fw, social, system_fw, telephony, testing, ui_fw, and web_fw</li>
+              <li>Defined system_share for group ID to allow access between daemons.</li>
+            </ul>
+          </li>
+          <li>50+ daemons have been changed from root to non-root ID.</li>
+          <li>Root daemon minimization is still in progress.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Device policy management framework
+    <ul>
+      <li>New device policy management framework and related APIs
+        <ul>
+          <li>In mobile and wearable, password policy APIs have been added.</li>
+          <li>Restriction policy APIs have been added.</li>
+          <li>Security policy APIs have been added.</li>
+          <li>In mobile, the zone policy APIs have been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Container (in mobile)
+    <ul>
+      <li>New container package:
+        <ul>
+          <li>New container framework has been added.</li>
+          <li>KeyGuard has been added.</li>
+          <li>Container App Launcher has been added.</li>
+          <li>Container Setup Wizard has been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Authentication
+    <ul>
+      <li>Password Management package has been changed.
+        <ul>
+          <li>The password management feature has been moved from security-server (until Tizen 2.4) to auth-fw (since Tizen 3.0).</li>
+        </ul>
+      </li>
+      <li>Public Key Pinning has been introduced.
+        <ul>
+          <li>Public pinning for HTTPS has been introduced in a browser and the following internal modules: oauth2, download-provider, dali-adaptor, email-service, conn-man, and chromium-efl</li>
+          <li>pubkey-pinning package has been added to help internal modules using HTTPS to check the validity of a server certificate with static pinning data.</li>
+        </ul>
+      </li>
+      <li>OCSP checking during application installation has been added.
+        <ul>
+          <li>Certificates for an application with OCSP information are checked during the installation with OCSP.</li>
+          <li>If there is no Internet connection, the installer skips the OCSP check and installs the package/application. Cert-checker performs the OCSP check for all newly-installed applications when the Internet connection is available.</li>
+        </ul>
+      </li>
+      <li>tizen-security-policy package has been removed.
+        <ul>
+          <li>tizen-security-policy in Tizen 2.4 had app-signing root certificates. App-signing root certificates have been moved to ca-certificates-tizen.</li>
+        </ul>
+      </li>
+      <li>cert-svc has been changed.
+        <ul>
+          <li>Pluggable step has been added to the app-signature validation. The plugin can perform an additional signature validation step.</li>
+          <li>Internal APIs in the <code class="highlighter-rouge">cert-service.h</code> header file have been completely removed. The cert-svc-vcore capis implement the same functionality.</li>
+          <li>Additional fingerprint file (<code class="highlighter-rouge">fingerprint_list_ext.xml</code>) for application signature verification root certificates are now allowed.</li>
+          <li>Internal symbolic links in application packaging are now allowed.</li>
+          <li>Certificate blacklist for application signature verification has been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Data protection
+    <ul>
+      <li>The secure-storage package has been removed.
+        <ul>
+          <li>Its functionality has been replaced by key-manager and libwebappenc packages.</li>
+        </ul>
+      </li>
+      <li>Key manager
+        <ul>
+          <li>Hardware integration has been upgraded.</li>
+          <li>Encrypted initial value support has been added.</li>
+          <li>Symmetric key (AES key) support has been added.</li>
+          <li>All public APIs have been changed to non-privileged APIs.</li>
+          <li>The following APIs have been added:
+            <ul>
+              <li>APIs to handle PKCS12 files, such as <code class="highlighter-rouge">ckmc_save_pkcs12()</code> and <code class="highlighter-rouge">ckmc_get_pkcs12()</code>, have been added.</li>
+              <li>API for certificate verification with designated trust certificates has been added.</li>
+              <li>API for OCSP (Online Certificate Status Protocol) has been added.</li>
+              <li>The <code class="highlighter-rouge">kmc_set_permission()</code> function to manage access control rules efficiently has been added.</li>
+              <li>The <code class="highlighter-rouge">ckmc_remove_alias()</code> function that deletes data in the database using an alias has been added.</li>
+              <li>Error code (<code class="highlighter-rouge">CKMC_ERROR_AUTHENTICATION_FAILED</code>) for per-row password mismatched error has been added.</li>
+              <li>API to create an AES key has been added.</li>
+              <li>APIs for encryption and decryption have been added.</li>
+              <li>APIs to handle cryptographic parameters have been added.</li>
+            </ul>
+          </li>
+          <li>The following APIs have been changed:
+            <ul>
+              <li>Platform-level privilege has been removed from the key-manager control APIs.</li>
+              <li>Getting a certificate chain with the aliases API has been deprecated.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Web application encryption
+        <ul>
+          <li>Web application (WGT) encryption feature is moved from secure-storage (until Tizen 2.4) to libwebappenc (since Tizen 3.0).</li>
+        </ul>
+      </li>
+      <li>YACA (Yet Another Crypto API)
+        <ul>
+          <li>A new crypto API package, YACA, has been introduced in Tizen 3.0.
+            <ul>
+              <li>It provides the application with the following stable cryptographic APIs:
+                <ul>
+                  <li>APIs for encryption/decryption operations with symmetric keys and sealing and opening operations with asymmetric keys</li>
+                  <li>APIs for creating and verifying a signature, calculating HMAC/CMAC, and calculating a message digest</li>
+                  <li>APIs for key handling operations, such as generating, importing, and exporting a key, and deriving a key from a password</li>
+                  <li>Simple APIs for cryptographic operations</li>
+                  <li>APIs for low-level RSA operations</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>openssl upgrade
+        <ul>
+          <li>openssl has been upgraded to 1.0.2j.</li>
+          <li>The following risky SSLv2-related APIs were removed:
+            <ul>
+              <li><code class="highlighter-rouge">SSLv2_method()</code> ,<code class="highlighter-rouge">SSLv2_client_method()</code>, <code class="highlighter-rouge">SSLv2_server_method()</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Anti-virus
+    <ul>
+      <li>csr-framework
+        <ul>
+          <li>Client-server architecture has been adopted.</li>
+          <li>Whole APIs have been changed to simple and easy APIs.</li>
+          <li>Delta scanning is supported.</li>
+          <li>Only embedded engine is supported (engine in the application is not supported).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="service-framework">Service Framework</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Location
+    <ul>
+      <li>Map service (in mobile and wearable)
+        <ul>
+          <li>APIs to get place list metadata, multiple reverse-geocodes, and alternative routes have been added.</li>
+          <li>APIs to render a map image on an Evas object have been added.</li>
+          <li>APIs for map objects, such as marker, polyline, and polygon, have been added.</li>
+          <li>API to capture snapshots of the current map has been added.</li>
+          <li>Gesture detector to recognize gestures internally has been added.</li>
+          <li>Mapzen map provider plugin has been added.</li>
+        </ul>
+      </li>
+      <li>Location (in mobile and wearable)
+        <ul>
+          <li>APIs to get mock locations have been added.</li>
+          <li>APIs to get locations in a batch have been added.</li>
+        </ul>
+      </li>
+      <li>Geofence (in mobile)
+        <ul>
+          <li>APIs to get proximity data based on geofence have been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Sensor
+    <ul>
+      <li>Sensor listener (in mobile and wearable)
+        <ul>
+          <li>2 new sensor types, sleep detector and stress monitor, have been added.</li>
+        </ul>
+      </li>
+      <li>Sensor recorder (in mobile and wearable)
+        <ul>
+          <li>Pedometer, heart-rate monitor, and sleep monitor data recording is supported.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Context
+    <ul>
+      <li>Contextual trigger (in mobile)
+        <ul>
+          <li>The contextual trigger allows applications to define and publish custom context data, which can be used to compose triggering rules.</li>
+          <li>Update events in contacts DB can be used as events for trigger rules.</li>
+        </ul>
+      </li>
+      <li>Contextual history (in mobile)
+        <ul>
+          <li>The contextual history provides per-application battery usage statistics.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>PIMS
+    <ul>
+      <li>Contacts (in mobile and wearable)
+        <ul>
+          <li>In wearable, the contacts service has been added.</li>
+          <li>API for the aggregation suggestions has been added.</li>
+          <li>Usage types for contact usage statistics have been added.</li>
+          <li>API to reset phone log statistics by SIM slot number has been added.</li>
+          <li>SIP address contact property has been added.</li>
+          <li>APIs for the search snippet have been added.</li>
+          <li>APIs for setting the limit size of the vCard photo have been added.</li>
+          <li>API for checking the initialization status in each SIM has been added. Old API has been deprecated.</li>
+          <li>API for importing contacts from each SIM has been added. Old API has been deprecated.</li>
+          <li>Thumbnail support for contact and person has been added.</li>
+          <li>Database mode has been changed to WAL mode.</li>
+          <li>Multi-user support has been added.</li>
+          <li>API for checking progress of SIM contact import has been added.</li>
+          <li>In mobile, the service running mode is changed from on-demand to always-on.</li>
+        </ul>
+      </li>
+      <li>Calendar (in mobile)
+        <ul>
+          <li>IPC of the calendar service has been changed from PIMS-ipc to gdbus.</li>
+          <li>Multi-user support has been added.</li>
+          <li>Database mode has been changed to WAL mode.</li>
+        </ul>
+      </li>
+      <li>Phonenumber-utils (in mobile and wearable)
+        <ul>
+          <li>In wearable, Phonenumber-utils has been added.</li>
+          <li>API for normalization of the phone number has been added.</li>
+          <li>APIs for daemonization of phonenumber-utils have been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Email and message
+    <ul>
+      <li>Email (in mobile and wearable)
+        <ul>
+          <li>In wearable, the email service has been added.</li>
+          <li>Multi-user support has been added.</li>
+          <li>Email sent notification has been changed. It is cleared automatically after 3 seconds.</li>
+        </ul>
+      </li>
+      <li>Message (in mobile and wearable)
+        <ul>
+          <li>msg-manager package for multi-user support has been added.</li>
+          <li>API for checking change of thread list has been added.</li>
+          <li>APIs related to v-object have been deprecated.</li>
+          <li>Reply on active notification feature has been added.</li>
+          <li>Support for single-part MMS has been added.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="web-framework">Web Framework</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>Web View API
+    <ul>
+      <li>The following APIs have been added:
+        <ul>
+          <li><code class="highlighter-rouge">ewk_cookie_manager_file_scheme_cookies_allow_get()</code>, <code class="highlighter-rouge">ewk_cookie_manager_file_scheme_cookies_allow_set()</code>, <code class="highlighter-rouge">ewk_context_intercept_request_callback_set()</code>, <code class="highlighter-rouge">ewk_intercept_request_url_get()</code>, <code class="highlighter-rouge">ewk_intercept_request_http_method_get()</code>, <code class="highlighter-rouge">ewk_intercept_request_headers_get()</code>, <code class="highlighter-rouge">ewk_intercept_request_ignore()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_set()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_status_set()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_header_add()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_header_map_add()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_body_set()</code>, <code class="highlighter-rouge">ewk_intercept_request_response_write_chunk()</code>, <code class="highlighter-rouge">ewk_view_add_in_incognito_mode()</code>, <code class="highlighter-rouge">ewk_view_javascript_message_handler_add()</code>, and <code class="highlighter-rouge">ewk_view_evaluate_javascript()</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>HTML5/W3C APIs
+    <ul>
+      <li>Responsive Images<br />
+Enables tag-based responsive image resource mapping for facilitating multi-screen Web application design and implementation.</li>
+      <li>Web Components (<code class="highlighter-rouge">template</code>, <code class="highlighter-rouge">imports</code>)<br />
+Enables user-defined Web components</li>
+      <li>Service Worker<br />
+Enables background task/page management.</li>
+      <li>WebSpeech API<br />
+Provides enhanced support for Speech APIs, including speech recognition.</li>
+      <li>Media Source Extensions (MSE)<br />
+Allows JS to generate media streams.</li>
+      <li>WebRTC<br />
+Enables real-time communication between browsers.</li>
+      <li>Web Cryptography API and Contents Security Policy 1.1</li>
+      <li>Web Push API<br />
+Gives Web applications the ability to receive messages pushed to them from the app server. (Not included in the TCS)</li>
+    </ul>
+  </li>
+  <li>Web Device API
+    <ul>
+      <li>Iotcon API<br />
+Provides functions for IoT connectivity.</li>
+      <li>Preference API<br />
+Stores and retrieves small pieces of data which can be used for application preferences.</li>
+      <li>Widget Service API<br />
+Provides information about installed widgets.</li>
+      <li>Player Util API<br />
+Manages features related to the W3C Player.</li>
+      <li>Key manager<br />
+Provides a secure repository protected by the Tizen platform for keys, certificates, sensitive data, and application data.</li>
+      <li>Feedback API<br />
+Plays sound or vibration associated with an action.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>Web Core
+    <ul>
+      <li>Invalid computation (0) of <code class="highlighter-rouge">screen.availableWidth</code> and <code class="highlighter-rouge">screen.availableHeight</code> has been fixed.</li>
+      <li>The default encoding type for the data URL scheme has been modified from ascii to app-specified encoding.</li>
+      <li>Layout crash caused by text autosizing has been fixed.</li>
+      <li>The DOM timer suspending while panning is working has been fixed.</li>
+      <li>Incremental image rendering has been switched off.</li>
+      <li>The db path relative to application path has been fixed.</li>
+      <li>Always-on option for the sensor depending on the screen-off condition has been added.</li>
+      <li>The maximum size of data URI scheme data has been increased from 2 MB to 6 MB.</li>
+      <li>Tizen has been applied as a vendor for <code class="highlighter-rouge">navigator.vendor</code>.</li>
+      <li>A deprecated <code class="highlighter-rouge">document.width</code> and <code class="highlighter-rouge">document.height</code> implementation has been added as a working API.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="scm">SCM</h3>
+
+<p><strong>New and Changed Features</strong></p>
+
+<ul>
+  <li>gcc
+    <ul>
+      <li>Address Sanitizer is officially supported.</li>
+      <li>In mobile and wearable, Leak Sanitizer and UndefinedBehavior Sanitizer are now available.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fixes</strong></p>
+
+<ul>
+  <li>gcc
+    <ul>
+      <li>An internal compiler error (PR ipa/64896) issue has been fixed.</li>
+      <li>The plugin infrastructure for sanitizer development has been enabled.</li>
+    </ul>
+  </li>
+  <li>glibc
+    <ul>
+      <li><code class="highlighter-rouge">libBrokenLocale.so</code> is included in the target image (fix for dlopen fail issue).</li>
+      <li><code class="highlighter-rouge">libtrhead_Db.so.1</code> is included in the target image (fix for gdb thread debugging issue).</li>
+      <li>Nss group configuration in <code class="highlighter-rouge">nsswitch.conf</code> has been modified.</li>
+      <li>CVE-2015-7547, CVE-2015-8779 patches have been applied.</li>
+    </ul>
+  </li>
+  <li>Configuration options
+    <ul>
+      <li>linaro-gcc: <code class="highlighter-rouge">--enable-lto</code> option has been added.</li>
+      <li>linaro-glibc: <code class="highlighter-rouge">--disable-nscd</code> option has been added.</li>
+    </ul>
+  </li>
+  <li>gmp library
+    <ul>
+      <li>DEP (Data Execution Prevention) option has been applied.</li>
+    </ul>
+  </li>
+  <li>elfutils
+    <ul>
+      <li>CVE-2014-0172, CVE-2014-9447 patches have been applied.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Build System Information</strong></p>
+
+<ul>
+  <li>Tizen 3.0 is built with:
+    <ul>
+      <li>OS: Opensuse 12.3</li>
+      <li>OBS Version: 2.4.6</li>
+      <li>GBS Version: 0.24.3</li>
+      <li>MIC Version: 0.27.2</li>
+      <li>OBS Repository: http://download.opensuse.org/repositories/OBS:/Server:/2.4/openSUSE_12.3/</li>
+      <li>Tizen Service Repository: http://download.tizen.org/services/archive/16.03/</li>
+      <li>Tizen Tools Repository: http://download.tizen.org/tools/archive/16.02.2/</li>
+      <li>gcc Version: 4.9.2 (Linaro ‘15 Jun version)</li>
+      <li>glibc Version: 2.20 (Linaro ‘14 Nov version)</li>
+      <li>binutils Version: 2.25 (Linaro ‘15 Oct version)</li>
+    </ul>
+  </li>
+</ul>
+
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

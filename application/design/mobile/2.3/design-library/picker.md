@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Picker
+order: 1
+---
+
 # Picker
 
 You can include pickers in your application design to help users set the date or time, and select colors.

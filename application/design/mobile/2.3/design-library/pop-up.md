@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Pop-up
+order: 1
+---
+
 # Pop-up
 
 Pop-ups can give users vital information when completing a task. They can carry a number of actions and are especially useful when the notification requires the user to respond.

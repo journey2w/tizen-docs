@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Hardware Keys on the Device
+order: 1
+---
+
 # Hardware Keys on the Device
 
 

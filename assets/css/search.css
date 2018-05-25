@@ -1,0 +1,19 @@
+.search h1 {
+  font-size: 2.6rem;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+
+.search h4 {
+  margin-top: 1.5rem;
+  margin-bottom: .6rem;
+  font-size: 1.3rem;
+}
+
+.search ul {
+  margin: 0 0 0 -2.4rem;
+  list-style: none;
+}

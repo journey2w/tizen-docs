@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Installing Development Tools
+order: 1
+---
+
 # Installing Development Tools
 
 Tizen SCM tools support the following Linux distribution versions:

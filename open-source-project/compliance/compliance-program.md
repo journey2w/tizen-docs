@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen Compliance Program
+order: 1
+---
+
 # Tizen Compliance Program
 
 The Tizen Compliance Program consists of the following parts:

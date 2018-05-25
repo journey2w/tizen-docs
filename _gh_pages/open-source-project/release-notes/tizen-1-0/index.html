@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Tizen 1.0 Release Notes &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/developing/installing">Developing</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-4-0-m2/">Tizen 4.0 Public M2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m4/">Tizen 3.0 Public M4</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m3/">Tizen 3.0 Public M3</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m2/">Tizen 3.0 Public M2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-milestones/">Tizen 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-4/">Tizen 2.4.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-2/">Tizen 2.3.2 for Wearable</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-1/">Tizen 2.3.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3/">Tizen 2.3.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2-1/">Tizen 2.2.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2/">Tizen 2.2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-1/">Tizen 2.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-0/">Tizen 2.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/release-notes/tizen-1-0/">Tizen 1.0 Release Notes</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-common-milestones/">Tizen Common milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-ivi-3-0-milestones/">Tizen IVI 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="tizen-10-release-notes">Tizen 1.0 Release Notes</h1>
+
+<p>Release Date: Apr. 30, 2012</p>
+
+<p>Version: <strong>1.0 Larkspur</strong></p>
+
+<p>This document details the new features in the Tizen 1.0 Larkspur release and provides a summary of the main components of the platform.</p>
+
+<p>This release provides a solid baseline for device vendors and developers to start creating software for mobile devices. The Tizen 1.0 Larkspur Core OS provides a complete set of enabling technologies for mobile computing. It is specifically designed for productizing smart phones and tablet devices.</p>
+
+<p>**UPDATE: Tizen OS development with RPM/OBS (Aug. 6, 2012) **</p>
+
+<p>This first release since the initial Larkspur release comes with major changes in many areas, notably the completed migration from Debian to rpm based packaging and a new way of how packages and sources are maintained. For Tizen developers GIT becomes the focal point and the only reference for sources and packaging data. Developers now are provided with new tools to interact with both the source management system (git) and the build system (OBS) in an efficient way and easy way.</p>
+
+<p>The complete development process leverages state of the art open–source source management, review and continuous integration tools to accelerate development and high quality releases.</p>
+
+<h2 id="changes-since-the-beta-release">Changes since the beta release</h2>
+
+<p>This release focused on stability and performance improvements. In addition, the following new features have been added:</p>
+
+<h3 id="web">Web</h3>
+
+<ul>
+  <li>W3C/HTML5 specifications support</li>
+  <li>WebRTC getUserMedia() API to access local camera</li>
+</ul>
+
+<h3 id="location">Location</h3>
+
+<ul>
+  <li>POI (Points of Interest) support</li>
+  <li>Structured queries for location with category, name, and location</li>
+  <li>Unstructured queries for location</li>
+  <li>Route search feature support</li>
+  <li>Multiple transportation mode (car, pedestrian)</li>
+  <li>Route customization (shortest, fastest, areas to avoid)</li>
+</ul>
+
+<h3 id="connectivity">Connectivity</h3>
+
+<ul>
+  <li>Wi-Fi Direct key features enhancement</li>
+  <li>Activation/deactivation</li>
+  <li>Device discovery</li>
+  <li>Peer to Peer connection with Wi-Fi Direct device</li>
+  <li>Group owner election</li>
+</ul>
+
+<h2 id="features">Features</h2>
+
+<p>Below is a summary of the features provided by the components of the Tizen platform.</p>
+
+<h3 id="application-framework">Application framework</h3>
+
+<p>Provides the functionality for launching a Tizen application and managing its lifecycle and information. Main features include:</p>
+
+<ul>
+  <li>Application lifecycle management using Appcore</li>
+  <li>Quick launching mode using pre-loading and pre-initialization</li>
+  <li>Application information management</li>
+  <li>Application integrity verification with hash value comparison</li>
+  <li>Package management</li>
+  <li>i18n/l10n based on GNU gettext and libICU</li>
+  <li>Two types of IPC mechanism support:</li>
+  <li>DBUS</li>
+  <li>Simple publish/subscribe notification</li>
+</ul>
+
+<h3 id="graphics--ui">Graphics &amp; UI</h3>
+
+<p>Consists of the following major components:</p>
+
+<ul>
+  <li>Window System</li>
+  <li>Graphics</li>
+  <li>Enlightenment Foundation Library (EFL)</li>
+  <li>Input Service Framework (ISF)</li>
+</ul>
+
+<p>Features include:</p>
+
+<ul>
+  <li>Window system based on the X11 open source project</li>
+  <li>Direct Rendering Infrastructure (DRI) support: DRI2 protocol 2.6 and libdrm 2.4.29</li>
+  <li>XGestureExtension support</li>
+  <li>Composite window manager based on EFL open source project</li>
+  <li>3D graphics</li>
+  <li>Supports OpenGL ES 1.1 and 2.0</li>
+  <li>Supports EGL 1.4</li>
+  <li>2D graphics</li>
+  <li>2D vector graphics based on the Cairo open source project</li>
+  <li>Widget toolkit</li>
+  <li>Supports both desktop PCs and multi-touch-screens, using the same widgets</li>
+  <li>Scalable widgets based on scale factors</li>
+  <li>Change scale factor based on screen size and resolution</li>
+  <li>Animation support based on the EFL open source project</li>
+  <li>Dynamic backend support</li>
+  <li>Software backend (X11) and H/W acceleration backend (OpenGL ES)</li>
+  <li>Video/image composition support</li>
+  <li>Input Service Framework based on scim 1.4.7 (open source)</li>
+  <li>Automatically shows or hides the virtual keyboard when entry gets or loses focus</li>
+  <li>Switches virtual keyboard mode</li>
+  <li>Supports Keyboard Engine for soft-keyboard</li>
+  <li>Supports a variety of interfaces between applications and the engine</li>
+  <li>Supports loading 3rd party IMEs</li>
+  <li>Keyboard engine for supporting hardware-based keyboards, such as a Bluetooth Keyboard</li>
+</ul>
+
+<h3 id="multimedia">Multimedia</h3>
+
+<p>Provides features for playing and manipulating of video, audio, images, and VoIP. It also provides content management for media file metadata. Its features include:</p>
+
+<ul>
+  <li>Multimedia framework based on the GStreamer open source project</li>
+  <li>Player</li>
+  <li>Local playback: Various file formats/DRM (PlayReady, OMA, DivX DRM)/A2DP/Subtitle(SRT,SMI,SUB)</li>
+  <li>Streaming playback: HTTP Streaming, HLS (HTTP Live Streaming), RTP/RTSP Streaming, progressive download (File/URI)</li>
+  <li>Camera preview/Capture/Camera Setting, Recording</li>
+  <li>Capture (multi, timer, frame, mosaic, panorama)</li>
+  <li>Video/Audio recording support</li>
+  <li>Audio recording support</li>
+  <li>Sound path control, audio I/O, WAV player, tone player support</li>
+  <li>Audio playback using simple API (supports only uncompressed WAV files)</li>
+  <li>Playback or capture PCM with a given memory buffer</li>
+  <li>OpenAL playback function support</li>
+  <li>Extracting media property information and metadata from media content (ID3Tag, Thumbnail, Exif etc)</li>
+  <li>Radio operation support</li>
+  <li>Software mixing of multiple audio streams based on PulseAudio open source project</li>
+  <li>Various codec support</li>
+  <li>Audio decoder: AAC, MP3, WMA 7/8, WAV, Vorbis, AMR-NB / AMR-WB</li>
+  <li>Audio encoder: Vorbis, AMR-NB</li>
+  <li>Video decoder: MPEG-1, MPEG-4, H.263, H.264, On2 VP3, Theora</li>
+  <li>Video encoder: MPEG-4 part 2, H.263</li>
+  <li>Various container format support</li>
+  <li>MP4, 3GP, AVI, WM 7/8, ASF, MKV, MPG, MP3, AAC, AMR, AC3, WMA, OGG, WAV, IMY, RMF, MMF, XMF, MID</li>
+  <li>OpenMAX IL Support</li>
+</ul>
+
+<h3 id="web-1">Web</h3>
+
+<p>Provides a complete implementation of the Tizen Web API optimized for mobile devices. It includes WebKit, a layout engine designed to enable web browsers to render web pages. It also provides a runtime for web applications. Its features include:</p>
+
+<ul>
+  <li>W3C/HTML5 specifications support</li>
+  <li>Content: HTML5 audio/video element, HTML5 Forms (Partial), Session History API, DOM/JS related HTML5 Enhancements, iframe sandbox attribute, HTML5 2D Canvas, Inline SVG</li>
+  <li>CSS3: CSS3 2D Transforms (H/W Accelerated), CSS3 3D Transforms (H/W Accelerated), CSS3 Animations (H/W Accelerated), CSS3 Transitions (H/W Accelerated), CSS3 Colors, CSS3 Backgrounds and Borders (Partial), CSS3 Flexible Box Layout (Partial), CSS3 Multicolumn Layout (Partial), CSS3 Text Effects (Partial), CSS3 User Interface (Partial), Downloadable Fonts, WOFF 1.0</li>
+  <li>Device / OS Integration: Touch Events, CSS3 Media Queries (Partial), Geolocation API, Orientation and Acceleration (Partial), Browser online state, Vibration API, HTML Media Capture (using the input tag), getUserMedia API, Battery Status, Network Info API, Web Notifications, Sensors.</li>
+  <li>Network and Communication: WebSocket API, Web Messaging, XMLHttpRequest Level 2, Cross-Origin Resource Sharing (CORS), Server-Sent Events</li>
+  <li>Storage: Web Storage, File Reader API, File Writer API, File System API, HTML5 Application Cache, Web SQL Database, Indexed DB API</li>
+  <li>Performance: Web Worker (Partial), Page visibility API</li>
+  <li>Non-W3C Specifications</li>
+  <li>Khronos specifications support : WebGL, Typed Arrays</li>
+  <li>Fullscreen API (Mozilla Spec)(Partial), Viewport Metatag (Apple Spec), JSON parsing/stringfy (JSON.org Spec), URI scheme (tel:, sms:, mmsto:, mailto:)(OMA Spec)</li>
+  <li>Legacy Web Standards support</li>
+  <li>HTTP 1.1 Protocol, DOM Level 2 Views, HTML 4.01 Strict, DOM Level 2 Traversal, DOM Level 2 Range, MIME Part 1 and Part 2, object tag handling and HTTP status codes, DOM Level 2 Core, DOM Level 2 Events, CSS2.1 Selectors, DOM Level 2 Style, DOM Level 2 HTML, Unicode 5.0 UTF-16/UTF-8, HTML 4.0 Transitional, SVG 1.1, SMIL 2.1, SVG 1.1 Fonts, Data URI scheme, ECMAScript (3rd edition) Conformance, XHTML 1.0 Strict</li>
+  <li>W3C Widget specifications support</li>
+  <li>Packaging and Configuration, Widget Access Request Policy, Digital Signing, Widget Interface, URI scheme</li>
+  <li>Tizen Device APIs to access to a device’s platform capabilities support</li>
+  <li>Tizen, Alarm, Application, Bluetooth, Calendar, Call, Contact, Filesystem, Geocoder, Media Content, Messaging, NFC, System Information, Time</li>
+  <li>Web UI service support based on JQuery Mobile 1.0</li>
+  <li>Rich and optimized Tizen widgets</li>
+  <li>Tizen UI theme support</li>
+  <li>Localization support</li>
+  <li>Web application templates</li>
+</ul>
+
+<h3 id="messaging">Messaging</h3>
+
+<p>Provides the functionality to send &amp; receive SMS, MMS, and email messages.</p>
+
+<ul>
+  <li>Support SMS, WAP push message and cell broadcast messages.</li>
+  <li>Support OMA MMS 1.2.</li>
+  <li>Support Email protocols</li>
+  <li>SMTP (Simple Mail Transfer Protocol, RFC2821)</li>
+  <li>IMAP4 (Internet Message Access Protocol, RFC2060)</li>
+  <li>POP3 (Post Office Protocol, RFC2449)</li>
+</ul>
+
+<h3 id="location-1">Location</h3>
+
+<p>Provides Location Based Services (LBS), including position information, geocoding, satellite information, and GPS status. It is based on GeoClue, which delivers location information from various positioning sources such as GPS, WPS (Wi-Fi Positioning System), Cell ID, and sensors.
+Features include:</p>
+
+<ul>
+  <li>Locating current position, velocity, and distance support</li>
+  <li>Last known position, velocity, satellite support</li>
+  <li>Satellite information of GPS and GLONASS support</li>
+  <li>Notification when a user enters or exits a predefined set of boundaries, like school attendance zone or neighborhood boundary</li>
+</ul>
+
+<p>Map service delivers advanced maps features and functionalities:</p>
+
+<ul>
+  <li>Geocoding and reverse geocoding support</li>
+  <li>POI (Point of Interest) support</li>
+  <li>Route search feature support</li>
+</ul>
+
+<h3 id="security">Security</h3>
+
+<p>Responsible for security deployment across the system. It consists of platform security enablers, such as access control, certificate management, and secure application distribution. Its features include:</p>
+
+<ul>
+  <li>Certificate management and cert/signature verification</li>
+  <li>Secure storage for confidential data</li>
+  <li>User space access control management</li>
+  <li>Cryptography and SSL support, based on OpenSSL open source project</li>
+</ul>
+
+<h3 id="system">System</h3>
+
+<p>Consists of the following system and device management features:</p>
+
+<ul>
+  <li>Monitoring the system status and communicating it to applications</li>
+  <li>OOM (Out Of Memory) status, Process status, Battery Status</li>
+  <li>Controlling the LCD power state</li>
+  <li>LCD on / dimming / off</li>
+  <li>Monitoring the devices status and communicating it to applications</li>
+  <li>JACK / POWERSUPPLY / BACKLIGHT / LCD / LED / TOUCHKEY</li>
+  <li>Providing APIs that handle the various sensor devices</li>
+  <li>Accelerometer / Geomagnetic / Gyroscope / Light / Proximity / Motion</li>
+</ul>
+
+<h3 id="base">Base</h3>
+
+<p>Contains Linux based essential system libraries that provide key features, such as database support, internationalization, and XML parsing. Base consists of pure open source projects, such as SQLite, Glibc, Glib, LibXML, LibICU, and so on.</p>
+
+<h3 id="connectivity-1">Connectivity</h3>
+
+<p>Consists of all network and connectivity related functionalities, such as 3G, Wi-Fi, Bluetooth, HTTP, and NFC (Near Field Communication). Data network is based on the ConnMan open source project, which provides 3G and Wi-Fi based network connection management. The connectivity features include:</p>
+
+<ul>
+  <li>Always-on connectivity which tries to keep connecting cellular or Wi-Fi network, preferring Wi-Fi network connection</li>
+  <li>Auto-connecting Wi-Fi access point which has been already remembered</li>
+  <li>Exponentially increasing and back-off Wi-Fi scan interval which minimizes Wi-Fi power consumption</li>
+  <li>Wi-Fi Direct support</li>
+  <li>DNS proxy scheme support</li>
+  <li>Extension on WiFi API Information</li>
+  <li>bssid, max data rate, channel frequency, encryption mode</li>
+  <li>bluez 4.98 version upgrade release, and obexd 0.44 initial release included</li>
+  <li>Bluetooth OOB pairing</li>
+</ul>
+
+<h3 id="telephony">Telephony</h3>
+
+<p>Provides cellular and VoIP call functionality. It supports the following:</p>
+
+<ul>
+  <li>UMTS/CDMA call, ALS, MPTY, AoC</li>
+  <li>UMTS Supplementary Service such as USSD, CLI, CF, CW, CH, Call Barring</li>
+  <li>UMTS PDP for IPv4 and IPv6, CDMA PPP</li>
+  <li>UMTS/CDMA SMS, Cell Broadcast</li>
+  <li>UMTS/GSM SIM manipulation, SIM security, Personalization</li>
+  <li>UMTS/GSM SAT command management</li>
+  <li>NITZ support, RSSI display</li>
+  <li>SIM authentication extension on IMS, GSM, and UMTS</li>
+</ul>
+
+<h3 id="pim-personal-information-management">PIM (Personal Information Management)</h3>
+
+<p>Enables the management of user data on the device, including calendar, contacts, and tasks. It also supports retrieving data about the device context, such as device position or cable status.
+It supports the following:</p>
+
+<ul>
+  <li>CRUD (Create, Read, Update, Delete) operations for PIMS data – contacts, calendar, task.</li>
+  <li>vCard 3.0</li>
+  <li>vCalendar 1.0</li>
+</ul>
+
+<h3 id="kernel">Kernel</h3>
+
+<p>The Tizen reference kernel is based on the Linux kernel.</p>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

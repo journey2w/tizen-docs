@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Git Repository Structure
+order: 2
+---
+
 # Git Repository Structure
 
 The following table describes the Git repository structure for Tizen 3.0 and higher.

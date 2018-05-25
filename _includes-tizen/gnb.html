@@ -1,0 +1,70 @@
+<!-- Bootstrap core CSS -->
+<link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Navigation bar -->
+<link href="{{ site.baseurl }}/assets/css/navbar.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="{{ site.baseurl }}/assets/css/carousel.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+	<a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+	<i class="fa fa-star" aria-hidden="true">Docs</i>
+    </a>
+
+<div class="container">
+		<!--
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+		-->
+
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul id="navbar" class="nav navbar-nav navbar-right nr-auto">
+			<li><a href="http://portal.tizen.org/tizen/overview/tizen.php" target="_blank">What is Tizen</a></li>
+			{% assign pages = site.pages | sort: 'order' %}
+			{% for p in pages %}
+				{% assign p_depth = p.url | split: '/' | size %}
+				{% if p_depth == 2 and p.title != null %}
+					{% assign current_path = page.url | split: '/' %}
+					{% if p.url contains current_path[1] %}
+						{% assign active = 'active' %}
+					{% else %}
+						{% assign active = '' %}
+					{% endif %}
+					{% if p.dropdown %}
+			<li class="nav-item {{ active }} dropdown">
+				<a class="nav-link dropbtn">{{ p.title }} <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+				<div class="dropdown-content">
+						{% for child in pages %}
+							{% assign child_depth = child.url | split: '/' | size %}
+							{% if child_depth == 3 and child.url contains p.url %}
+								{% if child.hidden %}
+				<a class="text-muted">{{ child.title }}</a>
+								{% else %}
+				<a href="{{ site.baseurl }}{{ child.url }}{{ child.redirect }}">{{ child.title }}</a>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+				</div>
+			</li>
+					{% else %}
+			<li class="nav-item {{ active }}">
+				<a class="nav-link" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+			</li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+
+			<li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a></li>
+			<li>
+		    <form class="form-inline mt-2 mt-md-0" action="{{ site.baseurl }}/search" method="get">
+		    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+		        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+		    </form>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>

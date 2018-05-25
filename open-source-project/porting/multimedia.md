@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Multimedia
+order: 6
+---
+
 # Multimedia
 
 You can implement various multimedia features, such as camera, audio, and video.

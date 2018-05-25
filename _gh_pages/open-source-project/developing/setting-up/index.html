@@ -1,0 +1,3728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Setting up the Development Environment &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/developing/installing">Developing</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/installing/">Installing Development Tools</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/developing/setting-up/">Setting up the Development Environment</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/cloning/">Cloning Tizen Source Files</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/building-all/">Building All Packages Locally with GBS</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/contributing/">Contributing Code to Tizen</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/creating/">Creating Tizen Images with MIC</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/flashing/">Flashing an Image to Device</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/tips/">Development Tips</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="setting-up-the-development-environment">Setting up the Development Environment</h1>
+
+<p>This topic provides information on how to set up a development environment.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>If you encounter problems while obtaining the repo tool, see <a href="tips.md">Development Tips</a>.</p>
+</blockquote>
+
+<h2 id="setting-up-gerrit-access">Setting Up Gerrit Access</h2>
+
+<p>You can set up access to <a href="http://review.tizen.org/gerrit/">Tizen Gerrit</a> through the following steps:</p>
+
+<ol>
+  <li>Register a user account to gain access to tizen.org.</li>
+  <li>Configure Secure Shell (SSH) for Gerrit access.</li>
+  <li>Configure Git for Gerrit access.</li>
+</ol>
+
+<h3 id="registering-a-user-account">Registering a User Account</h3>
+
+<p>To register a user account to gain access to tizen.org:</p>
+
+<ol>
+  <li>Open the <a href="https://www.tizen.org/user/register">Register page</a>.</li>
+  <li>Fill in the mandatory fields and other necessary information, and click <strong>Register</strong>.<br />
+Gerrit sends a verification email to the email address you have provided.</li>
+  <li>Follow the instructions in the verification email to verify the email address, change the password, and gain access to tizen.org.
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>If an error message is shown when you click the link in the verification email, copy the link to the address bar of the browser manually.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>At this point, the prerequisites for accessing Gerrit are ready. Move on to the next section to enable Gerrit access.</p>
+
+<h3 id="configuring-ssh-for-gerrit-access">Configuring SSH for Gerrit Access</h3>
+
+<p>To configure SSH for Gerrit access:</p>
+
+<ol>
+  <li>
+    <p>Generate RSA keys:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="o">[</span><span class="nt">-t</span> rsa] <span class="o">[</span><span class="nt">-C</span> <span class="s2">"&lt;Comments&gt;"</span><span class="o">]</span>
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p><code class="highlighter-rouge">[-t rsa]</code> and <code class="highlighter-rouge">[-C "&lt;Comments&gt;"]</code> are both optional arguments for the <code class="highlighter-rouge">ssh-keygen</code> command.</p>
+
+      <p>If invoked without specifying key type, <code class="highlighter-rouge">ssh-keygen</code> generates an RSA key for use in SSH protocol 2 connections, thus making <code class="highlighter-rouge">[-t rsa]</code>, which specifies the key type, optional.</p>
+
+      <p>For an RSA key, if invoked without adding any comment, <code class="highlighter-rouge">ssh-keygen</code> initializes the comment as “<user>@<host>" when the key is generated, thus making `[-C "<Comments>"]` optional. In spite of this, adding this argument is recommended because a rephrased comment can make it easier to identify the keys.</Comments></host></user></p>
+    </blockquote>
+
+    <p>Based on the on-screen prompts, specify the file in which to save the key, and the passphrase.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter file in which to save the key (/home/&lt;User&gt;/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+</code></pre></div>    </div>
+
+    <p>If you press ENTER directly for the file, the default value <code class="highlighter-rouge">/home/&lt;User&gt;/.ssh/id_rsa</code> is used. If you press ENTER directly for the passphrase, no passphrase is used.</p>
+
+    <p>At this point, the SSH keys are successfully generated.</p>
+  </li>
+  <li>
+    <p>Create an SSH configuration file, <code class="highlighter-rouge">~/.ssh/config</code>, and add 1 of the following, as appropriate:</p>
+
+    <ul>
+      <li>
+        <p>Ubuntu, openSUSE, CentOS, or Debian:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host tizen review.tizen.org
+Hostname review.tizen.org
+IdentityFile ~/.ssh/id_rsa
+User &lt;Gerrit_Username&gt;
+Port 29418
+# Add the line below when using proxy, otherwise, skip it
+# ProxyCommand nc -X5 -x &lt;Proxy Address&gt;:&lt;Port&gt; %h %p
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Fedora:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host tizen review.tizen.org
+Hostname review.tizen.org
+IdentityFile ~/.ssh/id_rsaUser &lt;Gerrit_Username&gt;
+Port 29418
+# Add the line below when using proxy, otherwise, skip it
+# ProxyCommand nc --proxy-type socks4 --proxy &lt;Proxy Address&gt;:&lt;Port&gt; %h %p
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <ul>
+        <li>
+          <p>Both “tizen” and “review.tizen.org” are aliases of the hostname. “tizen” is configured for simplicity of commands when initializing Git repositories and cloning specific Tizen projects, and “review.tizen.org” is configured to work with the <code class="highlighter-rouge">manifest.xml</code> and <code class="highlighter-rouge">_remote.xml</code> files when synchronizing the entire Tizen source.</p>
+        </li>
+        <li>
+          <p>The <code class="highlighter-rouge">~/.ssh/config</code> file must not be written in by other users. Make sure to remove the write permission by executing <code class="highlighter-rouge">chmod o-w ~/.ssh/config</code>. For more information on <code class="highlighter-rouge">ssh_config</code>, see <code class="highlighter-rouge">man ssh_config</code>.</p>
+        </li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>
+    <p>Copy the full text in <code class="highlighter-rouge">~/.ssh/id_rsa.pub</code>, including all of the following:</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">ssh-rsa</code> lead</li>
+      <li>SSH public key</li>
+      <li>Email address tail</li>
+    </ul>
+  </li>
+  <li>
+    <p>Log in to <a href="http://review.tizen.org/gerrit/">Tizen Gerrit</a> and upload the key:</p>
+
+    <ol>
+      <li>In the Gerrit Web page, click the user name on the top right corner (with an inverted triangle on the right), and select <strong>Settings</strong>.</li>
+      <li>Click <strong>SSH Public Keys</strong> in the left panel, paste the text copied earlier into the <strong>Add SSH Public Key</strong> box, and click <strong>Add</strong>.</li>
+    </ol>
+  </li>
+  <li>
+    <p>Verify the SSH connection:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh tizen
+</code></pre></div>    </div>
+
+    <p>The following message indicates that SSH connection has been established successfully:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">****</span> Welcome to Gerrit Code Review <span class="k">****</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="configuring-git-for-gerrit-access">Configuring Git for Gerrit Access</h3>
+
+<p>Git must know the user’s name and email address to determine the author of each commit. If the user name or email address is not set up in a way that Git can find it, the user can encounter some odd warnings.</p>
+
+<p>This configuration operation requires developer access. In addition, it is recommended to match the email address with the one registered in contact information, which helps Git identify the user.</p>
+
+<p>To configure Git for Gerrit access:</p>
+
+<ol>
+  <li>Set the user name by executing the following command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.name &lt;First_Name Last_Name&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Set the email address by executing the following command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"&lt;E-mail_Address&gt;"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Using the <code class="highlighter-rouge">GIT_AUTHOR_NAME</code> and <code class="highlighter-rouge">GIT_AUTHOR_EMAIL</code> environment variables is an alternative solution. These variables override all configuration settings once set.</p>
+</blockquote>
+
+<h2 id="setting-up-the-gbs-configuration">Setting Up the GBS Configuration</h2>
+
+<p>You can set up the GBS configuration through editing the <code class="highlighter-rouge">.gbs.conf</code> file.</p>
+
+<h3 id="setting-up-the-default-gbs-configuration-file">Setting Up the Default GBS Configuration File</h3>
+
+<p>The default GBS configuration file is located in <code class="highlighter-rouge">~/.gbs.conf</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-mobile_target-TM1
+
+
+#########################################################
+################## Profile Section ##################
+#########################################################
+ 
+############# 5.0-unified #############
+[profile.unified_standard]
+buildconf=./scm/meta/build-config/unified/standard_build.conf
+repos = repo.base_standard,repo.base_standard_debug,repo.unified_standard,repo.unified_standard_debug
+ 
+[profile.unified_emulator]
+buildconf=./scm/meta/build-config/unified/emulator_build.conf
+repos = repo.base_standard,repo.base_standard_debug,repo.unified_emulator,repo.unified_emulator_debug
+ 
+############# 4.0-unified #############
+[profile.4.0-unified_standard]
+buildconf=./scm/meta/build-config/4.0/unified/standard_build.conf
+repos = repo.4.0-base_arm,repo.4.0-base_arm_debug,repo.4.0-base_arm64,repo.4.0-base_arm64_debug,repo.4.0-base_ia32,repo.4.0-base_ia32_debug,repo.4.0-base_x86_64,repo.4.0-base_x86_64_debug,repo.4.0-unified_standard,repo.4.0-unified_standard_debug
+ 
+[profile.4.0-unified_emulator]
+buildconf=./scm/meta/build-config/4.0/unified/emulator_build.conf
+repos = repo.4.0-base_ia32,repo.4.0-base_ia32_debug,repo.4.0-base_x86_64,repo.4.0-base_x86_64_debug,repo.4.0-unified_emulator,repo.4.0-unified_emulator_debug
+ 
+############# 3.0-common #############
+[profile.3.0-common_x86_64-wayland]
+buildconf=./scm/meta/build-config/3.0/common/x86_64-wayland_build.conf
+repos = repo.3.0-base_x86_64,repo.3.0-base_x86_64_debug,repo.3.0-common_x86_64-wayland,repo.3.0-common_x86_64-wayland_debug
+ 
+[profile.3.0-common_ia32-wayland]
+buildconf=./scm/meta/build-config/3.0/common/ia32-wayland_build.conf
+repos = repo.3.0-base_ia32,repo.3.0-base_ia32_debug,repo.3.0-common_ia32-wayland,repo.3.0-common_ia32-wayland_debug
+ 
+[profile.3.0-common_emulator32-wayland]
+buildconf=./scm/meta/build-config/3.0/common/emulator32-wayland_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-common_emulator32-wayland,repo.3.0-common_emulator32-wayland_debug
+ 
+[profile.3.0-common_arm64-wayland]
+buildconf=./scm/meta/build-config/3.0/common/arm64-wayland_build.conf
+repos = repo.3.0-base_arm64,repo.3.0-base_arm64_debug,repo.3.0-common_arm64-wayland,repo.3.0-common_arm64-wayland_debug
+ 
+[profile.3.0-common_arm-wayland]
+buildconf=./scm/meta/build-config/3.0/common/arm-wayland_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-common_arm-wayland,repo.3.0-common_arm-wayland_debug
+ 
+############# 3.0-mobile #############
+[profile.3.0-mobile_target-TM1]
+buildconf=./scm/meta/build-config/3.0/mobile/target-TM1_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-mobile_target-TM1,repo.3.0-mobile_target-TM1_debug
+ 
+[profile.3.0-mobile_emulator32-wayland]
+buildconf=./scm/meta/build-config/3.0/mobile/emulator32-wayland_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-mobile_emulator32-wayland,repo.3.0-mobile_emulator32-wayland_debug
+ 
+[profile.3.0-mobile_arm-wayland]
+buildconf=./scm/meta/build-config/3.0/mobile/arm-wayland_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-mobile_arm-wayland,repo.3.0-mobile_arm-wayland_debug
+ 
+############# 3.0-tv #############
+[profile.3.0-tv_emulator64-wayland]
+buildconf=./scm/meta/build-config/3.0/tv/emulator64-wayland_build.conf
+repos = repo.3.0-base_emulator64,repo.3.0-base_emulator64_debug,repo.3.0-tv_emulator64-wayland,repo.3.0-tv_emulator64-wayland_debug
+ 
+[profile.3.0-tv_emulator32-wayland]
+buildconf=./scm/meta/build-config/3.0/tv/emulator32-wayland_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-tv_emulator32-wayland,repo.3.0-tv_emulator32-wayland_debug
+ 
+[profile.3.0-tv_arm-wayland]
+buildconf=./scm/meta/build-config/3.0/tv/arm-wayland_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-tv_arm-wayland,repo.3.0-tv_arm-wayland_debug
+ 
+############# 3.0-wearable #############
+[profile.3.0-wearable_target-circle]
+buildconf=./scm/meta/build-config/3.0/wearable/target-circle_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-wearable_target-circle,repo.3.0-wearable_target-circle_debug
+ 
+[profile.3.0-wearable_emulator32-wayland]
+buildconf=./scm/meta/build-config/3.0/wearable/emulator32-wayland_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-wearable_emulator32-wayland,repo.3.0-wearable_emulator32-wayland_debug
+ 
+[profile.3.0-wearable_emulator-circle]
+buildconf=./scm/meta/build-config/3.0/wearable/emulator-circle_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-wearable_emulator-circle,repo.3.0-wearable_emulator-circle_debug
+ 
+############# 3.0-ivi #############
+[profile.3.0-ivi_emulator]
+buildconf=./scm/meta/build-config/3.0/ivi/emulator_build.conf
+repos = repo.3.0-base_emulator32,repo.3.0-base_emulator32_debug,repo.3.0-ivi_emulator,repo.3.0-ivi_emulator_debug
+ 
+[profile.3.0-ivi_arm]
+buildconf=./scm/meta/build-config/3.0/ivi/arm_build.conf
+repos = repo.3.0-base_arm,repo.3.0-base_arm_debug,repo.3.0-ivi_arm,repo.3.0-ivi_arm_debug
+ 
+ 
+ 
+#########################################################
+################## Repo Section##################
+#########################################################
+ 
+############# base #############
+[repo.base_standard]
+url = http://download.tizen.org/releases/daily/tizen/base/latest/repos/standard/packages/
+[repo.base_standard_debug]
+url = http://download.tizen.org/releases/daily/tizen/base/latest/repos/standard/debug/
+ 
+############# 4.0-base #############
+[repo.4.0-base_x86_64]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/x86_64/packages/
+[repo.4.0-base_x86_64_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/x86_64/debug/
+ 
+[repo.4.0-base_ia32]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/ia32/packages/
+[repo.4.0-base_ia32_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/ia32/debug/
+ 
+[repo.4.0-base_emulator64]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/emulator64/packages/
+[repo.4.0-base_emulator64_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/emulator64/debug/
+ 
+[repo.4.0-base_emulator32]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/emulator32/packages/
+[repo.4.0-base_emulator32_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/emulator32/debug/
+ 
+[repo.4.0-base_arm64]
+url = http://download.tizen.org/releases/daily/4.0-base/latest/repos/arm64/packages/
+[repo.4.0-base_arm64_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/arm64/debug/
+ 
+[repo.4.0-base_arm]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/arm/packages/
+[repo.4.0-base_arm_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-base/latest/repos/arm/debug/
+ 
+############# 3.0-base #############
+[repo.3.0-base_x86_64]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/x86_64/packages/
+[repo.3.0-base_x86_64_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/x86_64/debug/
+ 
+[repo.3.0-base_ia32]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/ia32/packages/
+[repo.3.0-base_ia32_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/ia32/debug/
+ 
+[repo.3.0-base_emulator64]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/emulator64/packages/
+[repo.3.0-base_emulator64_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/emulator64/debug/
+ 
+[repo.3.0-base_emulator32]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/emulator32/packages/
+[repo.3.0-base_emulator32_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/emulator32/debug/
+ 
+[repo.3.0-base_arm64]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/arm64/packages/
+[repo.3.0-base_arm64_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/arm64/debug/
+ 
+[repo.3.0-base_arm]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/arm/packages/
+[repo.3.0-base_arm_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-base/latest/repos/arm/debug/
+ 
+############# 5.0-unified #############
+[repo.unified_standard]
+url = http://download.tizen.org/releases/daily/tizen/unified/latest/repos/standard/packages/
+[repo.unified_standard_debug]
+url = http://download.tizen.org/releases/daily/tizen/unified/latest/repos/standard/debug/
+ 
+[repo.unified_emulator]
+url = http://download.tizen.org/releases/daily/tizen/unified/latest/repos/emulator/packages/
+[repo.unified_emulator_debug]
+url = http://download.tizen.org/releases/daily/tizen/unified/latest/repos/emulator/debug/
+ 
+############# 4.0-unified #############
+[repo.4.0-unified_standard]
+url = http://download.tizen.org/releases/daily/tizen/4.0-unified/latest/repos/standard/packages/
+[repo.4.0-unified_standard_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-unified/latest/repos/standard/debug/
+ 
+[repo.4.0-unified_emulator]
+url = http://download.tizen.org/releases/daily/tizen/4.0-unified/latest/repos/emulator/packages/
+[repo.4.0-unified_emulator_debug]
+url = http://download.tizen.org/releases/daily/tizen/4.0-unified/latest/repos/emulator/debug/
+ 
+############# 3.0-common #############
+[repo.3.0-common_x86_64-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/x86_64-wayland/packages/
+[repo.3.0-common_x86_64-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/x86_64-wayland/debug/
+ 
+[repo.3.0-common_ia32-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/ia32-wayland/packages/
+[repo.3.0-common_ia32-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/ia32-wayland/debug/
+ 
+[repo.3.0-common_emulator32-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/emulator32-wayland/packages/
+[repo.3.0-common_emulator32-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/emulator32-wayland/debug/
+ 
+[repo.3.0-common_arm64-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/arm64-wayland/packages/
+[repo.3.0-common_arm64-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/arm64-wayland/debug/
+ 
+[repo.3.0-common_arm-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/arm-wayland/packages/
+[repo.3.0-common_arm-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-common/latest/repos/arm-wayland/debug/
+ 
+############# 3.0-mobile #############
+[repo.3.0-mobile_target-TM1]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/target-TM1/packages/
+[repo.3.0-mobile_target-TM1_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/target-TM1/debug/
+ 
+[repo.3.0-mobile_emulator32-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/emulator32-wayland/packages/
+[repo.3.0-mobile_emulator32-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/emulator32-wayland/debug/
+ 
+[repo.3.0-mobile_arm-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/arm-wayland/packages/
+[repo.3.0-mobile_arm-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-mobile/latest/repos/arm-wayland/debug/
+ 
+############# 3.0-tv #############
+[repo.3.0-tv_emulator64-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/emulator64-wayland/packages/
+[repo.3.0-tv_emulator64-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/emulator64-wayland/debug/
+ 
+[repo.3.0-tv_emulator32-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/emulator32-wayland/packages/
+[repo.3.0-tv_emulator32-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/emulator32-wayland/debug/
+ 
+[repo.3.0-tv_arm-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/arm-wayland/packages/
+[repo.3.0-tv_arm-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-tv/latest/repos/arm-wayland/debug/
+ 
+############# 3.0-wearable #############
+[repo.3.0-wearable_target-circle]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/target-circle/packages/
+[repo.3.0-wearable_target-circle_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/target-circle/debug/
+ 
+[repo.3.0-wearable_emulator32-wayland]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/emulator32-wayland/packages/
+[repo.3.0-wearable_emulator32-wayland_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/emulator32-wayland/debug/
+ 
+[repo.3.0-wearable_emulator-circle]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/emulator-circle/packages/
+[repo.3.0-wearable_emulator-circle_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-wearable/latest/repos/emulator-circle/debug/
+ 
+############# 3.0-ivi #############
+[repo.3.0-ivi_emulator]
+url = http://download.tizen.org/releases/daily/tizen/3.0-ivi/latest/repos/emulator/packages/
+[repo.3.0-ivi_emulator_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-ivi/latest/repos/emulator/debug/
+ 
+[repo.3.0-ivi_arm]
+url = http://download.tizen.org/releases/daily/tizen/3.0-ivi/latest/repos/arm/packages/
+[repo.3.0-ivi_arm_debug]
+url = http://download.tizen.org/releases/daily/tizen/3.0-ivi/latest/repos/arm/debug/
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The file contains the GBS configuration for all profiles and repositories in Tizen version 3.0, Tizen version 4.0 and Tizen version 5.0. In the near future in new GBS versions, the above default configuration file (<code class="highlighter-rouge">~/.gbs.conf</code>) is automatically installed when GBS is installed.</p>
+</blockquote>
+
+<p>The default profile used in GBS is specified in the <code class="highlighter-rouge">[general]</code> section:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.unified_standard
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The default GBS build parameters, based on the above block, are as follows:</p>
+  <ul>
+    <li>Tizen version: 5.0</li>
+    <li>Profile: unified</li>
+    <li>Repository: standard</li>
+  </ul>
+</blockquote>
+
+<h3 id="setting-up-a-specific-profile-in-the-gbsconf-file">Setting Up a Specific Profile in the <code class="highlighter-rouge">.gbs.conf</code> File</h3>
+
+<p>To build using a non-default Tizen version, profile, or repository, select 1 of the profiles specified in the <code class="highlighter-rouge">.gbs.conf</code> file and set that profile in the <code class="highlighter-rouge">[general]</code> section, using the following format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile."$Version""$Profile"_"$Repository"
+</code></pre></div></div>
+
+<ul>
+  <li>If the Tizen version is 3.0, <code class="highlighter-rouge">$Version</code> equals “3.0-“.</li>
+  <li>If the Tizen version is 4.0, <code class="highlighter-rouge">$Version</code> equals “4.0-“.</li>
+  <li>If the Tizen version is 5.0, <code class="highlighter-rouge">$Version</code> equals “”.</li>
+</ul>
+
+<p>Other examples:</p>
+
+<ul>
+  <li>
+    <p>Tizen 5.0 Unified / emulator repository</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.unified_emulator
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Tizen 4.0 Unified / emulator repository</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.4.0-unified_emulator
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 Common / arm64-wayland repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-common_arm64-wayland
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 Common / emulator32-wayland repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-common_emulator32-wayland
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 Mobile / target-TM1 repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-mobile_target-TM1
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 TV / arm-wayland repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-tv_arm-wayland
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 Wearable / target-circle repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-wearable_target-circle
+</code></pre></div>    </div>
+  </li>
+  <li>Tizen 3.0 IVI / emulator repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[general]
+profile = profile.3.0-ivi_emulator
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Each <code class="highlighter-rouge">profile</code> entry in the <code class="highlighter-rouge">.gbs.conf</code> file specifies multiple <code class="highlighter-rouge">repo</code> entries, and each <code class="highlighter-rouge">repo</code> entry specifies a URL where RPM files used in the GBS build are located.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The <code class="highlighter-rouge">latest</code> directory in the remote repository URLs is a symbolic link in the remote server, which is always linked to the latest new directory and can be changed any time, so make sure to use the latest repo with a specific date to guarantee usability. An example is shown below:</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>url = http://download.tizen.org/releases/daily/tizen/unified/latest/repos/standard/packages/
+</code></pre></div>  </div>
+  <p>This URL is symbolically linked to the latest snapshot number in “<a href="http://download.tizen.org/releases/daily/tizen/unified/">http://download.tizen.org/releases/daily/tizen/unified/</a>”. To guarantee usability, use a specific date:</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>url = http://download.tizen.org/releases/daily/tizen/unified/tizen-unified_20170627.1/repos/standard/packages/
+</code></pre></div>  </div>
+</blockquote>
+
+<p>For more information on <code class="highlighter-rouge">.gbs.conf</code>, see <a href="../reference/gbs/gbs.conf.md">GBS Configuration</a>.</p>
+
+<h2 id="setting-up-the-repo-tool">Setting Up the Repo Tool</h2>
+
+<p>Repo is a repository management tool built on top of Git.  Multiple Git repositories can be downloaded with a single repo command.</p>
+
+<p>To install and set up the repo tool:</p>
+
+<ol>
+  <li>
+    <p>Create a <code class="highlighter-rouge">~/bin/</code> subdirectory, include it in <code class="highlighter-rouge">PATH</code>, and switch to it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir ~/bin/
+<span class="nv">$ PATH</span><span class="o">=</span>~/bin:<span class="nv">$PATH</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Download the repo script:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl http://commondatastorage.googleapis.com/git-repo-downloads/repo <span class="o">&gt;</span> ~/bin/repo
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>If you encounter problems while obtaining the repo tool, see <a href="tips.md">Development Tips</a>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Change the attributes of the repo script to make it executable:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>chmod a+x ~/bin/repo
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="working-through-a-network-proxy">Working through a Network Proxy</h2>
+
+<p>You can set up your development environment to work through a network proxy.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>A network proxy is particularly useful if you also track other Git repositories for which you do not already have a dedicated <code class="highlighter-rouge">ProxyCommand</code> in your <code class="highlighter-rouge">~/.ssh/config</code>, or which use “git://” or “http://”.</p>
+</blockquote>
+
+<h3 id="configuring-a-proxy">Configuring a Proxy</h3>
+
+<p>To configure a proxy through the Linux shell prompt:</p>
+
+<ol>
+  <li>Open the <code class="highlighter-rouge">.bashrc</code> file and set the <code class="highlighter-rouge">http_proxy</code>, <code class="highlighter-rouge">ftp_proxy</code>, <code class="highlighter-rouge">https_proxy</code>, and <code class="highlighter-rouge">no_proxy</code> environment variables:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export http_proxy=&lt;Proxy_Address&gt;:&lt;Port&gt;
+ export ftp_proxy=$http_proxy
+ export https_proxy=&lt;Proxy_Address&gt;:&lt;Port&gt;
+ export no_proxy=&lt;Internal_Address&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open <code class="highlighter-rouge">/etc/sudoers</code> and preserve the environment variables by adding the following content:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Defaults env_keep="http_proxy ftp_proxy https_proxy no_proxy"
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Replace “=” with “+=” if other <code class="highlighter-rouge">env_keep</code> settings already exist in <code class="highlighter-rouge">/etc/sudoers</code>.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="configuring-git-access-through-the-proxy">Configuring Git Access through the Proxy</h3>
+
+<p>To allow Git access through the proxy:</p>
+
+<ol>
+  <li>
+    <p>Create a script named <code class="highlighter-rouge">git-proxy</code> in the <code class="highlighter-rouge">/usr/local/bin</code> directory by using a text editor.</p>
+
+    <p>The following example uses VIM:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /usr/local/bin/git-proxy
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add the following lines into the file and save it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nv">PROXY</span><span class="o">=</span>&lt;Proxy_Address&gt;
+<span class="nv">PORT</span><span class="o">=</span>&lt;Port&gt;
+
+<span class="k">case</span> <span class="nv">$1</span> <span class="k">in</span>
+<span class="c"># list Git servers here that you do not want to use</span>
+<span class="c"># the proxy with, separated by a pipe character '|' as below:</span>
+
+review.tizen.org<span class="p">)</span>
+<span class="nv">METHOD</span><span class="o">=</span><span class="s2">"-X connect"</span>
+<span class="p">;;</span>
+<span class="k">*</span><span class="p">)</span>
+<span class="nv">METHOD</span><span class="o">=</span><span class="s2">"-X 5 -x </span><span class="k">${</span><span class="nv">PROXY</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">PORT</span><span class="k">}</span><span class="s2">"</span>
+<span class="c">#The line above is applicable to Ubuntu and openSUSE</span>
+<span class="c">#For Fedora, use the variation below since it only supports socks v4</span>
+<span class="c">#METHOD="-X 4 -x ${PROXY}:${PORT}"</span>
+<span class="p">;;</span>
+<span class="k">esac</span>
+
+nc <span class="nv">$METHOD</span> <span class="nv">$*</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Change the attributes of the <code class="highlighter-rouge">git-proxy</code> script to make it executable:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>chmod +x /usr/local/bin/git-proxy
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Set the <code class="highlighter-rouge">GIT_PROXY_COMMAND</code> and <code class="highlighter-rouge">GIT_PROXY_IGNORE</code> environment variables by adding the following lines into the <code class="highlighter-rouge">.bashrc</code> file:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy
+export GIT_PROXY_IGNORE=&lt;Internal_Address&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Apply the changes:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">source</span> ~/.bashrc
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

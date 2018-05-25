@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Home Structure
+order: 1
+---
+
 # Home Structure
 
 This section provides information about the following main elements to enhance your understanding on the Tizen mobile platform.

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Overview
+order: 1
+---
+
 # Tizen RT
 
 Tizen has been commercialized in smart TVs, smart phones, wearable devices (Gear S, Gear Fit), and smart home appliances. However, low-end and low-cost IoT devices, such as home appliances without LCDs and wearable bands with small LCDs, have received less attention. The goal of Tizen RT is to extend the Tizen platform device coverage to these low-end devices. Tizen RT is an RTOS-based lightweight platform that works on these devices, which typically use Cortex-M/R processors with MPU, less than 2 MB RAM, and less than 16 MB flash memory.

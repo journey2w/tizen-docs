@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen Common milestones
+order: 0
+---
+
 # Tizen Common milestones
 
 Tizen Common is the common subset of the Tizen profiles, used by platform developers to develop the next version of the profiles. As such, it does not have releases in the traditional fashion. Instead, it has quarterly milestones.

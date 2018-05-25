@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Long-term Tizen RT Goals
+order: 4
+---
+
 # Long-term Tizen RT Goals
 
 The following sections describe various long-term development goals of Tizen RT.

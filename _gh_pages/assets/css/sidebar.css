@@ -1,0 +1,75 @@
+/*
+ * Override Bootstrap css
+ */
+
+.col-md-10 {
+  padding-left: 1.5rem!important;
+  /* padding-left: 15rem!important; */
+}
+
+.sidebar {
+  position: fixed;
+  top: 3rem;
+  /* top: 9rem; */
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem 1.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid rgba(0,0,0,.05);
+}
+
+.sidebar .item-root {
+  display: block;
+  margin: .5rem 0;
+}
+
+.sidebar .item-root.active {
+  margin: 1.5rem 0;
+}
+
+.sidebar .item-root.active.item-first {
+  margin-top: .5rem;
+}
+
+.sidebar .item-root>a {
+  display: block;
+  padding-bottom: .25rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(0,0,0,.5);
+}
+
+.sidebar .item-root.active>a,
+.sidebar .item-root>a:hover {
+  color: rgba(0,0,0,.8);
+}
+
+.sidebar ul {
+  list-style: none;
+  border-left: 1px solid rgba(0,0,0,.15);
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  display: block;
+}
+
+.sidebar li>a {
+  display: block;
+  padding: .25rem 0;
+  font-size: 90%;
+  text-decoration: none;
+  color: rgba(0,0,0,.6);
+}
+
+.sidebar li>a:hover {
+  color: rgba(0,0,0,1);
+}
+
+.sidebar li.active>a {
+  padding: .25rem 0;
+  font-weight: 500;
+  color: rgba(0,0,0,1);
+}

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Search
+order: 1
+---
+
 # Search
 
 You can use the following search options:

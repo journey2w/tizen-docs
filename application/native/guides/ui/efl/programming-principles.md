@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Programming Principles
+order: 3
+---
+
 # Programming Principles of EFL
 
 This topic explains the programming principles of EFL. Due to its hierarchical structure, EFL has certain characteristics distinguished from other frameworks, to which you need to pay attention while programming.

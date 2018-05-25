@@ -1,3 +1,9 @@
+---
+layout: solution
+title: GBS Frequently Asked Questions
+order: 5
+---
+
 # GBS Frequently Asked Questions
 
 ## GBS Installation Issues

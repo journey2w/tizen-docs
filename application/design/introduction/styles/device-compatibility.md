@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Device Compatibility
+order: 1
+---
+
 # Device Compatibility
 
 Tizen supports various mobile and wearable devices with different display sizes. For this, detailed style guidelines are provided to help you create consistently designed apps across different hardware platforms.

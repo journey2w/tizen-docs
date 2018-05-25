@@ -1,0 +1,3467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Building All Packages Locally with GBS &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/developing/installing">Developing</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/installing/">Installing Development Tools</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/setting-up/">Setting up the Development Environment</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/cloning/">Cloning Tizen Source Files</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/developing/building-all/">Building All Packages Locally with GBS</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/contributing/">Contributing Code to Tizen</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/creating/">Creating Tizen Images with MIC</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/flashing/">Flashing an Image to Device</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/developing/tips/">Development Tips</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="building-all-packages-locally-with-gbs">Building All Packages Locally with GBS</h1>
+
+<p>You can perform a build for all Tizen packages using the Git Build System (GBS).</p>
+
+<p>Before performing the build, study the following instructions:</p>
+
+<ul>
+  <li><a href="setting-up.md">Setting up the Development Environment</a></li>
+  <li><a href="installing.md">Installing Development Tools</a></li>
+  <li><a href="building.md">Building Packages Locally with GBS</a></li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <ul>
+    <li>To understand the local full build commands, see <a href="#gbs-build-concepts">GBS Build Concepts</a>.</li>
+    <li>To speed up the build process when hardware allows, see <a href="building.md#speeding-up-a-local-build">Speeding up a Local Build</a>.</li>
+  </ul>
+</blockquote>
+
+<h2 id="cloning-all-tizen-projects">Cloning All Tizen Projects</h2>
+
+<p>You can clone all Tizen projects over SSH or HTTPS.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Procedures to clone all projects over SSH and HTTPS are almost identical, the only difference being the Git cloning protocol. However, you can only contribute code to Tizen using the SSH method.</p>
+</blockquote>
+
+<h3 id="cloning-all-projects-over-ssh">Cloning All Projects over SSH</h3>
+<p>You can clone the source of all projects over SSH, including the latest source and the snapshot source.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Make sure the SSH configuration file is correctly configured according to <a href="setting-up.md">Setting up the Development Environment</a>. Otherwise, synchronization cannot be performed successfully and the following error message is displayed:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+nc: connection failed, SOCKS error 1
+ssh_exchange_identification: Connection closed by remote host
+nc: connection failed, SOCKS error 1
+...
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+ssh_exchange_identification: Connection closed by remote host
+fatal: Could not read from remote repository.
+</code></pre></div>  </div>
+</blockquote>
+
+<p>To clone the latest sources of all projects over SSH:</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The latest source does not mean the latest sources in the Gerrit server, but the reference snapshot sources where images generated by the reference snapshot are guaranteed by passing all test cases.</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Create a new directory for Tizen and switch to it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir ~/&lt;Tizen_Project&gt; <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/&lt;Tizen_Project&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a <code class="highlighter-rouge">.repo/</code> directory that contains all the information - for example, Git repositories, commit IDs, and remote URLs - to download all Git repositories to construct all Tizen projects.
+Initialize the repository by executing the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> &lt;tizen branch&gt; <span class="nt">-m</span> <span class="k">${</span><span class="nv">profile</span><span class="k">}</span>_<span class="k">${</span><span class="nv">repository</span><span class="k">}</span>.xml
+</code></pre></div>    </div>
+
+    <p><code class="highlighter-rouge">&lt;tizen branch&gt;</code> is <code class="highlighter-rouge">tizen</code> for Tizen 5.0, <code class="highlighter-rouge">tizen_4.0</code> for Tizen 4.0 and <code class="highlighter-rouge">tizen_3.0</code> for Tizen 3.0.</p>
+
+    <p>For example:</p>
+
+    <ul>
+      <li>
+        <p>Tizen 5.0 Unified / standard</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen <span class="nt">-m</span> unified_standard.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 5.0 Unified / emulator</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen <span class="nt">-m</span> unified_emulator.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 4.0 Unified / standard</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_4.0 <span class="nt">-m</span> unified_standard.xml	
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 4.0 Unified / standard</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_4.0 <span class="nt">-m</span> unified_standard.xml		
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 4.0 Unified / emulator</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_4.0 <span class="nt">-m</span> unified_emulator.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / arm-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_arm-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / arm64-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_arm64-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / emulator32-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_emulator32-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / ia32-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_ia32-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / x86_64-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_x86_64-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Mobile / arm-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> mobile_arm-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Mobile / emulator-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> mobile_emulator-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Mobile / target-TM1</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> mobile_target-TM1.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 TV / arm-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> tv_arm-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 TV / emulator32-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> tv_emulator32-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 TV / emulator64-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> tv_emulator64-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Wearable / emulator-circle</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> wearable_emulator-circle.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Wearable / target-circle</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> wearable_target-circle.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Wearable / emulator32-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> wearable_emulator32-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 IVI /arm</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> ivi_arm.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 IVI / emulator</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> ivi_emulator.xml
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Clone the specific snapshot source of all projects over SSH (optional).
+Replace the latest manifest with a snapshot manifest and make proper modifications by executing the following commands, as appropriate:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  &lt;Snapshot_Manifest_URL&gt; <span class="nt">-O</span> .repo/manifests/&lt;profile&gt;/&lt;repository&gt;/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/&lt;profile&gt;/&lt;repository&gt;/projects.xml
+</code></pre></div>    </div>
+
+    <p>For example:</p>
+
+    <ul>
+      <li>
+        <p>Tizen 5.0 Unified / standard</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget http://download.tizen.org/releases/weekly/tizen/unified/tizen-unified_20170928.1/builddata/manifest/tizen-unified_20170928.1_standard.xml <span class="nt">-O</span> .repo/manifests/unified/standard/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/unified/standard/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 4.0 Unified / emulator</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget http://download.tizen.org/releases/weekly/tizen/4.0-unified/tizen-4.0-unified_20171027.1/builddata/manifest/tizen-4.0-unified_20171027.1_emulator.xml <span class="nt">-O</span> .repo/manifests/unified/standard/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/unified/standard/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / arm64-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  http://download.tizen.org/snapshots/tizen/3.0-common/tizen-3.0-common_20170627.1/builddata/manifest/tizen-3.0-common_20170627.1_arm64-wayland.xml <span class="nt">-O</span> .repo/manifests/common/arm64-wayland/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/common/arm64-wayland/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Mobile / target-TM1</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  http://download.tizen.org/snapshots/tizen/3.0-mobile/tizen-3.0-mobile_20170627.1/builddata/manifest/tizen-3.0-mobile_20170627.1_target-TM1.xml <span class="nt">-O</span> .repo/manifests/mobile/target-TM1/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/mobile/target-TM1/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 TV / arm-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  http://download.tizen.org/snapshots/tizen/3.0-tv/tizen-3.0-tv_20170627.1/builddata/manifest/tizen-3.0-tv_20170627.1_arm-wayland.xml <span class="nt">-O</span> .repo/manifests/tv/arm-wayland/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/tv/arm-wayland/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Wearable / emulator-circle</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  http://download.tizen.org/snapshots/tizen/3.0-wearable/tizen-3.0-wearable_20170627.1/builddata/manifest/tizen-3.0-wearable_20170627.1_emulator-circle.xml <span class="nt">-O</span> .repo/manifests/wearable/emulator-circle/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/wearable/emulator-circle/projects.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 IVI / arm</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget  http://download.tizen.org/snapshots/tizen/3.0-ivi/tizen-3.0-ivi_20170627.1/builddata/manifest/tizen-3.0-ivi_20170627.1_arm.xml <span class="nt">-O</span> .repo/manifests/ivi/arm/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/ivi/arm/projects.xml
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Synchronize the files for all the projects based on the information downloaded by the <code class="highlighter-rouge">repo init</code> command by executing the following command:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo sync
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="cloning-all-projects-over-https">Cloning All Projects over HTTPS</h3>
+
+<p>You can clone the source of all projects over HTTPS, including the latest source and the snapshot source.</p>
+
+<p>To clone the latest sources of all projects over HTTPS:</p>
+
+<ol>
+  <li>
+    <p>Create a new directory for Tizen and switch to it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir ~/&lt;Tizen_Project&gt; <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/&lt;Tizen_Project&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a <code class="highlighter-rouge">.repo/</code> directory.
+Initialize the repository by executing the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> &lt;tizen branch&gt; <span class="nt">-m</span> unified_<span class="k">${</span><span class="nv">repository</span><span class="k">}</span>.xml
+</code></pre></div>    </div>
+
+    <p><code class="highlighter-rouge">&lt;tizen branch&gt;</code> is <code class="highlighter-rouge">tizen</code> for Tizen 5.0,  <code class="highlighter-rouge">tizen_4.0</code> for Tizen 4.0 and <code class="highlighter-rouge">tizen_3.0</code> for Tizen 3.0.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>The <code class="highlighter-rouge">repo init</code> command using HTTPS is almost identical to that of using SSH. The only difference is the parameter of the <code class="highlighter-rouge">'-u'</code> option. Replace <code class="highlighter-rouge">'ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest'</code> with <code class="highlighter-rouge">'https://git.tizen.org/cgit/scm/manifests'</code>.</p>
+    </blockquote>
+
+    <p>For example:</p>
+
+    <ul>
+      <li>
+        <p>Tizen 5.0 Unified / standard</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen <span class="nt">-m</span> unified_standard.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 4.0 Unified / emulator</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_4.0 <span class="nt">-m</span> unified_emulator.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Common / arm64-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> common_arm64-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Mobile / target-TM1</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> mobile_target-TM1.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 TV / arm-wayland</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> tv_arm-wayland.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 Wearable / emulator-circle</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> wearable_emulator-circle.xml
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Tizen 3.0 IVI /arm</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo init <span class="nt">-u</span> https://git.tizen.org/cgit/scm/manifest <span class="nt">-b</span> tizen_3.0 <span class="nt">-m</span> ivi_arm.xml
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Replace the remote ‘fetch url’ in the <code class="highlighter-rouge">_remote.xml</code> file by executing the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'s/ssh://review.tizen.org/https://git.tizen.org//cgit/'</span> .repo/manifests/_remote.xml
+</code></pre></div>    </div>
+
+    <p>This changes the ‘fetch url’ from <code class="highlighter-rouge">fetch="ssh://review.tizen.org/"</code> to <code class="highlighter-rouge">fetch="https://git.tizen.org/cgit/"</code>.</p>
+  </li>
+  <li>
+    <p>Clone the specific snapshot source of all projects over HTTPS (optional).<br />
+Replace the latest manifest with a snapshot manifest and make proper modifications by executing the following commands, as appropriate:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget &lt;Snapshot_Manifest_URL&gt; <span class="nt">-O</span> .repo/manifests/&lt;profile&gt;/&lt;repository&gt;/projects.xml
+<span class="nv">$ </span>sed <span class="nt">-i</span> <span class="s1">'3,4d'</span> .repo/manifests/&lt;profile&gt;/&lt;repository&gt;/projects.xml
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>This procedure is the same as for <a href="#cloning-all-projects-over-ssh">SSH</a>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Synchronize the files for all the projects based on the information downloaded by the <code class="highlighter-rouge">repo init</code> command by executing the following command:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>repo sync
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="building-all-packages">Building All Packages</h2>
+
+<p>Build all packages by executing the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> &lt;Tizen_Project&gt;
+<span class="nv">$ </span>gbs build &lt;gbs build option&gt;
+</code></pre></div></div>
+
+<p>For example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> &lt;Tizen_Project&gt;
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--threads</span><span class="o">=</span>4 <span class="nt">--clean-once</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Since the GBS configuration file (<code class="highlighter-rouge">.gbs.conf</code>) and build configuration file (<code class="highlighter-rouge">build.conf</code>) are also included in <code class="highlighter-rouge">scm/manifests</code>, they are automatically downloaded in the following paths after the <code class="highlighter-rouge">repo sync</code>:</p>
+
+  <ul>
+    <li><code class="highlighter-rouge">.gbs.conf</code>: <code class="highlighter-rouge">~/&lt;Tizen_Project&gt;/.gbs.conf</code></li>
+    <li><code class="highlighter-rouge">build.conf</code>: <code class="highlighter-rouge">~/&lt;Tizen_Project&gt;/scm/meta/build-config/&lt;Tizen version&gt;/&lt;profile&gt;/&lt;repository&gt;_build.conf</code></li>
+  </ul>
+</blockquote>
+
+<h2 id="gbs-build-concepts">GBS Build Concepts</h2>
+<p>The following build concepts help you understand the full build commands:</p>
+
+<ul>
+  <li><strong>Dependency cycles</strong>
+    <ul>
+      <li>In Tizen versions 2.4 and higher, packages with dependency cycles are only included in the <code class="highlighter-rouge">Tizen:[&lt;Tizen version&gt;]:Base</code> OBS project. Since building packages with dependency cycles is not supported by GBS, it is impossible to build all packages locally with GBS for <code class="highlighter-rouge">Tizen:[&lt;Tizen version&gt;]:Base</code>. Therefore, a remote repo which contains RPMs built by OBS for <code class="highlighter-rouge">Tizen:[&lt;Tizen version&gt;]:Base</code> needs to be added in the <code class="highlighter-rouge">.gbs.conf</code> file.</li>
+      <li>In Tizen versions lower than Tizen 2.3, there is only 1 OBS project and packages with dependency cycles are included in it. To continue the build by breaking the dependency cycles for Tizen versions lower than Tizen 2.3, see <a href="building.md#excluding-specific-packages">Excluding Specific Packages</a>.</li>
+    </ul>
+  </li>
+  <li><strong>Accelerator packages</strong>
+    <ul>
+      <li>Tizen provides cross-compilers and other accelerator packages. For Tizen versions 2.4 and higher, these accelerator packages are included in the <code class="highlighter-rouge">Tizen:[&lt;Tizen version&gt;]:Base</code> OBS project.</li>
+      <li>For Tizen versions lower than Tizen 2.3, there is only 1 OBS project and the accelerator packages are included in it. These packages have names ending with <code class="highlighter-rouge">-x64</code> and need to be excluded to build locally with GBS. Otherwise, built out packages are installed and used, and the accelerator packages fail to work. To exclude these accelerator packages for Tizen versions lower than Tizen 2.3, see <a href="building.md#excluding-specific-packages">Excluding Specific Packages</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

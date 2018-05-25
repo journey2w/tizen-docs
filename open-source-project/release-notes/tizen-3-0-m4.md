@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 3.0 Public M4
+order: -304
+---
+
 # Tizen 3.0 Public M4
 
 Release Date: Nov. 30, 2017

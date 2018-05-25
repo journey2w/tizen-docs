@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+{% if page.title %}
+  {{ page.title }} &middot; {{ site.title }}
+{% else %}
+  {{ site.title }} &middot; {{ site.description }}
+{% endif %}
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="{{ site.baseurl }}/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="{{ site.baseurl }}/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="{{ site.baseurl }}/assets/favicon.ico" rel="icon">

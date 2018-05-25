@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Connectivity
+order: 7
+---
+
 # Connectivity
 
 You can implement various connectivity features, such as Bluetooth, WLAN, and NFC.

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Asset Library
+order: 1
+---
+
 # Asset Library
 
 Tizen 2.3 uses the [TizenSans family fonts](visual-style/typography.md). The TizenSans family consists of regular and medium weight fonts. You can download useful fonts from [here](https://developer.tizen.org/sites/default/files/documentation/fonts_tizensans_1.zip) and use them in your applications.

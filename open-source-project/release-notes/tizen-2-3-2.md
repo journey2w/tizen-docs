@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.3.2 for Wearable
+order: -232
+---
+
 # Tizen 2.3.2 for Wearable
 
 ## SDK Release Notes

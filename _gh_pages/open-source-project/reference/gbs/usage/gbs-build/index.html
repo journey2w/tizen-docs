@@ -1,0 +1,4049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  gbs build &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/developing/installing">Developing</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/reference/gerrit-usage/">Gerrit</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/reference/gbs/gbs-overview">GBS</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <li>
+          
+          <a href="/open-source-project/reference/gbs/gbs-overview/">Overview</a>
+          
+        </li>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <li class="active">
+          <a href="/open-source-project/reference/gbs/usage/gbs-reference">GBS Usage</a>
+        </li>
+
+        <ul>
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li class="active">
+            <a href="/open-source-project/reference/gbs/usage/gbs-build/">gbs build</a>
+          </li>
+                      
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-clone/">gbs clone</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-reference/">Overview</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-changelog/">gbs changelog</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-chroot/">gbs chroot</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-devel/">gbs devel</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-export/">gbs export</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-import/">gbs import</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                      
+          <li>
+            
+            <a href="/open-source-project/reference/gbs/usage/gbs-pull/">gbs pull</a>
+            
+          </li>
+                      
+                    
+                  
+                    
+                    
+                  
+                    
+                    
+                  
+        </ul>
+
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <li>
+          
+          <a href="/open-source-project/reference/gbs/gbs.conf/">GBS Configuration</a>
+          
+        </li>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <li>
+          
+          <a href="/open-source-project/reference/gbs/gbs-maintenance-models/">Maintenance Models Supported by GBS</a>
+          
+        </li>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <li>
+          
+          <a href="/open-source-project/reference/gbs/gbs-faq/">GBS Frequently Asked Questions</a>
+          
+        </li>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="gbs-build">gbs build</h1>
+
+<p>Use the <code class="highlighter-rouge">gbs build</code> subcommand to build the source code and generate RPM packages locally.</p>
+
+<p>For command usage details, enter:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -help
+</code></pre></div></div>
+
+<h2 id="command-workflow">Command Workflow</h2>
+
+<p>The <code class="highlighter-rouge">gbs build</code> command requires the following input:</p>
+
+<ul>
+  <li>Git projects that contain RPM packaging files</li>
+  <li>
+    <p>Binary RPM repositories (remote or local)<br />
+The binary RPM repositories contain all the binary RPM packages used to create the chroot environment and build packages, which can be remote, like tizen release or snapshot repositories, or local. The local repository supports 2 types:</p>
+
+    <ul>
+      <li>Standard repository with existing repodata</li>
+      <li>Normal directory containing RPM packages. GBS finds all RPM packages within the directory.</li>
+    </ul>
+
+    <p>To configure a repository, see <a href="gbs.conf.md">GBS Configuration</a>.</p>
+  </li>
+  <li>Project build configurations (such as macros and flags)</li>
+</ul>
+
+<p>The following figure shows the basic GBS build workflow. The figure illustrates that input and output are both repositories, and the output repository is located at <code class="highlighter-rouge">~/GBS-ROOT/locals/repos/</code> by default. You can change the repository path by using the <code class="highlighter-rouge">--buildroot</code> option.</p>
+
+<p><strong>Figure: GBS build workflow</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ____________________
+|                    |      ___________
+| Source Code (GIT)  |----&gt;|           |      _________________________
+|____________________|     |           |     |                         |
+ ____________________      |           |     |  Local repository of    |
+|                    |     |           |     |                         |
+|    Build config    |----&gt;| GBS build |----&gt;|                         |
+|____________________|     |           |     |                         |
+ ____________________      |           |     |  build RPM packages     |
+|                    |     |           |     |(~/GBS-ROOT/local/repos/)|
+|Binary repositories |     |           |     |_________________________|
+|in GBS conf         |----&gt;|___________|                  |
+|(Remote or Local)   |           ^                        |
+|____________________|           |________________________|
+</code></pre></div></div>
+
+<p>Local repos in the GBS build root (<code class="highlighter-rouge">~/GBS-ROOT</code> by default) affect build results, so make sure that repositories do not contain old or unnecessary RPM packages. While running the <code class="highlighter-rouge">gbs build</code> command, you can specify the <code class="highlighter-rouge">--clean-repos</code> option to clean up local GBS-created repositories before building. To avoid problems, also set a different GBS build root directory for each profile. The GBS build directory can be defined in many ways:</p>
+
+<ul>
+  <li>By default, the GBS build puts all output files under <code class="highlighter-rouge">~/GBS-ROOT/</code>.</li>
+  <li>If the <code class="highlighter-rouge">TIZEN_BUILD_ROOT</code> environment variable exists, <code class="highlighter-rouge">${TIZEN_BUILD_ROOT}</code> is used as the output top directory.</li>
+  <li>If the <code class="highlighter-rouge">-B</code> option is specified, the specified directory is used, even if <code class="highlighter-rouge">${TIZEN_BUILD_ROOT}</code> exists.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>All RPM packages under the output repository (by default, <code class="highlighter-rouge">~/GBS-ROOT/local/repos/&lt;VERSION&gt;/</code>) are used when building packages. Since all the packages under the output repository are applied to the build environment, avoid unexpected results by making sure that the output repository is clean.</p>
+</blockquote>
+
+<p>The following example shows the structure of the GBS build root directory in the workflow output:</p>
+
+<p>``
+gbs output top dir
+|– local
+| |– cache # repodata and RPMs from remote repositories
+| |– repos # generated local repo top directory
+| | |– tizen # distro one: tizen
+| | | |– armv7l # store armv7l RPM packages
+| | | |– i586 # store x86 RPM packages
+| | <code class="highlighter-rouge">-- tizen2.0 # build for distro two: tizen2.0
+| | </code>– i586 # the same as above
+| |– scratch.armv7l.0 # first build root for arm build
+| |– scratch.i586.0 # second build root for x86 build
+| |– scratch.i586.1 # third build root for x86 build
+| |– scratch.i586.2 # fourth build root for x86 build
+| |– scratch.i586.3 # fifth build root for x86 build
+| | # The above build root dir can be used by gbs chroot <build root="" dir="">
+| `-- sources # sources generated for build, including tarball, spec, patches, etc.
+| |-- tizen
+| `-- tizen2.0
+`-- meta # meta data used by gbs</build></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+## Examples
+
+To perform a basic build:
+
+- Build a single package:
+</code></pre></div></div>
+<p>$ cd package1$ gbs build -A i586</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Build a package for different architectures:
+   &gt; **Note**
+   &gt;
+   &gt; Supported architectures include x86_64, i586, armv6l, armv7hl, armv7l, aarch64, mips, and mipsel.
+
+  ```bash
+  $ gbs build -A armv7l #build package for armv7l
+  $ gbs build -A i586 #build package for i586
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Make a clean build by deleting the old build root.<br />
+The <code class="highlighter-rouge">--clean</code> option must be specified if the repository has been changed, for example, to another release.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> armv7l <span class="nt">--clean</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Build the package with a specific commit:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> armv7l <span class="nt">--commit</span><span class="o">=</span>&lt;COMMIT_ID&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Use the <code class="highlighter-rouge">--overwrite</code> option to trigger a rebuild.<br />
+If you have already built before, and want to rebuild, specify the <code class="highlighter-rouge">--overwrite</code> option or the packages are skipped.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--overwrite</span>
+</code></pre></div>    </div>
+
+    <p>If you change the commit or specify the <code class="highlighter-rouge">--include-all</code> option, it always rebuilds. In these cases, the <code class="highlighter-rouge">--overwrite</code> option is not needed.</p>
+  </li>
+  <li>Output the debug info:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--debug</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Build against a local repository.<br />
+You can configure the local repo in the <code class="highlighter-rouge">.gbs.conf</code> file or through the command line.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-R</span> /path/to/repo/dir/ <span class="nt">-A</span> i586
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">--noinit</code> option to build a package in offline mode.<br />
+This option can only be used if the build root is ready. When it is used, GBS does not connect the remote repository, and skips parsing and checking the repository and initializing the build environment. The package is built directly.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="c"># build first and create build environment</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--noinit</span> <span class="c"># use --noinit to start building directly</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Build with all uncommitted changes using the <code class="highlighter-rouge">--include-all</code> option.<br />
+In the following examples, the Git tree contains 1 modified file and 2 extra files:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git status <span class="nt">-s</span>
+M ail.pc.in
+?? base.repo
+?? main.repo
+</code></pre></div>    </div>
+    <ul>
+      <li>
+        <p>Build without the <code class="highlighter-rouge">--include-all</code> option</p>
+
+        <p>Only committed files are built. None of the modified files, which are neither committed nor added, are built:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586
+warning: the following untracked files would NOT be included: base.repo main.repo
+warning: the following uncommitted changes would NOT be included: ail.pc.in
+warning: you can specify <span class="s1">'--include-all'</span> option to include these uncommitted and untracked files.
+....
+info: Binaries RPM packages can be found here:
+/home/test/GBS-ROOT/local/scratch.i586.0/home/abuild/rpmbuild/RPMS/
+info: Done
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Build with the <code class="highlighter-rouge">--include-all</code> option</p>
+
+        <p>All the files are built:</p>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586
+warning: the following untracked files would NOT be included: base.repo main.repo
+warning: the following uncommitted changes would NOT be included: ail.pc.in
+warning: you can specify <span class="s1">'--include-all'</span> option to include these uncommitted and untracked files.
+....
+info: Binaries RPM packages can be found here:
+/home/test/GBS-ROOT/local/scratch.i586.0/home/abuild/rpmbuild/RPMS/
+info: Done
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Use <code class="highlighter-rouge">.gitignore</code> to ignore specific files when using the <code class="highlighter-rouge">--include-all</code> option.</p>
+
+        <p>If you want to ignore some file types, update your <code class="highlighter-rouge">.gitignore</code>:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> .gitignore
+.<span class="k">*</span>
+<span class="k">*</span>/.<span class="k">*</span>
+<span class="k">*</span>.pyc
+<span class="k">*</span>.patch<span class="k">*</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="incremental-build">Incremental Build</h2>
+
+<p>Starting from GBS 0.10, the <code class="highlighter-rouge">gbs build</code> subcommand supports the <code class="highlighter-rouge">--incremental</code> option, which allows you to build incrementally.</p>
+
+<p>The incremental mode is designed for development and verification of single packages. It is not intended to replace the standard mode. Only 1 package can be built at a time using the incremental mode.</p>
+
+<p>The incremental mode sets up the build environment in multiple steps, finishing by mounting the local Git tree of a package in the chroot build environment.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Because GBS mounts your Git tree to the build root, be very careful when you remove your build root. You need to make sure you have already unmounted the source tree manually before you remove it.</p>
+</blockquote>
+
+<p>The incremental mode has the following benefits:</p>
+
+<ul>
+  <li>The build environment uses the latest source code and changes to source do not trigger a new build environment (in the chroot).</li>
+  <li>The Git source tree becomes the source of the builds. Any change made in the Git repository followed by invocation of the build script builds the changed sources.</li>
+  <li>If the build fails for some reason, the build script continues from the spot where it has failed, once the code has been changed to fix the problem causing the failure.</li>
+</ul>
+
+<p>Incremental building is, in many ways, similar to traditional code development, where changes are made to sources, followed by running make to test and compile the changes. However, it enables development using the build environment of the target, instead of the host OS.</p>
+
+<p>The incremental mode has some limitations, mostly related to packaging and how the sources are maintained. Among others, it depends on how the RPM spec file is composed:</p>
+
+<ul>
+  <li>
+    <p>The incremental mode does not support patches in the spec file. All source has to be maintained as part of the Git tree.</p>
+  </li>
+  <li>
+    <p>The incremental mode requires a clean packaging workflow. Exotic workflows in the spec files do not always work well, because the incremental mode expects the following model:</p>
+
+    <ol>
+      <li>Code preparation (%prep)</li>
+      <li>Code building (%build)</li>
+      <li>Code installation (%install)</li>
+    </ol>
+  </li>
+  <li>
+    <p>The %prep section can only contain the %setup macro to unpack the tarball, and must not contain other source code-related operations, such as unpacking another source or applying patches.</p>
+  </li>
+  <li>
+    <p>Because the %build section is run every time, if the %build script has configuration scripts (auto-tools), binaries can be regenerated, causing a complete build every time. To avoid this, use the following macros, which can be overridden using the <code class="highlighter-rouge">--no-configure</code> option:</p>
+
+    <ul>
+      <li>%configure: runs the configure script with pre-defined paths and options.</li>
+      <li>%reconfigure: regenerates the scripts and runs %configure.</li>
+      <li>%autogen: runs the autogen script.</li>
+    </ul>
+  </li>
+  <li>
+    <p>You can build only a single package. You cannot build multiple packages in parallel.</p>
+  </li>
+  <li>
+    <p>The tarball’s name in the spec file must be <code class="highlighter-rouge">%{name}-%{version}.{tar.gz|tar.bz2|zip|...}</code>. Otherwise, GBS cannot mount the source code to build the root correctly.</p>
+  </li>
+</ul>
+
+<p>The following example uses the dlog source code. First, it builds with the <code class="highlighter-rouge">--incremental</code> option, then modifies 1 source file and triggers the incremental build again. You can see that only modified source code gets compiled during the incremental build.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>dlog
+<span class="c"># first build:</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--incremental</span>
+<span class="nv">$ </span>vim log.c <span class="c"># change code</span>
+<span class="c"># second build:</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--incremental</span>
+info: generate repositories ...
+info: build conf has been downloaded at:
+/var/tmp/test-gbs/tizen.conf
+info: Start building packages from: /home/test/packages/dlog <span class="o">(</span>git<span class="o">)</span>
+info: Prepare sources...
+info: Retrieving repo metadata...
+info: Parsing package data...
+info: <span class="k">***</span> overwriting dlog-0.4.1-5.1 i586 <span class="k">***</span>
+info: Next pass:
+dlog
+info: <span class="k">***</span> building dlog-0.4.1-5.1 i586 tizen <span class="o">(</span>worker: 0<span class="o">)</span> <span class="k">***</span>
+info: Doing incremental build
+<span class="o">[</span> 0s] Memory limit <span class="nb">set </span>to 10854336KB
+<span class="o">[</span> 0s] Using <span class="nv">BUILD_ROOT</span><span class="o">=</span>/home/test/GBS-ROOT/local/scratch.i586.0
+<span class="o">[</span> 0s] Using <span class="nv">BUILD_ARCH</span><span class="o">=</span>i686:i586:i486:i386:noarch
+<span class="o">[</span> 0s] test-desktop started <span class="s2">"build dlog.spec"</span> at Thu Sep 13 07:36:14 UTC 2012.
+<span class="o">[</span> 0s] <span class="nt">-----------------------------------------------------------------</span>
+<span class="o">[</span> 0s] <span class="nt">-----</span> building dlog.spec <span class="o">(</span>user abuild<span class="o">)</span>
+<span class="o">[</span> 0s] <span class="nt">-----------------------------------------------------------------</span>
+<span class="o">[</span> 0s] <span class="nt">-----------------------------------------------------------------</span>
+<span class="o">[</span> 0s] + rpmbuild <span class="nt">--short-circuit</span> <span class="nt">-bc</span> /home/abuild/rpmbuild/SOURCES/dlog.spec
+<span class="o">[</span> 0s] Executing<span class="o">(</span>%build<span class="o">)</span>: /bin/sh <span class="nt">-e</span> /var/tmp/rpm-tmp.XLz8je
+<span class="o">[</span> 0s] + <span class="nb">umask </span>022
+<span class="o">[</span> 0s] + <span class="nb">export </span>LD_AS_NEEDED
+<span class="o">[</span> 4s] + make <span class="nt">-j4</span>
+<span class="o">[</span> 4s] make all-am
+<span class="o">[</span> 4s] make[1]: Entering directory /home/abuild/rpmbuild/BUILD/dlog-0.4.1
+<span class="o">[</span> 4s] /bin/sh ./libtool <span class="nt">--tag</span><span class="o">=</span>CC <span class="nt">--mode</span><span class="o">=</span>compile gcc <span class="nt">-c</span> <span class="nt">-o</span> log.lo log.c
+<span class="o">[</span> 4s] mv <span class="nt">-f</span> .deps/log.Tpo .deps/log.Plo
+<span class="o">[</span> 4s] /bin/sh ./libtool <span class="nt">--tag</span><span class="o">=</span>CC <span class="nt">--mode</span><span class="o">=</span>link gcc <span class="nt">-o</span> libdlog.la /usr/lib log.lo
+<span class="o">[</span> 4s] libtool: link: gcc <span class="nt">-shared</span> .libs/log.o <span class="nt">-o</span> .libs/libdlog.so.0.0.0
+<span class="o">[</span> 4s] libtool: link: ar cru .libs/libdlog.a log.o
+<span class="o">[</span> 4s] libtool: link: ranlib .libs/libdlog.a
+<span class="o">[</span> 4s] make[1]: Leaving directory /home/abuild/rpmbuild/BUILD/dlog-0.4.1
+<span class="o">[</span> 4s] + <span class="nb">exit </span>0
+<span class="o">[</span> 4s] finished <span class="s2">"build dlog.spec"</span> at Thu Sep 13 07:36:18 UTC 2012.
+<span class="o">[</span> 4s]
+info: finished incremental building dlog
+info: Local repo can be found here:
+/home/test/GBS-ROOT/local/repos/tizen/
+info: Done
+</code></pre></div></div>
+
+<p>From the build log, you can see that only <code class="highlighter-rouge">log.c</code> has been re-compiled. That is the point of the incremental build behavior.</p>
+
+<p>The <code class="highlighter-rouge">--noinit</code> option can be used together with <code class="highlighter-rouge">--incremental</code> to make a build more quickly:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">--incremental</span> <span class="nt">--noinit</span>
+</code></pre></div></div>
+
+<h2 id="multiple-package-build-dependency-build">Multiple Package Build (Dependency Build)</h2>
+
+<p>Multiple package build has been supported since GBS 0.10. If packages have dependencies on each other, GBS builds them in the correct order calculated by the dependency relationships. Previously built RPMs are used to build the packages that depend on them. This process is called a dependency build.</p>
+
+<p>To perform a multiple package build:</p>
+
+<ul>
+  <li>
+    <p>Build all packages under a specific package directory:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir tizen-packages
+<span class="nv">$ </span>cp package1 package2 package3 ... tizen-packages/
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 tizen-packages <span class="c"># build all packages under tizen-packages</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build multiple packages in parallel with the <code class="highlighter-rouge">--threads</code> option:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># current directory have multiple packages, --threads can be used to set the max build worker at the same time</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> armv7l <span class="nt">--threads</span><span class="o">=</span>4
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Select a group of packages to be built:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--binary-from-file</code> option specifies a text file that contains a name list of RPM packages to be built. The format in the text file is 1 package per line.</li>
+      <li>The <code class="highlighter-rouge">--binary-list</code> option specifies a list in which the package names are separated by commas.</li>
+    </ul>
+
+    <p>When the number of packages is small and the packages can be clearly listed in the command line, use the <code class="highlighter-rouge">--binary-list</code> option for simplicity.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--binary-from-file</span><span class="o">=</span>/path/to/packages.list
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--binary-list</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Exclude certain packages:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--exclude</code> option specifies a list in which the names of packages to be ignored are separated by commas.</li>
+      <li>The <code class="highlighter-rouge">--exclude-from-file</code> option specifies a text file that contains a name list of packages to be ignored.</li>
+    </ul>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 tizen-packages <span class="nt">--exclude</span><span class="o">=</span>&lt;pkg1&gt;
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 tizen-packages <span class="nt">--exclude</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt;
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 tizen-packages <span class="nt">--exclude-from-file</span><span class="o">=</span>/path/to/packages.list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build packages based on dependencies:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--deps</code> option enables GBS to build specific packages, together with all related packages on which they depend.</li>
+      <li>The <code class="highlighter-rouge">--rdep</code> option enables GBS to build specific packages, together with all related packages that depend on them.</li>
+    </ul>
+
+    <p>The specific packages can be included by the <code class="highlighter-rouge">--binary-from-file</code> or <code class="highlighter-rouge">--binary-list</code> option, and excluded by the <code class="highlighter-rouge">--exclude</code> or <code class="highlighter-rouge">--exclude-from-file</code> option.</p>
+
+    <p>The <code class="highlighter-rouge">--deps</code> and <code class="highlighter-rouge">--rdep</code> options are compatible. When added at the same time, besides the specific packages, GBS builds not only the related packages on which they depend, but also all the related packages that depend on them.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--binary-list</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--deps</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--binary-list</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--rdeps</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--binary-list</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--deps</span> <span class="nt">--rdeps</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="useful-building-options">Useful Building Options</h2>
+
+<p>The <code class="highlighter-rouge">gbs build</code> command offers some useful options:</p>
+
+<ul>
+  <li>
+    <p>Install extra packages to build a root</p>
+
+    <p>The <code class="highlighter-rouge">--extra-packs=&lt;packages separated by commas&gt;</code> option can be used to install extra packages:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--extra-packs</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--deps</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--extra-packs</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--rdeps</span>
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--extra-packs</span><span class="o">=</span>&lt;pkg1&gt;,&lt;pkg2&gt; <span class="nt">--deps</span> <span class="nt">--rdeps</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Keep all packages in the build root</p>
+
+    <p>Generally, the GBS build removes unnecessary packages in the build root. While transferring to build another package, you can use the <code class="highlighter-rouge">--keep-packs</code> option to keep all unnecessary packages, and just install missing required build packages. This option can be used to speed up building multiple packages.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">--keep-packs</span>
+</code></pre></div>    </div>
+
+    <p>The <code class="highlighter-rouge">--keep-packs</code> option can be used to create 1 build root for building multiple packages. Once the build root is ready, you can use the <code class="highlighter-rouge">--noinit</code> option to build these packages quickly.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build pkg1/ <span class="nt">--keep-packs</span> <span class="nt">-A</span> i586
+<span class="nv">$ </span>gbs build pkg2/ <span class="nt">--keep-packs</span> <span class="nt">-A</span> i586
+<span class="nv">$ </span>gbs build pkg3/ <span class="nt">--keep-packs</span> <span class="nt">-A</span> i586
+</code></pre></div>    </div>
+
+    <p>Now, the build root (<code class="highlighter-rouge">~/GBS-ROOT/local/scratch.i586.0</code>) is ready for building <code class="highlighter-rouge">pkg1</code>, <code class="highlighter-rouge">pkg2</code>, and <code class="highlighter-rouge">pkg3</code>. You can use the <code class="highlighter-rouge">--noinit</code> option to build them offline, and need waste no time to check for repository updates and build root.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build pkg1 <span class="nt">--noinit</span>
+<span class="nv">$ </span>gbs build pkg2 <span class="nt">--noinit</span>
+<span class="nv">$ </span>gbs build pkg3 <span class="nt">--noinit</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="forcing-gbs-to-work-in-the-native-mode">Forcing GBS to Work in the Native Mode</h3>
+
+<p>Use the <code class="highlighter-rouge">--fallback-to-native</code> option to force GBS to perform packaging for non-native packages in the native packaging mode in the packaging phase of the building process, that is, ignore the upstream branch and create a tarball from HEAD (by default) or specified commit without generating any patch. Adding the <code class="highlighter-rouge">--fallback-to-native</code> option when issuing the <code class="highlighter-rouge">gbs build</code> or <code class="highlighter-rouge">gbs export</code> command is equivalent to adding the <code class="highlighter-rouge">fallback_to_native = true</code> property into the <code class="highlighter-rouge">[general]</code> section of the GBS configuration file.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>This option serves as a work-around solution for solving export failures of some non-native packages caused by a tricky engineering problem. For Tizen native packages, GBS always performs packaging in the native packaging mode.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--fallback-to-native</span>
+</code></pre></div></div>
+
+<h3 id="skipping-the-building-of-the-srcrpm-file">Skipping the Building of the src.rpm File</h3>
+
+<p>Normally, 2 types of package files are created during the package building process:</p>
+
+<ul>
+  <li>Binary, or executable, package file</li>
+  <li>Source package file</li>
+</ul>
+
+<p>The source package file (<code class="highlighter-rouge">src.rpm</code>) contains everything needed to recreate a specific version of a package. This makes the <code class="highlighter-rouge">src.rpm</code> file a great way to distribute source code. However, it is optional when developing source code, especially when the source Git tree is huge.</p>
+
+<p>Adding the <code class="highlighter-rouge">--skip-srcrpm</code> option enables GBS to skip the building of the <code class="highlighter-rouge">src.rpm</code> file, speeding up the building process of huge source Git trees during development:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> &lt;Path_to_crosswalk&gt;
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--skip-srcrpm</span>
+</code></pre></div></div>
+
+<h3 id="using-distributed-compiler-networks">Using Distributed Compiler Networks</h3>
+
+<p>Though GBS provides the <code class="highlighter-rouge">--threads</code> option to speed up the build process by activating multiple build workers, the efficiency of just using multiple build workers in 1 local machine is far from satisfactory, especially for a huge Git tree, such as crosswalk.</p>
+
+<p>To improve the build process efficiency further, use the <code class="highlighter-rouge">--icecream</code> option, which activates distributed compiler networks. The option makes GBS use build workers on both the local machine and distributed networks.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">--icecream</span><span class="o">=</span>10
+</code></pre></div></div>
+
+<h2 id="fetching-the-project-build-conf-and-customizing-the-build-root-for-advanced-users">Fetching the Project Build Conf and Customizing the Build Root (for Advanced Users)</h2>
+
+<p>The project build conf describes the build configurations for the project, including all macros, packages, and flags predefined in the build environment. In Tizen releases, the build conf is released together with the released repository.</p>
+
+<ul>
+  <li>
+    <p>Fetch the build conf automatically with the <code class="highlighter-rouge">gbs build</code> command</p>
+
+    <p>Starting from GBS 0.7.1, by default, GBS fetches the build conf from a remote repository (if you specify the remote Tizen repository) and stores it in your temporary environment:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gbs build <span class="nt">-A</span> i586
+info: generate repositories ...
+info: build conf has been downloaded at:
+/var/tmp/&lt;user&gt;-gbs/tizen2.0.conf
+info: generate <span class="nb">tar </span>ball: packaging/acpid-2.0.14.tar.bz2
+<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> password <span class="k">for</span> &lt;user&gt;:
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build the package using your own project build conf, by using the <code class="highlighter-rouge">-D</code> option</p>
+
+    <p>You can save and modify the build conf, and use it for your own purposes:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>cp /var/tmp/&lt;user&gt;-gbs/tizen2.0.conf ~/tizen2.0.conf
+<span class="nv">$ </span>gbs build <span class="nt">-A</span> i586 <span class="nt">-D</span> ~/tizen2.0.conf
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>To customize the build config, see <a href="http://en.opensuse.org/openSUSE:Build_Service_prjconf">http://en.opensuse.org/openSUSE:Build_Service_prjconf</a>.</p>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

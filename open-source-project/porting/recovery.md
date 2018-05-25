@@ -1,3 +1,9 @@
+---
+layout: solution
+title: System Recovery
+order: 3
+---
+
 # System Recovery
 
 Tizen 4.0 comes with 3 different root filesystems, each designed for a different purpose.

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.4.0
+order: -240
+---
+
 # Tizen 2.4
 
 Release Date: Oct 30, 2015

@@ -1,0 +1,618 @@
+@import "font.css";
+
+/******************** GNB ********************/
+.navbar {
+  font-family:museosans-500;
+  font-size:18px;
+  background-color:#ffffff;
+  margin-bottom:0px;
+  border-bottom:1px solid #dddddd;
+  vertical-align:middle;
+}
+
+.navbar-nav > li > a {
+  /* margin: 25px 15px ; */
+  margin: 25px 20px 23px 20px;
+  /* margin: 25px 0px 23px 40px; */
+  padding: 5px 0px;
+  line-height: 20px;
+  position: relative;
+  display: block;
+}
+
+.navbar-nav > li.login > a {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li > a:hover {
+  border-bottom: 2px solid #999999;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li.active > a:hover,
+.navbar-inverse .navbar a.navbar-brand,
+.navbar-inverse .navbar a.navbar-brand:hover {
+  color: #999999;
+}
+
+.navbar-nav > li.navbar-divisor {
+  display:table-cell;
+  border-left:2px solid #999999;
+  width: 0px;
+  height: 30px;
+  margin-top:25px;
+  margin-left:8px;
+}
+
+.navbar a.navbar-brand,
+.navbar a.navbar-brand:hover {
+  font-family:museosans-700;
+  font-size:30px;
+  color: #999999;
+}
+
+.navbar-nav {
+  float:left;
+  vertical-align: middle;
+}
+
+.nav  {
+  list-style:none;
+}
+
+.navbar-brand {
+  float: left;
+  /* padding: 15px 15px; */
+  padding-left:25px;
+  margin: 15px auto;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar-brand > img {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+}
+
+.navbar-toggle {
+display:none;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-toggle:focus {
+  outline: 0;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-right {
+  float:right !important;
+  margin-right: 200px;
+}
+
+.container > .navbar-header {
+  margin-left: 195px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+  height:82px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.d-header.clearfix {
+  display:none;
+}
+
+.navbar-wrapper {
+  margin-top:0px;
+  position:relative;
+}
+
+/******************** navbar-wrapper ********************/
+.navbar-wrapper .nav.navbar-nav .searchbox {
+  display:none;
+  z-index:1000;
+  width:170px;
+  height:40px;
+  position:absolute;
+  right:0px;
+  top:19px;
+  background-color: #efefef;
+  border-radius:6px;
+  margin-right:10px;  
+}
+
+.navbar-wrapper .nav.navbar-nav .searchbox > input {
+  background-color: #efefef;
+  font-family:museosans-500;
+  font-size:15px;
+  color:#999999;
+  text-align:left;
+  width:125px;
+  height:40px;
+  border-radius:6px;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  display:inline-block;
+  border:none;
+}
+
+.navbar-wrapper .nav.navbar-nav .searchbox > input:focus {
+  border:none;
+  -ms-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+.navbar-wrapper .nav.navbar-nav .searchbox img {
+  margin:auto;
+  margin-left:11px;
+}
+
+.navbar-wrapper .nav.navbar-nav > li.avatar > a {
+  width:42px;
+  height:42px;
+  border-radius:50%;
+
+  margin:20px 7px 0px 0px;
+
+  background-color:white;
+  background-image:url("../images/img_default_profile.png");
+  background-repeat:no-repeat;
+  border:none;
+}
+
+.navbar-wrapper .nav.navbar-nav > li.active.search > a {
+  background-color:white;
+  border-bottom: 2px solid transparent;
+  margin-left:25px;
+  margin-right:25px;
+}
+
+.navbar-wrapper .nav.navbar-nav > li.search .search-btn {
+  width:19px;
+  height:20px;
+
+  background-image: url(../images/ic_search_gray.png);
+}
+
+/******************** sitemap ********************/
+.sitemap {
+  background-color:#f7f7f7;
+  padding: 30px 0 0 0;
+}
+
+.sitemap .container {
+  width:100%;
+  padding:0px;
+}
+
+.sitemap .row:first-child {
+  height:50px;
+  border-top:none;
+}
+
+.sitemap .row:nth-child(2) {
+  height:39px;
+  border-top:none;
+  border-bottom:1px solid #d0d0d0;
+}
+
+.sitemap .row:last-child {
+  height:113px;
+  vertical-align:middle;
+  display:table;
+}
+
+/********** nav-footer **********/
+.sitemap .nav-footer {
+  background-color:#ffffff;
+  font-family:museosans-700;
+  font-size:16px;
+  color:#333333;
+
+  vertical-align:middle;
+  list-style:none;
+  display:block;
+  margin-bottom:0px;
+  padding-left:51px;
+}
+
+.sitemap .container .row .nav-footer > li {
+  display:block;
+  position:relative;
+  float:left;
+}
+
+.sitemap .container .row .nav-footer > li > a {
+  color:#333333;
+}
+
+.sitemap .container .row .nav-footer > li > a:hover {
+  color:#56c4d8;
+}
+
+.sitemap .container .row .nav-footer > li.navbar-divisor {
+  /* display:table-cell; */
+  vertical-align:middle;
+  height:13px;
+  border-left:1px solid #333333;
+  margin:4px 30px 0px 30px;
+}
+
+/*
+.sitemap .container .row .nav-footer > li > a,
+.sitemap .container .row .nav-footer > li > a:hover,
+.sitemap .container .row .nav-footer > li > a:focus,
+.sitemap .container .row .nav-footer > li.active > a,
+.sitemap .container .row .nav-footer > li.active > a:hover,
+.sitemap .container .row .nav-footer > li.active > a:focus,
+{
+  color:red; 
+}
+*/
+/********** nav-footer **********/
+
+/********** footer-social **********/
+.sitemap .container .row .footer-social {
+  background-color:#ffffff;
+  font-family:museosans-300;
+  font-size:14px;
+  color:#333333;
+
+  vertical-align:middle;
+  list-style:none;
+  display:block;
+  padding-left:51px;
+  margin-bottom:30px;
+}
+
+.sitemap .container .row .footer-social > a {
+  display:block;
+  position:relative;
+  float:left;
+  /* width:24px; */
+  /* height:24px;*/
+}
+
+.sitemap .container .row .footer-social> li {
+  display:block;
+  position:relative;
+  float:left;
+  margin-left:10px;
+  margin-right:30px;
+  vertical-align:middle;
+  padding-top:2px;
+}
+
+.sitemap .container .row .footer-social > li > a {
+  color:#333333;
+}
+
+.sitemap .container .row .footer-social > li > a:hover {
+  font-family:museosans-300;
+  /* font-family:museosans-500; */
+  font-size:14px;
+  color:#56c4d8;
+}
+/********** footer-social **********/
+
+table.sitemap-table {
+  /* table-layout:fixed; */
+  margin-left:40px;
+  padding-left:32px;
+  padding-right:32px;
+  width:520px;
+  color:#333333;
+  opacity:0.7;
+}
+
+table.sitemap-table th {
+  /* vertical-align:top; */
+  width:150px;
+  border-right:1px solid #333333;
+  text-align:center;
+}
+
+table.sitemap-table th:last-child {
+  width:150px;
+  border-right:none;
+  text-align:center;
+}
+
+table.sitemap-table td {
+  vertical-align:top;
+  width:100px;
+}
+
+/*
+table.sitemap-table tr td {
+  vertical-align:top;
+  width:100px;
+}
+*/
+
+
+
+.sitemap table.footer-table {
+  /* display:table-cell; */
+  vertical-align:middle;
+  margin-left:51px; 
+}
+
+.sitemap table.footer-table tr td {
+  font-family:museosans-300;
+  font-size:13px;
+  line-height:22px;
+  color:#999999;
+  width:750px;
+  padding-top:30px;
+  padding-bottom:30px;
+  text-align:justify;
+}
+
+/*
+.sitemap table.footer-table tr td:first-child {
+  font-family:museosans-700;
+  font-size:24px;
+  line-height:22px;
+  color:#999999;
+  width:200px;
+}
+
+.sitemap table.footer-table tr td:last-child {
+  font-family:museosans-300px;
+  font-size:13px;
+  line-height:22px;
+  color:#999999;
+  text-align:justify;
+}
+*/
+
+/* 171027_backup
+table th {
+  font-family:museosans-700;
+  font-size:16px;
+  padding-bottom:28px;
+}
+
+table td {
+  font-family:museosans-300;
+  font-size:14px;
+  line-height:24px;
+}
+*/
+
+table, th, td {
+  border: 1px solid #999999;
+}
+
+table th {
+  font-family:museosans-700;
+  font-size:16px;
+  /* padding-bottom:28px; */
+
+  /* for md style */
+  padding: 6px 13px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background:#eaf3f5;
+}
+
+table td {
+  font-family:museosans-300;
+  font-size:13px;
+  line-height:22px;
+
+  /* for md style */
+  padding: 6px 13px;
+}
+
+blockquote {
+  margin-top:16px;
+}
+/***************** sitemap ******************/
+.dropdown-menu:before {
+  content:"";
+  position:absolute;
+  right:70px;
+  top:-10px;
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:0 10px 10px 10px;
+  border-color:transparent transparent #ddd transparent;
+  z-index:9999;
+}
+
+.navbar-right .dropdown-menu {
+  text-align:center;
+  top:70px;
+  right: 10px;
+  background-color:#ddd;
+  border:transparent;
+
+  /* use important bcz default border-radius of bootstrap.css is 0 */
+  -ms-border-radius:6px !important;
+  -webkit-border-radius:6px !important;
+  border-radius:6px !important;
+
+  font-family:museosans-300;
+  font-size:15px;
+
+  padding: 5px 0 5px 0;
+  left:-60px;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover {
+  color:#777;
+  -ms-border-radius:6px !important;
+  -webkit-border-radius:6px !important;
+  border-radius:6px !important;
+  margin-left:1px;
+
+  padding: 10px 0 10px 0;
+}

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen Open Source Project
+order: 1
+---
+
 # Tizen Open Source Project
 
 Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.
@@ -19,9 +25,9 @@ The [Tizen Association](http://www.tizenassociation.org/) has been formed to gui
 
 To get started with Tizen development:
 
-- Get access  
+- Get access
   You can register for an account at [https://www.tizen.org/user/register](https://www.tizen.org/user/register).
-- Study the development workflow  
+- Study the development workflow
   Tizen developers use the Git and [GBS command-line tools](../reference/gbs/gbs-overview.md) for most of their work. Tizen source code is managed by [Gerrit](../reference/gerrit-usage.md), a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.
 
 Start by reading the [Development Workflow](work-flow.md) page.

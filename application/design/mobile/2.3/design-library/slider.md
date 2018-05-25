@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Slider
+order: 1
+---
+
 # Slider
 
 The slider is used to control a value by moving the handle horizontally.

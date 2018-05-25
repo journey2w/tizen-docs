@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Cloning Tizen Source Files
+order: 3
+---
+
 # Cloning Tizen Source Files
 
 You can clone Tizen source files over SSH or HTTPS.

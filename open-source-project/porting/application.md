@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Application
+order: 10
+---
+
 # Application
 
 Tizen supports both core and reference applications. Core applications are developed with platform internal interfaces, such as the Enlightenment Foundation Libraries (EFL) and other third party libraries. Reference applications are developed with Tizen native APIs.

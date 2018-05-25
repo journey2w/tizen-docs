@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Button
+order: 1
+---
+
 # Button
 
 Button is an UI element that provides the user a simple way to trigger an event.

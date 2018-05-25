@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Gerrit
+order: 1
+---
+
 # Gerrit
 
 You can perform various operations in Gerrit:

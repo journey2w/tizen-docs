@@ -1,0 +1,3732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  System Recovery &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/developing/installing">Developing</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/porting/overview">Porting</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/overview/">Overview</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/kernel/">Kernel</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/porting/recovery/">System Recovery</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/system/">System</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/graphics-and-ui/">Graphics and UI</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/multimedia/">Multimedia</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/connectivity/">Connectivity</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/location/">Location</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/telephony/">Telephony</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/porting/application/">Application</a>
+        
+      </li>
+          
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="system-recovery">System Recovery</h1>
+
+<p>Tizen 4.0 comes with 3 different root filesystems, each designed for a different purpose.</p>
+
+<p><strong>Table: Root filesystems</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">rootfs</code></td>
+      <td>Main root filesystem</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ramdisk</code></td>
+      <td>Regular boot ramdisk</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ramdisk-recovery</code></td>
+      <td>System recovery ramdisk</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This topic describes operation and customization options of the system
+recovery ramdisk.</p>
+
+<p>The following steps describe the boot process:</p>
+
+<ol>
+  <li>
+    <p>The boot process starts with a bootloader (u-boot or s-boot) loading
+appropriate kernel and ramdisk images dedicated for the system
+recovery process (methods for controlling bootloader actions are beyond the
+scope of this document). With both images loaded into RAM, the kernel
+initialization begins. When the initialization is complete, the kernel passes
+control to the init process, such as <code class="highlighter-rouge">/sbin/init</code> (PID#1).</p>
+  </li>
+  <li>
+    <p>In the case of the recovery ramdisk, <code class="highlighter-rouge">/sbin/init</code> is a symlink to
+<code class="highlighter-rouge">/usr/libexec/initrd-recovery/init</code> (a shell script that comes
+from the <code class="highlighter-rouge">initrd-recovery</code> package). The script mounts several kernel
+filesystems and the inform partition (if it exists), and parses the
+kernel command line options (<code class="highlighter-rouge">/proc/cmdline</code>) to find the <code class="highlighter-rouge">bootmode</code>
+parameter. If the parameter is present, one of the <code class="highlighter-rouge">/sbin/*-init</code> scripts is
+started. If the boot mode is set to <code class="highlighter-rouge">recovery</code>,
+<code class="highlighter-rouge">/usr/libexec/system-recovery/recovery-init</code> is started.</p>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">recovery-init</code> script mounts the real root filesystem under
+the <code class="highlighter-rouge">/system</code> directory, and other filesystems (such as <code class="highlighter-rouge">/opt</code> and
+<code class="highlighter-rouge">/opt/usr</code>) below the <code class="highlighter-rouge">/system</code> directory. The script starts a shell on the serial console and launches the
+<code class="highlighter-rouge">system-recovery</code> program.</p>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">system-recovery</code> program can work as either an interactive GUI or
+a non-interactive dispatcher, executing 1 (non-interactive) or
+more (interactive) actions. The actions are configured in the
+<code class="highlighter-rouge">/usr/share/system-recovery/system-recovery.cfg</code> file.</p>
+  </li>
+</ol>
+
+<h2 id="configuration-file">Configuration File</h2>
+
+<p>The configuration file allows you to customize 2 aspects of
+the system-recovery operation: GUI and actions. The following sections take a closer look
+at the actions.</p>
+
+<p>The configuration file is parsed using <code class="highlighter-rouge">libconfig</code>. For a detailed description of the
+grammar, see the <a href="http://hyperrealm.com/libconfig/libconfig_manual.html#Configuration-File-Grammar">libconfig documentation</a>.</p>
+
+<h3 id="action_handlers"><code class="highlighter-rouge">action_handlers</code></h3>
+
+<p><code class="highlighter-rouge">action_handlers</code> is a dictionary, in which shell commands (action
+handlers) are assigned names (actions). The names are used later in
+the configuration to refer to commands. The dictionary can be edited
+and actions can be added or removed. The names must be unique.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>action_handlers = {
+    reboot = "reboot -f";
+    factory-reset = "touch -f /opt/.factoryreset";
+    safeboot = "touch -f /opt/etc/.safeboot";
+}
+</code></pre></div></div>
+
+<h3 id="menus"><code class="highlighter-rouge">menus</code></h3>
+
+<p>Actions (names) are used in the <code class="highlighter-rouge">menus</code> dictionary, which
+comprises all pages of the menu system presented by
+<code class="highlighter-rouge">system-recovery</code>. The <code class="highlighter-rouge">main</code> entry is the one the program displays
+at startup. The rest must be linked in a tree-like structure.</p>
+
+<p>Each menu entry consists of the following fields:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">pos_x</code> and <code class="highlighter-rouge">pox_y</code>: Position on a screen</li>
+  <li><code class="highlighter-rouge">style</code>: Reference to the <code class="highlighter-rouge">menu_styles</code> dictionary</li>
+  <li><code class="highlighter-rouge">actions</code>: Array of actions available in this menu</li>
+  <li><code class="highlighter-rouge">item_default</code>: Action to highlight when opening the menu</li>
+</ul>
+
+<p>The <code class="highlighter-rouge">system-recovery</code> program can handle an action in 2 ways: it can run an action handler
+or switch to another screen. There is a reserved screen name <strong>BACK</strong>, which
+means switching to the previous screen (for more information, see <code class="highlighter-rouge">screen_back</code> in the <a href="#screens">screens
+dictionary</a>).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>menus = {
+    main = {
+        pos_x = 0;
+        pos_y = 100;
+        style = "common";
+        actions = ({
+            label = "Reboot system now";
+            screen_switch_to = "reboot";
+        },{
+            label = "Safe mode";
+            screen_switch_to = "safe";
+        },{
+            label = "Phone reinitialisation";
+            screen_switch_to = "factory";
+        });
+    };
+    reboot = {
+        pos_x = 0;
+        pos_y = 480;
+        style = "common";
+        item_default = 1;
+        actions = ({
+            label = "Yes";
+            action_handler = "reboot";
+            exit_after_action = 0;
+        },{
+            label = "No";
+            screen_switch_to = "BACK";
+        });
+    };
+    safe = {
+        pos_x = 0;
+        pos_y = 480;
+        style = "common";
+        item_default = 1;
+        actions = ({
+            label = "Yes";
+            action_handler = "safeboot";
+            exit_after_action = 1;
+        },{
+            label = "No";
+            screen_switch_to = "BACK";
+        });
+    };
+    factory = {
+        pos_x = 0;
+        pos_y = 480;
+        style = "common";
+        item_default = 1;
+        actions = ({
+            label = "Yes";
+            screen_switch_to = "factory-run";
+            action_handler = "factory-reset";
+            exit_after_action = 1;
+        },{
+            label = "No";
+            screen_switch_to = "BACK";
+        });
+    };
+};
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The <code class="highlighter-rouge">system-recovery.cfg.m4.in</code> source file provides the <code class="highlighter-rouge">confirm_action</code> m4 macro to define a <strong>Yes/No</strong> style action array:</p>
+  <ul>
+    <li><strong>Yes</strong> executes an action.</li>
+    <li><strong>No</strong> switches to a previous screen.</li>
+  </ul>
+
+  <p>Use this macro when adding an action to the config file in the repository.</p>
+
+  <p>For example:</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>actions = confirm_action('safeboot', 1);
+</code></pre></div>  </div>
+  <p>Expands to:</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>actions = ({
+    label = "Yes";
+    action_handler = "safeboot";
+    exit_after_action = 1;
+},{
+    label = "No";
+    screen_switch_to = "BACK";
+});
+</code></pre></div>  </div>
+
+  <p>The first argument of the macro is an action, and the second is the value to assign to the <code class="highlighter-rouge">exit_after_action</code> element.</p>
+</blockquote>
+
+<h3 id="screens"><code class="highlighter-rouge">screens</code></h3>
+
+<p>Each action can either execute an action handler (a shell command) or switch to a screen. The screens are configured in
+their dictionary as follows:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screens = {
+    main = {
+        style = "common";
+        menu = "main";
+        description = "main";
+        rulers = "main";
+        images = ("background_default", "menu_title");
+        screen_back = "CURRENT";
+    };
+    reboot = {
+        style = "common";
+        menu = "reboot";
+        description = "reboot"
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        screen_back = "main";
+    };
+    safe = {
+        style = "common";
+        menu = "safe";
+        description = "safe";
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        screen_back = "main";
+    };
+    factory = {
+        style = "common";
+        menu = "factory";
+        description = "factory";
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        screen_back = "main";
+    };
+    factory-run = {
+        style = "common";
+        description = "factory-run";
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        animations = ("working");
+        screen_back = "main";
+        allow_force_reboot = 1;
+    };
+};
+</code></pre></div></div>
+
+<p>The above entries contain 2 parameter groups:</p>
+
+<ul>
+  <li>The first group is responsible for the look of a screen:
+    <ul>
+      <li><code class="highlighter-rouge">style</code>: Element of the <code class="highlighter-rouge">screen_styles</code> dictionary</li>
+      <li><code class="highlighter-rouge">rulers</code>: Element of the <code class="highlighter-rouge">rulers</code> dictionary</li>
+      <li><code class="highlighter-rouge">images</code>: List of elements of the <code class="highlighter-rouge">images</code> dictionary</li>
+      <li><code class="highlighter-rouge">animations</code>: Element of the <code class="highlighter-rouge">animations</code> dictionary</li>
+    </ul>
+
+    <p>These parameters are not described in detail in this document.</p>
+  </li>
+  <li>The second group comprises parameters that describe logic:
+    <ul>
+      <li><code class="highlighter-rouge">menu</code>: Menu to display (an element of the <code class="highlighter-rouge">menus</code> dictionary)</li>
+      <li><code class="highlighter-rouge">description</code>: Description text and screen title to display (an element of the <code class="highlighter-rouge">descriptions</code> dictionary)</li>
+      <li><code class="highlighter-rouge">screen_back</code>: Screen to switch to when switching <strong>BACK</strong></li>
+      <li><code class="highlighter-rouge">allow_force_reboot</code>: Reboot after executing an action</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="descriptions"><code class="highlighter-rouge">descriptions</code></h3>
+
+<p>The elements of the <code class="highlighter-rouge">descriptions</code> dictionary hold screen titles and
+brief descriptions for screen entries:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">title</code>: Short (one line) title displayed at the top of a screen</li>
+  <li><code class="highlighter-rouge">description</code>: Brief explanation of actions available on the screen</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>descriptions = {
+    main = {
+        pos_x = 15;
+        pos_y = 480;
+        style = "common";
+        title = "Controls:";
+        text = "Volume Up/Down to move menu cursor\n"
+            "Power button to select";
+    };
+
+    reboot = {
+        pos_x = 15;
+        pos_y = 100;
+        title = "The phone will be restarted.";
+        text = "Continue?";
+        style = "common";
+    };
+
+    safe = {
+        pos_x = 15;
+        pos_y = 100;
+        title = "Safe mode:",
+        text = "The phone will be started in safe mode.\n"
+            "Home screen will be changed to default\n"
+            "setting and just allow a user to use\n"
+            "only preloaded applications.\n"
+            "Continue?";
+        style = "common";
+    };
+
+    factory = {
+        pos_x = 15;
+        pos_y = 100;
+        title = "Factory reset (except SD-card)";
+        text = "This will erase all data from your\n"
+            "phone's internal storage, including\n"
+            "settings of downloaded and preloaded\n"
+            "applications and system configuration.\n"
+            "Continue?";
+        style = "common";
+    };
+
+    factory-run = {
+        pos_x = 15;
+        pos_y = 100;
+        style = "common";
+        title = "Restoring settings to factory default.";
+        text = "Please wait. Do not turn off.\n"
+            "(Hold power button for 3 seconds\n"
+            "to reboot the device. Not recommended.)";
+    }
+};
+</code></pre></div></div>
+
+<h2 id="non-interactive-operation">Non-interactive Operation</h2>
+
+<p>If the <code class="highlighter-rouge">system-recovery</code> program is compiled without GUI support, only 2 parameters
+in the configuration file control how the program behaves:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">action_handlers</code>: List of shell commands</li>
+  <li><code class="highlighter-rouge">headless_action</code>: Action to execute by default</li>
+</ul>
+
+<p>Before <code class="highlighter-rouge">system-recovery</code> reads the <code class="highlighter-rouge">headless_action</code> parameter, it looks
+for the action to execute in 2 other places:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">tizen.recovery</code> kernel command line option (such as <code class="highlighter-rouge">tizen.recovery=factory-reset</code>)</li>
+  <li><code class="highlighter-rouge">/opt/.recovery.action</code></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>headless_action = "factory-reset";
+</code></pre></div></div>
+
+<h2 id="adding-new-actions">Adding New Actions</h2>
+
+<p>To add a new action:</p>
+
+<ol>
+  <li>Define an action handler in the <code class="highlighter-rouge">action_handlers</code> dictionary:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>action_handlers = {
+    factory-reset-minimal = "/usr/bin/factory-reset-minimal.sh"
+};
+</code></pre></div>    </div>
+  </li>
+  <li>Take the <code class="highlighter-rouge">factory</code> entry from the <code class="highlighter-rouge">menus</code> dictionary and adapt it:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>menus = {
+    factory-minimal = {
+        pos_x = 0;
+        pos_y = 480;
+        style = "common";
+        item_default = 1;
+        actions = ({
+            label = "Yes";
+            screen_switch_to = "factory-run-minimal";
+            action_handler = "factory-reset-minimal";
+            exit_after_action = 1;
+        },{
+            label = "No";
+            screen_switch_to = "BACK";
+        });
+    };
+};
+</code></pre></div>    </div>
+  </li>
+  <li>Add 2 new entries in the <code class="highlighter-rouge">screens</code> dictionary:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screens = {
+    factory-minimal = {
+        style = "common";
+        menu = "factory-minimal";
+        description = "factory-minimal";
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        screen_back = "main";
+    };
+    factory-run-minimal = {
+        style = "common";
+        description = "factory-run-minimal";
+        rulers = "confirm";
+        images = ("background_default", "menu_title");
+        animations = ("working");
+        screen_back = "main";
+        allow_force_reboot = 1;
+    };
+};
+</code></pre></div>    </div>
+  </li>
+  <li>Add 2 new entries in the <code class="highlighter-rouge">descriptions</code> dictionary:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>descriptions = {
+    factory-minimal = {
+        pos_x = 15;
+        pos_y = 100;
+        title = "Factory reset (except SD-card)";
+        text = "This will erase SOME data from your\n"
+            "phone's internal storage, including\n"
+            "settings of downloaded and preloaded\n"
+            "applications and system configuration.\n"
+            "Continue?";
+        style = "common";
+    };
+    factory-run-minimal = {
+        pos_x = 15;
+        pos_y = 100;
+        style = "common";
+        title = "Restoring SOME settings to factory default.";
+        text = "Please wait. Do not turn off.\n"
+            "(Hold power button for 3 seconds\n"
+            "to reboot the device. Not recommended.)";
+    };
+};
+</code></pre></div>    </div>
+  </li>
+  <li>Add an action to the <code class="highlighter-rouge">main</code> menu that switches to the <code class="highlighter-rouge">factory-minimal</code> screen:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main = {
+    pos_x = 0;
+    pos_y = 100;
+    style = "common";
+    actions = ({
+        label = "Reboot system now";
+        screen_switch_to = "reboot";
+    },{
+        label = "Safe mode";
+        screen_switch_to = "safe";
+    },{
+        label = "Phone reinitialisation";
+        screen_switch_to = "factory";
+    },{
+        label = "Minimal phone reinitialisation";
+        screen_switch_to = "factory-minimal";
+    });
+};
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="look-and-feel-options">Look-and-feel Options</h2>
+
+<p>The following example shows the remaining parts of the configuration file, containing options that control the look-and-feel of the system recovery menus:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>colors = {
+    background = "#000000ff";
+    title = "#1bc7ccff";
+    ruler = "#1bc7ccff";
+    white = "#ffffffff";
+};
+
+ruler_styles = {
+    common = {
+        c_ruler = "ruler";
+    };
+};
+
+menu_styles = {
+    common = {
+        item_height = 80;
+        item_spacing = 8;
+        text_pos_x = 15;
+        c_bg_selected = "title";
+        c_bg_unselected = "background";
+        c_text_selected = "white";
+        c_text_unselected = "white";
+    };
+};
+
+screen_styles = {
+    common = {
+        c_background = "background";
+    };
+};
+
+description_styles = {
+    common = {
+        c_title = "title";
+        c_text = "white";
+    };
+};
+
+rulers = {
+    main = (
+    {
+        pos_x = 0;
+        pos_y = 80;
+        height = 2;
+        style = "common";
+    }, {
+        pos_x = 0;
+        pos_y = 420;
+        height = 2;
+        style = "common";
+    });
+
+    confirm = (
+    {
+        pos_x = 0;
+        pos_y = 80;
+        height = 2;
+        style = "common";
+    });
+};
+
+images = {
+    background_default = {
+        fname = "/usr/share/system-recovery/res/images/warning.png";
+        c_bg = "background"; // reference to colors
+        align_hor = "center";
+        align_ver = "bottom";
+        offset_x = 0;
+        offset_y = 0;
+        img_type = "alpha"; // alt: "no-alpha";
+    };
+    menu_title = {
+        fname = "/usr/share/system-recovery/res/images/menu-title.png";
+        c_bg = "title";
+        align_hor = "center";
+        align_ver = "top";
+        offset_x = 0;
+        offset_y = 20;
+        img_type = "no-alpha"; // alt: "no-alpha";
+    };
+};
+
+animations = {
+    working = {
+        fname = "/usr/share/system-recovery/res/images/tizen-anim.png";
+        c_bg = "background";
+        align_hor = "center";
+        align_ver = "middle";
+        offset_x = 0;
+        offset_y = 0;
+        frames_num = 0;
+        current_frame = 0;
+        img_type = "no-alpha"; // alt: "no-alpha";
+    };
+};
+</code></pre></div></div>
+
+<h2 id="adding-new-files-to-the-ramdisk-recovery-partition">Adding New Files to the <code class="highlighter-rouge">ramdisk-recovery</code> Partition</h2>
+
+<p>The <code class="highlighter-rouge">ramdisk-recovery</code> partition is created along with the <code class="highlighter-rouge">rootfs</code>
+partition (methods for creating images are beyond the scope of this
+document):</p>
+
+<ul>
+  <li>Files to be added to the <code class="highlighter-rouge">ramdisk-recovery</code> partition must
+be available in Tizen RPM packages.</li>
+  <li>Files are added to the partition by the <code class="highlighter-rouge">mkinitrd-recovery.sh</code> script, which is started
+automatically as a part of the <code class="highlighter-rouge">%posttrans</code> RPM script of the <code class="highlighter-rouge">initrd-recovery</code> package.</li>
+</ul>
+
+<p>To install a selected file in the recovery
+image, its RPM needs to be installed before <code class="highlighter-rouge">initrd-recovery</code> is run. The
+easiest way to make sure this happens is to list the package as a
+dependency in the <code class="highlighter-rouge">initrd-recovery.spec</code> file.</p>
+
+<p>The <code class="highlighter-rouge">mkinitrd-recovery.sh</code> script copies or moves files from the
+<code class="highlighter-rouge">rootfs</code> partition to the <code class="highlighter-rouge">initrd-recovery</code> partition according to
+directions provided in configuration files stored in the
+<code class="highlighter-rouge">/usr/share/initrd-recovery/initrd.list.d</code> directory. These files
+must be packaged in the RPM packages together with the
+files to be put on the <code class="highlighter-rouge">initrd-recovery</code> partition. The configuration files are
+interpreted as shell scripts and can be used to set the following
+variables:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">DIRECTORIES</code>: Create directories.</li>
+  <li><code class="highlighter-rouge">DIR_SYMLINKS</code>: Create symbolic links to directories.</li>
+  <li><code class="highlighter-rouge">LIBONLYS</code>: Copy <strong>only</strong> the libraries required by the listed executable files.</li>
+  <li><code class="highlighter-rouge">MVWITHLIBS</code>: Move the listed executable files and copy the required libraries.</li>
+  <li><code class="highlighter-rouge">SYMLINKS</code>: Create symbolic links.</li>
+  <li><code class="highlighter-rouge">VERBATIMS</code>: Copy the listed files. List non-executable files here.</li>
+  <li><code class="highlighter-rouge">WITHLIBS</code>: Copy the listed executable files and the required libraries.</li>
+</ul>
+
+<p>The <code class="highlighter-rouge">SYMLINKS</code> and <code class="highlighter-rouge">DIR_SYMLINKS</code> variables contain pairs of filenames separated with
+colons.</p>
+
+<p>The following section contains examples of the above variables:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DIRECTORIES="
+/var/tmp
+/usr/lib/odbc
+"
+
+# LinkFileName:Target
+DIR_SYMLINKS="
+/lib:usr/lib
+/opt:system/opt
+"
+
+LIBONLYS="
+/bin/bash
+/bin/kill
+"
+
+MVWITHLIBS="
+/usr/libexec/initrd-recovery/minireboot
+/usr/libexec/system-recovery/system-recovery.gui
+"
+
+WITHLIBS="
+/usr/bin/sync
+/usr/bin/touch
+"
+
+VERBATIMS="
+/usr/share/system-recovery/res/images/font.png
+/usr/share/system-recovery/res/images/menu-title.png
+/usr/share/system-recovery/system-recovery.cfg
+"
+
+# LinkFileName:Target
+SYMLINKS="
+/sbin/recovery-init:/usr/libexec/system-recovery/recovery-init
+/usr/lib/bufmgr/libtbm_default.so:libtbm_sprd.so
+"
+</code></pre></div></div>
+
+<p>The following real-world example comes from the <code class="highlighter-rouge">initrd-recovery</code>
+package. Following this configuration, <code class="highlighter-rouge">mkinitrd-recovery.sh</code> copies
+some basic tools to the <code class="highlighter-rouge">initrd-recovery</code> partition, moves <code class="highlighter-rouge">init</code> and
+<code class="highlighter-rouge">minireboot</code>, and creates some symlinks:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MVWITHLIBS="
+/usr/libexec/initrd-recovery/init
+/usr/libexec/initrd-recovery/minireboot
+"
+
+WITHLIBS="
+/usr/bin/bash
+/usr/bin/cat
+/usr/bin/mkdir
+/usr/bin/mount
+/usr/bin/sleep
+/usr/bin/sync
+/usr/bin/umount
+/usr/sbin/blkid
+"
+
+# LinkFileName:Target
+SYMLINKS="
+/bin/sh:bash
+/sbin/init:/usr/libexec/initrd-recovery/init
+/sbin/minireboot:/usr/libexec/initrd-recovery/minireboot
+/sbin/reboot:/usr/libexec/initrd-recovery/minireboot
+"
+</code></pre></div></div>
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

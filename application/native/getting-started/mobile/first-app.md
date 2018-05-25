@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Creating Your First Tizen Mobile Native Application
+order: 1
+---
+
 # Creating Your First Tizen Mobile Native Application
 
 **Welcome to Tizen mobile native application development!**

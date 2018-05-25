@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 2.3.0
+order: -230
+---
+
 # Tizen 2.3
 
 Release Date: 09 Feb, 2015

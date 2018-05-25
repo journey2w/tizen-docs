@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Accessibility
+order: 1
+---
+
 # Accessibility
 
 Tizen provides users with a universal design, which presents the same level and quality of user experience regardless of the accessibility level of the individuals.

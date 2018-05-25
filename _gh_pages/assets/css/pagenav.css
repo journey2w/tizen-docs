@@ -1,0 +1,59 @@
+/* 
+ * Style from https://console.bluemix.net/docs
+ */
+
+.table-of-content {
+  border: 1px #dfe3e6 solid;
+  width: 100%;
+  display: none
+}
+
+@media (min-width: 78.5rem) {
+  .table-of-content.show {
+    display: inline-block
+  }
+}
+
+.table-of-content-header {
+  background-color: transparent;
+  color: #152935;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem
+}
+
+.table-of-content-header>a {
+  color: #152935;
+  text-decoration: none;
+}
+
+.table-of-content-anchors .anchor-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.table-of-content-anchors .anchor-list__item {
+  transition: .3s background-color ease-out
+}
+
+.table-of-content-anchors .anchor-list__item.highlighted {
+  background-color: #f0f3f6
+}
+
+.table-of-content-anchors .anchor-list__item.highlighted>a {
+  color: #3d70b2
+}
+
+.table-of-content-anchors .anchor-list__item a {
+  padding: .5rem 1rem;
+  display: block;
+  font-size: 0.875rem;
+  color: #152935;
+  text-decoration: none;
+  line-height: 1.4
+}
+
+.table-of-content-anchors .anchor-list__item a.sub-item {
+  padding-left: 2rem;
+}

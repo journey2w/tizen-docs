@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Overview
+order: 1
+---
+
 # Introduction to Native applications
 
 The introduction to native applications documentation provides overall information you need to become familiar with native-specific Tizen programming and the Tizen application model:

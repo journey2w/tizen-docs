@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Telephony
+order: 9
+---
+
 # Telephony
 
 This guide describes the Telephony architecture in detail, including the various telephony components and the workflow in the Telephony framework. It also provides porting guidelines for vendors to facilitate OAL interface development for their hardware.

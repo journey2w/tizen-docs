@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Location
+order: 8
+---
+
 # Location
 
 The Location framework provides location-based services (LBS), including the position information, satellite information and GPS status.

@@ -1,0 +1,89 @@
+<!-- Sidebar -->
+<link href="{{ site.baseurl }}/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+{% assign page_path = page.url | split: '/' %}
+{% assign pages = site.pages | sort: 'order' %}
+{% assign first = 'item-first' %}
+{% for d3_page in pages %}
+  {% assign d3_path = d3_page.url | split: '/' %}
+  {% if d3_path.size == 3 and d3_path[1] == page_path[1] %}
+    {% if page.url contains d3_page.url %}
+  <div class="item-root active {{ first }}">
+    <a href="{{ site.baseurl }}{{ d3_page.url }}{{ d3_page.redirect }}">{{ d3_page.title }}</a>
+    <ul>
+      {% for d4_page in pages %}
+        {% assign d4_path = d4_page.url | split: '/' %}
+        {% if d4_path.size == 4 and d4_path[2] == d3_path.last %}
+          {% if page.url contains d4_page.url %}
+      <li class="active">
+			  <a href="{{ site.baseurl }}{{ d4_page.url }}{{ d4_page.redirect }}">{{ d4_page.title }}</a>
+      </li>
+      <ul>
+            {% for d5_page in pages %}
+              {% assign d5_path = d5_page.url | split: '/' %}
+              {% if d5_path.size == 5 and d5_path[2] == d3_path.last and d5_path[3] == d4_path.last %}
+                {% if page.url contains d5_page.url %}
+        <li class="active">
+          <a href="{{ site.baseurl }}{{ d5_page.url }}{{ d5_page.redirect }}">{{ d5_page.title }}</a>
+        </li>
+
+        <ul>
+                  {% for d6_page in pages %}
+                    {% assign d6_path = d6_page.url | split: '/' %}
+                    {% if d6_path.size == 6 and d6_path[2] == d3_path.last and d6_path[3] == d4_path.last and d6_path[4] == d5_path.last %}
+                      {% if page.url contains d6_page.url %}
+          <li class="active">
+            <a href="{{ site.baseurl }}{{ d6_page.url }}{{ d6_page.redirect }}">{{ d6_page.title }}</a>
+          </li>
+                      {% else %}
+          <li>
+            {% if d6_page.hidden %}
+            <a tabindex = "-1" >{{ d6_page.title }}</a>
+            {% else %}
+            <a href="{{ site.baseurl }}{{ d6_page.url }}{{ d6_page.redirect }}">{{ d6_page.title }}</a>
+            {% endif %}
+          </li>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+        </ul>
+
+                {% else %}
+        <li>
+          {% if d5_page.hidden %}
+          <a tabindex = "-1" >{{ d5_page.title }}</a>
+          {% else %}
+          <a href="{{ site.baseurl }}{{ d5_page.url }}{{ d5_page.redirect }}">{{ d5_page.title }}</a>
+          {% endif %}
+        </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+      </ul>
+          {% else %}
+      <li>
+        {% if d4_page.hidden %}
+        <a tabindex = "-1" >{{ d4_page.title }}</a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ d4_page.url }}{{ d4_page.redirect }}">{{ d4_page.title }}</a>
+        {% endif %}
+      </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+    {% else %}
+  <div class="item-root {{ first }}">
+      {% if d3_page.hidden %}
+    <a style="cursor: default;">{{ d3_page.title }}</a>
+      {% else %}
+    <a href="{{ site.baseurl }}{{ d3_page.url }}{{ d3_page.redirect }}">{{ d3_page.title }}</a>
+      {% endif %}
+  </div>
+    {% endif %}
+    {% assign first = '' %}
+  {% endif %}
+{% endfor %}
+</nav>
+<!-- Sidebar end -->

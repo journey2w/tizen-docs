@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Gestures
+order: 1
+---
+
 # Gestures
 
 The Tizen platform supports a wide variety of gestures that allow users to directly access content on touch screen devices. For example, users can tap the screen to select an element, swipe to scroll through content on the screen, or drag and drop an element to move it.

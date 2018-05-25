@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Creating Your First Tizen Wearable Native Application
+order: 2
+---
+
 # Creating Your First Tizen Wearable Native Application
 
 **Welcome to Tizen wearable native application development!**

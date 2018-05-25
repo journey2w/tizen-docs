@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen 3.0 Public M2
+order: -302
+---
+
 # Tizen 3.0 Public M2
 
 Release Date: Jan 18, 2017

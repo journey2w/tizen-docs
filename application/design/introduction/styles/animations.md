@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Animations
+order: 1
+---
+
 # Animations
 
 The idea of on-screen animation effects in the Tizen UI was inspired by the behavior of wind. We aim to reproduce the wind's natural movements on the screen to provide a more organic and aesthetic experience for users.

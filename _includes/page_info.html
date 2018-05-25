@@ -1,0 +1,30 @@
+<!-- Page info -->
+<p class="text-muted small">
+{% for contact in site.data.contacts %}
+  {% if page.url contains contact.path %}
+    {% assign author = contact %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if page.last_modified_at %}
+  <br>
+  Last updated {{ page.last_modified_at | date: '%B %d, %Y' }}
+{% endif %}
+{% if author %}
+  <br>
+  {% if author.raw %}
+    {{ author.raw }}
+  {% else %}
+    {% for p in site.pages %}
+      {% assign p_path = p.url | split: '/' %}
+      {% if p_path.size == 3 and page.url contains p.url %}
+        {% assign email_subject = (p.title | append: ': ' | append: page.title) | cgi_escape | replace: '+', ' ' %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% assign email_body = '%0A%0A----------%0A' | append: site.title | append: ' Feedback Form%0APage URL: http://star.samsung.net' | append: page.url | append: '%0A----------' %}
+    <a href="mailto:{{ author.email }}?subject={{ email_subject }}&body={{ email_body }}">Send feedback</a> to {{ author.name }}&lt;{{ author.email }}&gt;
+  {% endif %}
+{% endif %}
+</p>
+<!-- Page info end -->

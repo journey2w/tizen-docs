@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen Compliance Tests
+order: 3
+---
+
 # Tizen Compliance Tests
 
 Tizen Compliance Tests (TCT) verify conformance to the [Tizen Compliance Specification](compliance-specification.md) (TCS). These tests are intended to be used by Tizen device implementers to build a Tizen-compliant development environment for Tizen application developers.

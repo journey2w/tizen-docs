@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Getting Started
+order: 2
+---
+
 # Getting Started with EFL UI Programming
 
 This topic explains how to start EFL UI programming. If you first want to learn what EFL is and how it works, see [Introduction](./index.md). If you want to create a first application step by step, see [Creating Your First Tizen Mobile Native Application](../../../getting-started/mobile/first-app.md) or [Creating Your First Tizen Wearable Native Application](../../../getting-started/wearable/first-app.md).

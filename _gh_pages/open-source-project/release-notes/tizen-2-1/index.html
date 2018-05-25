@@ -1,0 +1,4431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Tizen 2.1 &middot; Tizen Platform
+
+</title>
+
+<!-- Bootstrap CSS -->
+<link href="/assets/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome -->
+<link href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="/assets/favicon.ico" rel="icon">
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/clipboard.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/vendor/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/bootstrap-4.0.0-beta/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- Search highlight -->
+<script src="/assets/js/search/highlight.js"></script>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+<link href="/assets/css/navbar.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item ">
+      <a class="nav-link" href="/home/">Docs</a>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item active dropdown">
+      <a class="nav-link dropbtn">Open Source Project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/developing/installing">Developing</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/porting/overview">Porting</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+                
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+                
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          
+          
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropbtn">Application <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <div class="dropdown-content">
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/overview/">Overview</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/native/overview">Native Application</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                
+        <a href="/application/design/introduction">Design</a>
+                
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </div>
+    </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" action="/search" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-box" name="q">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="search">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Navigation bar end -->
+
+  <link href="/assets/css/solution.css" rel="stylesheet">
+<link href="/assets/css/markdown.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- Sidebar -->
+<link href="/assets/css/sidebar.css" rel="stylesheet">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root item-first">
+      
+    <a href="/open-source-project/overview/tizen-open-source-project">Overview</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/developing/installing">Developing</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/porting/overview">Porting</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/reference/gerrit-usage">Reference</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root active ">
+    <a href="/open-source-project/release-notes/tizen-4-0-m2">Release Notes</a>
+    <ul>
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-4-0-m2/">Tizen 4.0 Public M2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m4/">Tizen 3.0 Public M4</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m3/">Tizen 3.0 Public M3</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-m2/">Tizen 3.0 Public M2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-3-0-milestones/">Tizen 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-4/">Tizen 2.4.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-2/">Tizen 2.3.2 for Wearable</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3-1/">Tizen 2.3.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-3/">Tizen 2.3.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2-1/">Tizen 2.2.1</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-2/">Tizen 2.2</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li class="active">
+			  <a href="/open-source-project/release-notes/tizen-2-1/">Tizen 2.1</a>
+      </li>
+      <ul>
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+      </ul>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-2-0/">Tizen 2.0</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-1-0/">Tizen 1.0 Release Notes</a>
+        
+      </li>
+          
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-common-milestones/">Tizen Common milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+      <li>
+        
+        <a href="/open-source-project/release-notes/tizen-ivi-3-0-milestones/">Tizen IVI 3.0 Milestones</a>
+        
+      </li>
+          
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </ul>
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/compliance/compliance-program">Compliance</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-rt/">Tizen RT</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+    
+  <div class="item-root ">
+      
+    <a href="/open-source-project/tizen-studio/overview">Tizen Studio</a>
+      
+  </div>
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</nav>
+<!-- Sidebar end -->
+
+  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+  <div class="bd-content doc-content">
+    <h1 id="tizen-21">Tizen 2.1</h1>
+
+<p>Release Date: 18 May, 2013</p>
+
+<p>The Tizen 2.1 Nectarine release provides developers with the Tizen kernel, device drivers, middleware subsystems, and Web/Native APIs, necessary to develop future Tizen compliant solutions.</p>
+
+<h2 id="release-details">Release Details</h2>
+
+<ul>
+  <li><a href="http://review.tizen.org/git/">Getting source code</a> (Tizen 2.1 Nectarine source codes are under <strong>tizen_2.1</strong> branch.)</li>
+  <li><a href="http://download.tizen.org/releases/2.1/tizen-2.1">Getting binaries and images</a></li>
+  <li><a href="https://wiki.tizen.org/wiki/Flash_Tizen_2.1_Image_to_Reference_Device">How to flash to a device</a></li>
+</ul>
+
+<h2 id="release-notes">Release Notes</h2>
+
+<p>Tizen is an open source, standards-based software platform supported by leading mobile operators, device manufacturers, and chip suppliers for multiple device categories, including smartphones, tablets, netbooks, in-vehicle infotainment devices, and smart TVs.</p>
+
+<p>The Tizen Platform consists of the Web framework (APIs), native framework (APIs), and core system.</p>
+
+<p>The Tizen Software Development Kit (SDK) is a comprehensive set of tools for developing Web applications, native applications, and the platform component for Tizen. The SDK contains an install manager, IDE, tools, documents, samples, and a platform image.</p>
+
+<h3 id="tizen-platform">Tizen Platform</h3>
+
+<h4 id="web-framework">Web Framework</h4>
+
+<h5 id="new-features">New Features</h5>
+
+<ul>
+  <li>HTML5 / W3C
+    <ul>
+      <li>Security
+        <ul>
+          <li>Content Security Policy 1.0
+            <ul>
+              <li>This policy language provides the declaration of a set of content restrictions for Web resources, and a mechanism for transmitting the policy from a server to a client when the policy is enforced</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Performance and Optimization
+        <ul>
+          <li>Navigation Timing
+            <ul>
+              <li>This API provides an interface for Web applications to access timing information related to navigation and elements</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Web Runtime
+    <ul>
+      <li>Web Dynamic Box runtime framework to enable embedding of Web Dynamic Boxes in viewer applications (for example, the Home screen). The supported features include:
+        <ul>
+          <li>Web Dynamic Box installation and uninstallation</li>
+          <li>Web Dynamic Box configuration extensions</li>
+          <li>Web Dynamic Box execution and life-cycle management</li>
+        </ul>
+      </li>
+      <li>Configuration extension updates
+        <ul>
+          <li>The “package” attribute in the <tizen:application> element to specify the package ID</tizen:application></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="changed-features">Changed Features</h5>
+
+<ul>
+  <li>
+    <p>For Tizen Web API change details, see <a href="http://developer.tizen.org/downloads/sdk/2.1-api-change-notes">Tizen API Change Notes</a>.</p>
+  </li>
+  <li>
+    <p>HTML5/W3C</p>
+
+    <ul>
+      <li>
+        <p>Reference documentation unified as a single document in accordance with the specification changes:</p>
+
+        <ul>
+          <li>CSS 2D Transforms and CSS 3D Transforms Module Level 3 to CSS Transforms</li>
+        </ul>
+      </li>
+      <li>
+        <p>Specification version update</p>
+
+        <p><em>Note</em>: If you have developed Web applications based on the previous Tizen versions (including 2.0) of the following specifications, you MUST check whether the corresponding features are available in the updated version of the specifications referred to in this release.</p>
+
+        <ul>
+          <li>DOM, Forms, and Styles
+            <ul>
+              <li>HTML5 Forms (Partial) - The formnovalidate content attribute of the form element is not supported</li>
+              <li>CSS Transforms</li>
+              <li>CSS Animations Module Level 3</li>
+              <li>CSS Transitions Module Level 3 (Partial)</li>
+              <li>CSS Multi-column Layout Module (Partial) - The column, avoid-page, and avoid-column values of the break-before and break-after properties, and the avoid-page and avoid-column values of the break-inside property are not supported</li>
+            </ul>
+          </li>
+          <li>Device
+            <ul>
+              <li>Touch Events version 1 (Partial)</li>
+              <li>The Screen Orientation API</li>
+              <li>The Network Information API</li>
+            </ul>
+          </li>
+          <li>Graphics
+            <ul>
+              <li>HTML5 The canvas element (Partial) - The toBlob method of the HTMLCanvasElement interface is not supported</li>
+              <li>HTML Canvas 2D context (Partial) - The scrollPathIntoView method of the CanvasRenderingContext2D interface is not supported</li>
+            </ul>
+          </li>
+          <li>Media
+            <ul>
+              <li>HTML5 The video element (Partial) - The videoTracks attribute of HTMLMediaElement and the abort event are not supported</li>
+              <li>HTML5 The audio element (Partial) - The audioTracks attribute of HTMLMediaElement and the abort event are not supported</li>
+              <li>Web Audio API (Partial)
+                <ul>
+                  <li>The computedValue attribute of the AudioParam interface is not supported</li>
+                  <li>The SOUNDFIELD enum string constant value of the PanningModelType enum for the panningModel attribute is not supported</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Update to method, attribute, and constructor support</p>
+
+        <ul>
+          <li>DOM, Forms and Styles
+            <ul>
+              <li>Selectors API Level 2 (Partial) - The matchesSelector method (Element interface) is not supported</li>
+              <li>Media Queries (Partial) – The color-index, min-color-index, max-color-index, resolution, scan, print, 3d-glasses, and grid queries are not supported</li>
+            </ul>
+          </li>
+          <li>Storage
+            <ul>
+              <li>File API: Writer (Partial) - The FileSaver interface and saveAs method (Window interface) are not supported</li>
+            </ul>
+          </li>
+          <li>UI
+            <ul>
+              <li>Clipboard API and Events - The ClipboardEvent interface constructor is not supported</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Web UI Framework</p>
+
+    <ul>
+      <li>The following widgets are newly introduced:
+        <ul>
+          <li>Gallery 3D</li>
+          <li>Split View</li>
+        </ul>
+      </li>
+      <li>The APIs of the following widgets are updated:
+        <ul>
+          <li>Fast Scroll</li>
+          <li>Token Text Area</li>
+          <li>Progress</li>
+          <li>Multimedia View</li>
+          <li>Virtual Grid</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen Web APIs</p>
+
+    <p>The following APIs are newly introduced or updated:</p>
+
+    <ul>
+      <li>Bookmark</li>
+      <li>DataControl</li>
+      <li>DataSync</li>
+      <li>MessagePort</li>
+      <li>Notification</li>
+      <li>Package</li>
+      <li>Push</li>
+      <li>SecureElement</li>
+      <li>SystemInfo</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="native-framework">Native Framework</h4>
+
+<h5 id="new-features-1">New Features</h5>
+
+<ul>
+  <li>Tizen::App
+    <ul>
+      <li>Application controls
+        <ul>
+          <li>Bluetooth, Gallery, and Todo application controls added</li>
+          <li>Platform application control supports implicit resolution</li>
+          <li>Supports signature-based access control</li>
+        </ul>
+      </li>
+      <li>Data controls
+        <ul>
+          <li>Supports flow-control operation on multiple requests</li>
+          <li>Supports signature-based access control</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::App::Package
+    <ul>
+      <li>Package management
+        <ul>
+          <li>Supports application-specific metadata in the manifest</li>
+          <li>Supports package filtering and package app filtering for more effective ways to get installed package list</li>
+          <li>Supports getting package information from the specific Tizen package file</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Base
+    <ul>
+      <li>Basic types
+        <ul>
+          <li>Supports tick resolution in the Tizen::Base::DateTime class</li>
+          <li>Supports the Tizen::Base::String hash code provider and comparer which can be used with the template Collection classes</li>
+        </ul>
+      </li>
+      <li>Collection
+        <ul>
+          <li>Supports conversion between Tizen collections and C++ standard library containers</li>
+          <li>Supports non-owning collection and owning collection through the DeleterFunctionType argument</li>
+        </ul>
+      </li>
+      <li>Utility
+        <ul>
+          <li>Supports tokenizing string scanner and converter (Tizen::Base::Utility::Scanner class)</li>
+        </ul>
+      </li>
+      <li>Runtime
+        <ul>
+          <li>Supports non-recursive mutex</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Content
+    <ul>
+      <li>Content management
+        <ul>
+          <li>Supports metadata extraction (such as EXIF and ID3 tags from images, audio, and video)</li>
+          <li>Supports scanning for a file or directory to synchronize content information with the local content database</li>
+          <li>Supports database change notifications</li>
+        </ul>
+      </li>
+      <li>Download manager
+        <ul>
+          <li>Download information is available for at least the next 24 hours</li>
+          <li>Supports enabling and disabling the download notifications</li>
+          <li>Supports setting the allowed network type</li>
+          <li>Supports managing the HTTP header fields</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Graphics
+    <ul>
+      <li>Graphics
+        <ul>
+          <li>Supports floating point precision
+            <ul>
+              <li>API set which draws 2D primitives in floating point coordinates is added</li>
+            </ul>
+          </li>
+          <li>New properties for canvas
+            <ul>
+              <li>Line cap style, which controls the shapes of the end of line</li>
+              <li>Line join style, which determines how to draw the intersection of two joining lines</li>
+              <li>Composite mode, which determines how to merge a 2D primitive with another primitive</li>
+              <li>Anti-alias mode for 2D drawing in canvas</li>
+            </ul>
+          </li>
+          <li>TextElement of EnrichedText are vertically aligned along the baseline with TEXT_ALIGNMENT_BASELINE</li>
+        </ul>
+      </li>
+      <li>3D Graphics
+        <ul>
+          <li>OpenGL ES
+            <ul>
+              <li>pbuffer surface is available in the Emulator</li>
+              <li>FBO for OpenGL-ES 1.1 is supported in the Emulator</li>
+            </ul>
+          </li>
+          <li>GL utilities
+            <ul>
+              <li>Sample application and programming guide for CanvasTexture</li>
+              <li>Sample application and programming guide for VideoTexture</li>
+              <li>Programming guide for GlPlayer and GlRenderer</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Io</p>
+  </li>
+  <li>FileLock
+    <ul>
+      <li>Supports an advisory lock mechanism on file or registry file</li>
+    </ul>
+  </li>
+  <li>Dataset
+    <ul>
+      <li>Supports handling an in-memory table-structured dataset for DataControl result set</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Locales</p>
+  </li>
+  <li>New country codes added:
+    <ul>
+      <li>COUNTRY_BL (Saint Barthelemy)</li>
+      <li>COUNTRY_MF (Saint Martin (French part))</li>
+      <li>COUNTRY_AREA_419 (Latin America and the Caribbean)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Media</p>
+  </li>
+  <li>Camera
+    <ul>
+      <li>Scene mode is added</li>
+    </ul>
+  </li>
+  <li>Audio and video recorder
+    <ul>
+      <li>Audio and video pre-processing filter APIs and classes</li>
+    </ul>
+  </li>
+  <li>Image
+    <ul>
+      <li>Floating point-based resized image decoding API</li>
+      <li>EXIF orientation getter</li>
+    </ul>
+  </li>
+  <li>VideoFrameExtractor
+    <ul>
+      <li>Recording rotation getter</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Net</p>
+  </li>
+  <li>NFC
+    <ul>
+      <li>Reserved Push feature</li>
+    </ul>
+  </li>
+  <li>HTTP
+    <ul>
+      <li>Server certificate is verified manually</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Security</p>
+  </li>
+  <li>Key
+    <ul>
+      <li>Supports “X509” and “PKCS#1” format for public keys and “PKCS#8” and “PKCS#1” format for private keys</li>
+      <li>Supports changing the format of the RSA key and encoding</li>
+    </ul>
+  </li>
+  <li>PKCS
+    <ul>
+      <li>Supports “PKCS#5” (Password-based Encryption Standard) and “PKCS#8” (Private-key Information Syntax Standard)</li>
+    </ul>
+  </li>
+  <li>Cert
+    <ul>
+      <li>Supports .p12 and .pfx certificate installation</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Shell</p>
+  </li>
+  <li>Notification
+    <ul>
+      <li>Supports badge change event listener</li>
+      <li>Supports notifications by application control - implicit AppControl resolution is attempted when the user selects the message</li>
+      <li>Supports text message notifications on the status bar</li>
+      <li>Supports removing individual notifications</li>
+      <li>Supports thumbnail and multiline-type notifications</li>
+    </ul>
+  </li>
+  <li>Dynamic Box
+    <ul>
+      <li>Supports showing the widget and its Drop View on the Home screen</li>
+    </ul>
+  </li>
+  <li>Shortcut manager
+    <ul>
+      <li>Supports adding application shortcuts on the Home screen</li>
+    </ul>
+  </li>
+  <li>
+    <p>Lock manager</p>
+  </li>
+  <li>
+    <p>Supports getting the lock state and dismissing swipe unlocking</p>
+  </li>
+  <li>
+    <p>Tizen::Social</p>
+  </li>
+  <li>Account
+    <ul>
+      <li>Supports methods to manage the account information</li>
+      <li>Supports methods to access accounts and account providers</li>
+    </ul>
+  </li>
+  <li>Calendarbook
+    <ul>
+      <li>Supports methods to update an event instance</li>
+      <li>Supports absolute time for reminders</li>
+    </ul>
+  </li>
+  <li>Addressbook
+    <ul>
+      <li>Supports user profile</li>
+      <li>Supports bulk operations for adding, updating, and removing contacts</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::System</p>
+  </li>
+  <li>Environment
+    <ul>
+      <li>System ringtone path is added in the PredefinedDirectoryType enum</li>
+    </ul>
+  </li>
+  <li>IScreenEventListener
+    <ul>
+      <li>The OnScreenBrightnessChanged event handlers added</li>
+    </ul>
+  </li>
+  <li>PowerManager
+    <ul>
+      <li>Supports subscribing to boot events</li>
+    </ul>
+  </li>
+  <li>RuntimeInfo
+    <ul>
+      <li>The following keys are added:</li>
+      <li><a href="http://tizen.org/runtime/system.status">http://tizen.org/runtime/system.status</a></li>
+      <li><a href="http://tizen.org/runtime/memory.allocated.self">http://tizen.org/runtime/memory.allocated.self</a></li>
+    </ul>
+  </li>
+  <li>SettingInfo
+    <ul>
+      <li>The SetValueAsync method is added for asynchronous elements</li>
+      <li>The following keys are added:
+        <ul>
+          <li><a href="http://tizen.org/setting/application.home">http://tizen.org/setting/application.home</a></li>
+          <li><a href="http://tizen.org/setting/application.lock">http://tizen.org/setting/application.lock</a></li>
+          <li><a href="http://tizen.org/setting/developer.usb_debugging">http://tizen.org/setting/developer.usb_debugging</a></li>
+          <li><a href="http://tizen.org/setting/graphics.gpu.rendering">http://tizen.org/setting/graphics.gpu.rendering</a></li>
+          <li><a href="http://tizen.org/setting/network.bluetooth">http://tizen.org/setting/network.bluetooth</a></li>
+          <li><a href="http://tizen.org/setting/network.bluetooth.tethering">http://tizen.org/setting/network.bluetooth.tethering</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi">http://tizen.org/setting/network.wifi</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.direct">http://tizen.org/setting/network.wifi.direct</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.notification">http://tizen.org/setting/network.wifi.notification</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.tethering">http://tizen.org/setting/network.wifi.tethering</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.tethering.hide">http://tizen.org/setting/network.wifi.tethering.hide</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.tethering.security">http://tizen.org/setting/network.wifi.tethering.security</a></li>
+          <li><a href="http://tizen.org/setting/network.wifi.tethering.security.password">http://tizen.org/setting/network.wifi.tethering.security.password</a></li>
+          <li><a href="http://tizen.org/setting/screen.mode">http://tizen.org/setting/screen.mode</a></li>
+          <li><a href="http://tizen.org/setting/sound.notification">http://tizen.org/setting/sound.notification</a></li>
+          <li><a href="http://tizen.org/setting/speech.tts.screen">http://tizen.org/setting/speech.tts.screen</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.bluetooth.download">http://tizen.org/setting/storage.directory.bluetooth.download</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.camera.record">http://tizen.org/setting/storage.directory.camera.record</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.radio.broadcast">http://tizen.org/setting/storage.directory.radio.broadcast</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.video.broadcast">http://tizen.org/setting/storage.directory.video.broadcast</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.voice.record">http://tizen.org/setting/storage.directory.voice.record</a></li>
+          <li><a href="http://tizen.org/setting/storage.directory.wap.download">http://tizen.org/setting/storage.directory.wap.download</a></li>
+          <li><a href="http://tizen.org/setting/usb.tethering">http://tizen.org/setting/usb.tethering</a></li>
+          <li><a href="http://tizen.org/setting/vibrator.level.notification">http://tizen.org/setting/vibrator.level.notification</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>SystemInfo
+    <ul>
+      <li>The GetBuildInfo method is added</li>
+      <li>The following keys are added:
+        <ul>
+          <li><a href="http://tizen.org/feature/graphics.acceleration">http://tizen.org/feature/graphics.acceleration</a></li>
+          <li><a href="http://tizen.org/feature/network.nfc.reserved_push">http://tizen.org/feature/network.nfc.reserved_push</a></li>
+          <li><a href="http://tizen.org/feature/network.push">http://tizen.org/feature/network.push</a></li>
+          <li><a href="http://tizen.org/feature/opengles">http://tizen.org/feature/opengles</a></li>
+          <li><a href="http://tizen.org/feature/screen.auto_rotation">http://tizen.org/feature/screen.auto_rotation</a></li>
+          <li><a href="http://tizen.org/feature/screen.size.normal.480.800">http://tizen.org/feature/screen.size.normal.480.800</a></li>
+          <li><a href="http://tizen.org/feature/screen.size.normal.720.1280">http://tizen.org/feature/screen.size.normal.720.1280</a></li>
+          <li><a href="http://tizen.org/feature/shell.appwidget">http://tizen.org/feature/shell.appwidget</a></li>
+          <li><a href="http://tizen.org/feature/sip.voip">http://tizen.org/feature/sip.voip</a></li>
+          <li><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a></li>
+          <li><a href="http://tizen.org/feature/speech.synthesis">http://tizen.org/feature/speech.synthesis</a></li>
+          <li><a href="http://tizen.org/feature/network.telephony.mms">http://tizen.org/feature/network.telephony.mms</a></li>
+          <li><a href="http://tizen.org/feature/network.telephony.sms.cbs">http://tizen.org/feature/network.telephony.sms.cbs</a></li>
+          <li><a href="http://tizen.org/feature/vision.face_recognition">http://tizen.org/feature/vision.face_recognition</a></li>
+          <li><a href="http://tizen.org/feature/vision.image_recognition">http://tizen.org/feature/vision.image_recognition</a></li>
+          <li><a href="http://tizen.org/feature/vision.qrcode_generation">http://tizen.org/feature/vision.qrcode_generation</a></li>
+          <li><a href="http://tizen.org/feature/vision.qrcode_recognition">http://tizen.org/feature/vision.qrcode_recognition</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Vibrator
+    <ul>
+      <li>Supports array-based pattern vibration</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Telephony</p>
+  </li>
+  <li>SIM Manager
+    <ul>
+      <li>Supports getting SIM state and type</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Ui</p>
+  </li>
+  <li>APIs related to floating point are added throughout the UI namespace to reduce loss of precision issues when handling different resolutions</li>
+  <li>UI controls
+    <ul>
+      <li>GroupContainer for grouping controls together with a grouped look is added</li>
+      <li>Supports verifying paste texts by implements Tizen::Ui::Controls::ITextFilter interface that processes a text event</li>
+    </ul>
+  </li>
+  <li>IME
+    <ul>
+      <li>Supports input methods in the Tizen::Ui::Ime::InputMethod classes which can be used to input characters to text input UI controls, and interact with the associated UI controls</li>
+      <li>Supports managing input methods through the Tizen::Ui::Ime::InputMethodManager classes</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Uix</p>
+  </li>
+  <li>Vision
+    <ul>
+      <li>Image recognition
+        <ul>
+          <li>Supports natural image recognition and tracking functionalities</li>
+          <li>New API for reference image feature set creation used in the image recognition is supported</li>
+        </ul>
+      </li>
+      <li>QR code recognition
+        <ul>
+          <li>Supports standard QR code recognition and generation functionalities</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Sensor management
+    <ul>
+      <li>Supports device orientation, user acceleration, and gravity sensors</li>
+    </ul>
+  </li>
+  <li>
+    <p>Tizen::Web</p>
+  </li>
+  <li>HTML5/W3C programming
+    <ul>
+      <li>Supports Geolocation, GetUserMedia, Custom Handlers, Web Notification, Web Socket, Web GL, Web Worker, App Cache, Indexed DB, Web SQL Database, Web Storage, File System, Vibration, Prevent Default, and many more</li>
+    </ul>
+  </li>
+  <li>Bookmark
+    <ul>
+      <li>Supports bookmark information management for a preloaded browser</li>
+    </ul>
+  </li>
+  <li>Storage
+    <ul>
+      <li>Supports managing quota for Application Cache, Indexed DB, Web SQL Database, Web Storage, and File System</li>
+    </ul>
+  </li>
+  <li>Page control
+    <ul>
+      <li>Supports:
+        <ul>
+          <li>Getting the size of a Web page</li>
+          <li>Scrolling a Web page</li>
+          <li>Clearing navigation history, auto-cumulated data, or auto-fill data</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Setting
+    <ul>
+      <li>Supports configuring the auto-complete or auto-fill features</li>
+    </ul>
+  </li>
+  <li>Floating point
+    <ul>
+      <li>Supports precision for floating-point coordinates</li>
+    </ul>
+  </li>
+  <li>JSON
+    <ul>
+      <li>Supports the compose API for unescape Unicode</li>
+    </ul>
+  </li>
+  <li>
+    <p>Reference native applications</p>
+  </li>
+  <li>Messages
+    <ul>
+      <li>Multimedia Messaging System (MMS) is added</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="changed-features-1">Changed Features</h5>
+
+<ul>
+  <li>For Tizen native API change details, see <a href="http://developer.tizen.org/downloads/sdk/2.1-api-change-notes">Tizen API Change Notes</a>.</li>
+  <li>Tizen::App
+    <ul>
+      <li>AppControl
+        <ul>
+          <li>Phone AppControl is split into Phone and Call</li>
+          <li>The AppControl argument is changed, but the previous argument is still supported</li>
+        </ul>
+      </li>
+      <li>GetInstanceByAppId() privilege level is changed from Partner to Platform</li>
+    </ul>
+  </li>
+  <li>Tizen::Ui
+    <ul>
+      <li>The client size of the Tizen::Ui::Controls::Popup control has changed to remove unnecessary left and right margins of 20 pixels</li>
+      <li>The height of the Tizen::Ui::Controls::MessageBox and Tizen::Ui::Controls::ProgressPopup controls is no longer variable according to the length of the body text</li>
+      <li>Indicator height is reduced in the landscape mode to provide more content area. Therefore, client bounds of the Tizen::Ui::Controls::Form control changes in the landscape mode. When the indicator is made translucent while in the landscape mode, it becomes completely transparent. The indicator and Form behavior for the portrait orientation has not changed.</li>
+      <li>The UI control deleting order has changed. UI controls were being deleted from parent to child, but in Tizen version 2.1, they are deleted from child to parent.</li>
+      <li>It is recommended to use “.#.png” for extension of a nine patch image. If the extension is not “.#.png”, a bitmap which is loaded by the GetBitmapN() method and the UI Builder tool is not represented as a nine patch.</li>
+      <li>Scene management
+        <ul>
+          <li>User input is disabled on scene transition animations</li>
+          <li>The RegisterScene() method returns the exception to prevent duplicated form IDs on different form scenes</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="known-issues">Known Issues</h5>
+
+<ul>
+  <li>Tizen::App
+    <ul>
+      <li>AppControl
+        <ul>
+          <li>The PICK operation of the MusicPlayer application control is supported only on the target device</li>
+          <li>Video call is not supported for the Call application control</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Graphics
+    <ul>
+      <li>Graphics
+        <ul>
+          <li>The Tizen SDK adopts font resources with open source license, therefore, some rarely used glyphs are missing</li>
+        </ul>
+      </li>
+      <li>3D graphics
+        <ul>
+          <li>OpenGL ES
+            <ul>
+              <li>To create an egl window surface for Tizen::Ui::Controls, the width of the control has to be an even number</li>
+              <li>When a GL application runs with HW Acceleration enabled in the Emulator, the rendering results are flipped along y-axis</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Io
+    <ul>
+      <li>MessagePort
+        <ul>
+          <li>Sending ByteBuffer values to a Web application through the RemoteMessagePort::SendMessage() method is not supported for native applications</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tizen::Locales
+    <ul>
+      <li>Number formatting has known issues when saved number strings with a decimal point or thousands separator are handled after the locale setting has changed</li>
+    </ul>
+  </li>
+  <li>Tizen::Locations
+    <ul>
+      <li>If the current locale, time zone, or time is changed after region monitoring is enabled, the location provider does not always notify of the region change</li>
+    </ul>
+  </li>
+  <li>Tizen::Media
+    <ul>
+      <li>The camera preview or video is not shown if the height is longer than width when the H/W acceleration is off</li>
+      <li>The video frame that is rendered on the screen at the end of a stream or when the Player::Stop() method is called can differ depending on the device model and the H/W acceleration mode</li>
+    </ul>
+  </li>
+  <li>Tizen::Web
+    <ul>
+      <li>Web
+        <ul>
+          <li>The UI for the auto-complete feature does not work</li>
+          <li>To use a site supporting geolocation feature, enable the “Remember Preference” check box when a confirm popup appears</li>
+        </ul>
+      </li>
+      <li>JSON
+        <ul>
+          <li>The JSON parser is currently locale-dependent. It will be changed in a later revision to be locale-independent.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="core-system">Core System</h4>
+
+<h5 id="new-features-2">New Features</h5>
+
+<ul>
+  <li>Reference Kernel
+    <ul>
+      <li>MFC (Multi Function Codec) firmware is added</li>
+      <li>Bluetooth
+        <ul>
+          <li>Supports encoding of 32/128 bit UUIDs is added</li>
+        </ul>
+      </li>
+      <li>Camera
+        <ul>
+          <li>Supports 3264x2488 and 3264x1836 preview resolutions for RD-PQ</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>System
+    <ul>
+      <li>Systemd
+        <ul>
+          <li>As a system and service manager, systemd (v.43) is newly applied to the platform, replacing the System V init daemon</li>
+          <li>Parallelized service activation, on-demand socket and D-Bus activation for starting services and daemons, managing the service processes as a group using Linux cgroup, supporting automount points, snapshotting, and restoring of services are newly added</li>
+          <li>systemd coredump handler is disabled as the Tizen platform has its own crash debugging module</li>
+          <li>Supports SMACK labeling of FIFO and UNIX domain sockets used by systemd at runtime</li>
+          <li>In order to support backward compatibility of System V init, necessary features, such as “reboot parameter passing” are added into systemd</li>
+        </ul>
+      </li>
+      <li>Device-node
+        <ul>
+          <li>New module to control hardware devices. A tunnel between system framework and OAL (OEM Adaptation Layer), which accesses real device nodes. In addition, this module decides the permission of device nodes with which user can access.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Security
+    <ul>
+      <li>Smack
+        <ul>
+          <li>Full Smack support in kernel space including long label support, recursive transmute</li>
+          <li>Smack labels for platform core modules and sample Smack rule sets enabling apps to run properly</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="changed-features-2">Changed Features</h5>
+
+<ul>
+  <li>System
+    <ul>
+      <li>System V init daemon is removed and systemd is used as the service manager</li>
+      <li>Power manager
+        <ul>
+          <li>When a user or an application changes the brightness of display, the power manager daemon broadcasts the information to other applications</li>
+        </ul>
+      </li>
+      <li>Device manager
+        <ul>
+          <li>Even in a low battery condition, changing the display brightness can be done</li>
+        </ul>
+      </li>
+      <li>Feedback
+        <ul>
+          <li>All vibration files are combined to an XML file to reduce the size of binary. The XML file is implemented by base64 encoding schemes.</li>
+        </ul>
+      </li>
+      <li>Vibrator
+        <ul>
+          <li>When a vibration effect is created, its magnitude can be set</li>
+        </ul>
+      </li>
+      <li>Sys-Assert
+        <ul>
+          <li>Debug mode is enabled</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>dlog
+    <ul>
+      <li>In the logging mode, the platform log turns on or off conditionally</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="supported-devices">Supported Devices</h4>
+
+<h5 id="features">Features</h5>
+
+<ul>
+  <li>Emulator
+    <ul>
+      <li>The Emulator is an x86-based Qemu image which can be run on computers</li>
+      <li>Preloaded applications:
+        <ul>
+          <li>Reference Core applications
+            <ul>
+              <li>Home and Lock</li>
+            </ul>
+          </li>
+          <li>Reference native applications
+            <ul>
+              <li>Calculator, Calendar, CalendarService, Camera, Clock, Contacts, Email, Gallery, ImageViewer, Internet, Memo, Messages, MusicPlayer, MyFiles, Phone, Settings, and VideoPlayer</li>
+            </ul>
+          </li>
+          <li>Home and Lock applications can be changed from reference core applications to reference native applications with the build configuration</li>
+          <li>All reference native applications can be changed from reference native applications to reference core applications with the build configuration</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Reference target devices
+    <ul>
+      <li>The reference target devices are designed based on commercial target devices:</li>
+      <li>Ref.Device-210
+        <ul>
+          <li>Ref.Device-210 is a reference target based on Samsung Galaxy S2 HD</li>
+        </ul>
+      </li>
+      <li>Ref.Device-PQ
+        <ul>
+          <li>Ref.Device-PQ is a reference target based on Samsung Galaxy S3</li>
+        </ul>
+      </li>
+      <li>Preloaded applications:
+        <ul>
+          <li>Reference Core applications
+            <ul>
+              <li>Home, Calculator, Calendar, CalendarService, Camera, Clock, Contacts, Email, Gallery, ImageViewer, Memo, Messages, MusicPlayer, MyFiles, Phone, Settings and VideoPlayer</li>
+            </ul>
+          </li>
+          <li>Reference native applications
+            <ul>
+              <li>Calculator, Calendar, CalendarService, Camera, Clock, Contacts, Email, Gallery, ImageViewer, Internet, Memo, Messages, MusicPlayer, MyFiles, Phone, Settings, and VideoPlayer</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="supported-languages">Supported Languages</h4>
+
+<ul>
+  <li>The following languages are supported:
+    <ul>
+      <li>Arabic</li>
+      <li>Armenian</li>
+      <li>Azerbaijani</li>
+      <li>Basque</li>
+      <li>Bulgarian</li>
+      <li>Catalan</li>
+      <li>Chinese</li>
+      <li>Chinese(Singapore)</li>
+      <li>Chinese(HongKong)</li>
+      <li>Chinese(Taiwan)</li>
+      <li>Croatian</li>
+      <li>Czech</li>
+      <li>Danish</li>
+      <li>Dutch</li>
+      <li>English (US)</li>
+      <li>English (UK)</li>
+      <li>English (Philippines)</li>
+      <li>Estonian</li>
+      <li>Finnish</li>
+      <li>French</li>
+      <li>French (Canada)</li>
+      <li>Galician</li>
+      <li>Georgian</li>
+      <li>German</li>
+      <li>Greek</li>
+      <li>Hindi</li>
+      <li>Hungarian</li>
+      <li>Icelandic</li>
+      <li>Irish</li>
+      <li>Italian</li>
+      <li>Japanese</li>
+      <li>Kazakh</li>
+      <li>Korean</li>
+      <li>Latvian</li>
+      <li>Lithuanian</li>
+      <li>Macedonian</li>
+      <li>Norwegian</li>
+      <li>Polish</li>
+      <li>Portuguese</li>
+      <li>Portuguese(Brazil)</li>
+      <li>Romanian</li>
+      <li>Russian</li>
+      <li>Serbian</li>
+      <li>Slovak</li>
+      <li>Slovenian</li>
+      <li>Spanish</li>
+      <li>Spanish (Mexico)</li>
+      <li>Swedish</li>
+      <li>Turkish</li>
+      <li>Ukrainian</li>
+      <li>Uzbek</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="licenses">Licenses</h4>
+
+<ul>
+  <li>The following changes have been made in the licenses:
+    <ul>
+      <li>The term “Compatibility Definition Document” in the Flora license and Tizen SDK License has been changed to “Tizen Compliance Specification”</li>
+      <li>The term “Compatibility Test Suites” in the Flora license and Tizen SDK License has been changed to “Tizen Compliance Tests”</li>
+      <li>The Flora License 4.4 condition has been clarified regarding the licensee’s own copyright to derivative works or modifications</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="ide-and-tools">IDE and Tools</h3>
+
+<h4 id="new-features-3">New Features</h4>
+
+<ul>
+  <li>General
+    <ul>
+      <li>Design renewal
+        <ul>
+          <li>The Tizen pinwheel BI (Brand Identity) has been applied</li>
+          <li>A new delightful color scheme for icons, textures, and shapes has been applied</li>
+          <li>The application icon size has been increased from 108 to 117</li>
+        </ul>
+      </li>
+      <li>“Keyboard Shortcuts” menu added: a user can download Tizen IDE shortcuts in PDF format
+        <ul>
+          <li>Menu with a link to Tizen Web site added</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Common Tools
+    <ul>
+      <li>Emulator
+        <ul>
+          <li>The following changes have been made in OpenGL ES:
+            <ul>
+              <li>Support for the FBO extension for GLES1.1</li>
+              <li>Removal of SW mesa from the Tizen platform</li>
+            </ul>
+          </li>
+          <li>systemd has been adopted for the Tizen platform booting</li>
+          <li>Sleep mode performance on Ubuntu and Mac OS X has been enhanced by removing redundant CPU usage</li>
+          <li>The orientation of the general purpose skin can be done with the skin indicator, which is by default located on the upper left corner and rotated along the skin</li>
+        </ul>
+      </li>
+      <li>Emulator Manager
+        <ul>
+          <li>Checking the OpenGL capability of host has been added to enable and disable GPU acceleration automatically</li>
+        </ul>
+      </li>
+      <li>Event Injector
+        <ul>
+          <li>The following changes have been made:
+            <ul>
+              <li>Support for the user acceleration sensor</li>
+              <li>Support for the gravity sensor</li>
+              <li>Support for the orientation sensor</li>
+              <li>Support for the MMS sent status</li>
+              <li>UI enhancement for telephony messaging</li>
+              <li>Removal of toggle buttons (check boxes) from the 3-axis sensor</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Install Manager
+        <ul>
+          <li>Supports command line interface (CLI) for installing or removing the SDK</li>
+          <li>Separates the “Minimal” installation type into “Web Minimal” and “Native Minimal”</li>
+          <li>Shows the installed size of the SDK packages</li>
+          <li>Supports styling scripting tags for component description</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Web IDE and Tools
+    <ul>
+      <li>Configuration editor
+        <ul>
+          <li>Supports app-control operations on the Tizen tab</li>
+          <li>Supports app-widget settings on the Tizen tab</li>
+          <li>Supports account settings on the Tizen tab</li>
+          <li>Supports mouse events and touch effects on the Dynamic Box on the Tizen tab</li>
+          <li>Supports tools for icon production in the configuration editor</li>
+          <li>Changes the default required version from 1.0 to 2.1</li>
+        </ul>
+      </li>
+      <li>Editors (HTML, JavaScript, and CSS)
+        <ul>
+          <li>Supports the code assist and privilege list for the add-on SDK</li>
+          <li>Changes the default mode of the HTML editor to the source mode</li>
+        </ul>
+      </li>
+      <li>Building, running, and debugging
+        <ul>
+          <li>Supports NPPlugin packaging</li>
+          <li>Checks application ID validation during launch</li>
+          <li>Checks the architecture for a hybrid app before launch</li>
+          <li>Launching the application is canceled in case of existing errors in the “config.xml” file</li>
+        </ul>
+      </li>
+      <li>Application signing
+        <ul>
+          <li>Application signing is mandatory for launching</li>
+          <li>Checks validation of the certificate password in the Secure Profile before launching</li>
+        </ul>
+      </li>
+      <li>Project Wizard
+        <ul>
+          <li>Updated template libraries to jQuery 1.8.2 and jQM 1.2.0</li>
+          <li>Updated Tizen Web UI Framework to 0.2.26</li>
+        </ul>
+      </li>
+      <li>Preferences
+        <ul>
+          <li>Removed the API assist option</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Web UI Builder
+    <ul>
+      <li>Programming model
+        <ul>
+          <li>Supports application life-cycle event handlers, such as on-show and on-hide</li>
+        </ul>
+      </li>
+      <li>Properties view
+        <ul>
+          <li>Supports widget CSS style properties</li>
+        </ul>
+      </li>
+      <li>WYSIWYG page design editor (Page Designer)
+        <ul>
+          <li>Supports absolute layout</li>
+          <li>Supports HTML block and common container widgets absolute layout</li>
+        </ul>
+      </li>
+      <li>Advanced Declaration view
+        <ul>
+          <li>Support has been added</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Web Simulator
+    <ul>
+      <li>API implementation
+        <ul>
+          <li>SystemSetting, Push, NetworkBearerSelection, and Package modules added</li>
+          <li>Various old modules updated according to a specification change, including Messaging, SystemInfo, Content, and Power</li>
+          <li>Supports system service of dialer and messaging added and manual callbacks from other applications and services enabled</li>
+          <li>config.xml parser updated (as per new schema)</li>
+        </ul>
+      </li>
+      <li>UI enhancement
+        <ul>
+          <li>UI refinement</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Native IDE and Tools</p>
+  </li>
+  <li>Building
+    <ul>
+      <li>New build configuration: Debug, Release, and Profile</li>
+      <li>New architecture: LLVM-Bitcode/X86 (experimental), LLVM-Bitcode/ARM (experimental)</li>
+    </ul>
+  </li>
+  <li>Application signing
+    <ul>
+      <li>Application signing mandatory for launching</li>
+    </ul>
+  </li>
+  <li>Running and debugging
+    <ul>
+      <li>Supports attach debugging</li>
+      <li>Supports Smart Launch</li>
+      <li>Supports “Enable update” mode to test the Tizen Store update</li>
+      <li>Detailed error messages shown when the package is installed</li>
+    </ul>
+  </li>
+  <li>Tools
+    <ul>
+      <li>Code coverage
+        <ul>
+          <li>Code coverage is supported for the LLVM toolchain</li>
+        </ul>
+      </li>
+      <li>Unit Test
+        <ul>
+          <li>Changed to use the static gtest library</li>
+        </ul>
+      </li>
+      <li>Native CLI supports multi-project application packaging</li>
+      <li>sdb
+        <ul>
+          <li>sdbd has the “developer” privilege, so a user requiring root permission must use the “sdb root on” command</li>
+          <li>The “sdb install” command supports the Web package (*.wgt)</li>
+        </ul>
+      </li>
+      <li>Rootstrap Manager removed (use the Platform SDK)</li>
+    </ul>
+  </li>
+  <li>Dynamic analyzer
+    <ul>
+      <li>Feature configuration view is added</li>
+      <li>File chart information on the File analysis page is updated (see the manual)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Platform IDE</p>
+  </li>
+  <li>
+    <p>Supports local package repository</p>
+  </li>
+  <li>
+    <p>SDK Development Tools</p>
+  </li>
+  <li>The “build-cli changelog” command for querying the change log is added</li>
+  <li>Supports the project lock preventing building</li>
+  <li>Shows the progress when registering packages</li>
+  <li>Supports the remote build option (“–save”) of the “build-cli” command to save build results in a local storage</li>
+  <li>Shows detailed log of remote jobs on DIBS WEB</li>
+</ul>
+
+<h4 id="bugs-fixed">Bugs Fixed</h4>
+
+<ul>
+  <li>Web IDE
+    <ul>
+      <li>JSDT
+        <ul>
+          <li>Alerting the keyword error for “continue” and “delete” used as a property name of an object is fixed</li>
+          <li>Malfunction of the open declaration feature (for the position of creating an object with a constructor which has a declaration with parameters) is fixed</li>
+        </ul>
+      </li>
+      <li>NPE at re-launching application after the first launch succeeded is fixed</li>
+      <li>Bugs for incremental signing are fixed</li>
+      <li>UI Builder project exception created by the user template is fixed</li>
+      <li>JSON Validator error is fixed</li>
+      <li>Hybrid app CLI is fixed</li>
+      <li>Various bugs related to templates are fixed</li>
+      <li>Template attribute (data-inline) is fixed</li>
+      <li>Movable header in the jQuery Mobile templates is fixed</li>
+      <li>The issue of not opening the configuration editor when there are errors in the file is fixed</li>
+      <li>Web-hybrid app CLI bug is fixed</li>
+      <li>Including generated signature files into deltaInfoList is fixed</li>
+      <li>Duplicated project location is checked when creating a new project</li>
+      <li>The “Google Chrome settings in preferences” problem is fixed</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="known-issues-1">Known Issues</h4>
+
+<ul>
+  <li>
+    <p>Common IDE</p>
+
+    <ul>
+      <li>RDS (Rapid Development Support)
+        <ul>
+          <li>RDS is not supported in multi-process application projects</li>
+          <li>RDS is not supported in CLI tools</li>
+        </ul>
+      </li>
+      <li>CLI (Command Line Interface)
+        <ul>
+          <li>The project path and Tizen SDK path are fixed when the project is generated. If you change the path, the project cannot be built.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Web IDE</p>
+
+    <ul>
+      <li>The advanced Declaration view for JavaScript has several known issues due to JSDT-related bugs</li>
+      <li>The Lock function of the advanced Declaration view has been disabled because of a NullPointerException issue</li>
+      <li>Assignment tracing for JavaScript has several known issues:
+        <ul>
+          <li>If local variables are used as a method name in a method call expression, assignment tracing does not function</li>
+          <li>Incorrect activation occurs if the inner and outer methods are both anonymous</li>
+        </ul>
+      </li>
+      <li>Web Simulator
+        <ul>
+          <li>Only a single application can run at a time</li>
+          <li>Modules not supported: DataControl, MessagePort, SecureElement, Bookmark, and DataSynchronization</li>
+          <li>Daylight saving time-related methods are not supported in the Time module</li>
+        </ul>
+      </li>
+      <li>The “could not delete resources” problem while building is fixed</li>
+      <li>An error can occur in the Web UI Builder template when you try to perform the clean and build action. This is a bug in the JavaScript Validator in Eclipse, and can be resolved as follows:
+        <ol>
+          <li>Uncheck JavaScript Validator in the Builders section of the application properties.</li>
+          <li>Delete errors in the Problems view.</li>
+          <li>Clean and build the project again.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Native IDE</p>
+
+    <ul>
+      <li>Unit test
+        <ul>
+          <li>Currently, the unit test is designed to support only functional testing</li>
+          <li>Unit Test application is not an OSP-based application. Therefore, some methods related with OSP application framework, such as methods of the Tizen::Base::String class, can behave incorrectly.</li>
+          <li>The Test Explorer does not work if the project files have not been changed. In this case, edit the code manually, build the project, and run it.</li>
+        </ul>
+      </li>
+      <li>Valgrind
+        <ul>
+          <li>Valgrind profiling is only supported in the Emulator</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Emulator</p>
+
+    <ul>
+      <li>
+        <p>If you run the Emulator with Oracle Java 1.7 or higher on Mac OS, it may result in your host machine getting slower. If you run two or more Emulator VMs, Occasionally booting the Emulator does no work.</p>
+      </li>
+      <li>
+        <p>Your Ubuntu desktop session can be occasionally logged out when launching the Emulator Manager, if you use NVIDIA graphic card. In that case, install the latest driver directly from the NVIDIA website.</p>
+      </li>
+      <li>
+        <p>OpenGL ES acceleration can have problems in certain environments:</p>
+
+        <ul>
+          <li>Windows XP/7 with Intel motherboard integrated card</li>
+          <li>Ubuntu 11.10 with Intel CPU/motherboard integrated card</li>
+        </ul>
+
+        <p>If this occurs, you can launch the Emulator by switching off the HW GL acceleration in the Emulator Manager. However, you cannot use any GL-related applications, such as a Web browser.</p>
+      </li>
+      <li>
+        <p>When you launch the Emulator on Windows, you can get a “failed to allocate memory” error. In that case, try the following:</p>
+
+        <ul>
+          <li>Increase the user area of the virtual memory in the system to 3 GB by running the “bcdedit /set increaseuserva 3072” command on the console with administrator rights (Windows 7 only)</li>
+          <li>Close some other programs and try to launch the Emulator again</li>
+          <li>If you have set the RAM size as 768 or 1024 MB for the VM in the Emulator Manager, change the RAM size to 512 MB</li>
+        </ul>
+      </li>
+      <li>
+        <p>Using the Emulator with SOCKS (SOCKet Secure) proxy on Mac OS X can cause unexpected problems</p>
+      </li>
+      <li>
+        <p>You cannot play all video files that are linked in YouTube or other Web pages and require the browsers registered to them</p>
+      </li>
+      <li>
+        <p>The Emulator log file (emulator.log) can become too large if you run the Emulator for a long time</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Dynamic analyzer</p>
+
+    <ul>
+      <li>A screenshot is sometimes not taken if the screen or scene change is implemented using an animation technique</li>
+      <li>The analysis of the IME and Service Applications is not supported</li>
+    </ul>
+  </li>
+  <li>
+    <p>Install Manager</p>
+
+    <ul>
+      <li>A shortcut is not provided in Mac OS X</li>
+    </ul>
+  </li>
+</ul>
+
+
+    <!-- Page info -->
+<p class="text-muted small">
+
+  
+
+
+  <br>
+  Last updated May 28, 2018
+
+
+</p>
+<!-- Page info end -->
+  </div>
+  <aside class="side-nav">
+    <!-- Page navigation -->
+<link href="/assets/css/pagenav.css" rel="stylesheet">
+<div class="table-of-content" id="pagenav-table">
+  <div class="table-of-content-header"><a href="#">Index</a></div>
+  <div class="table-of-content-anchors">
+    <ul class="anchor-list" id="pagenav-index"/>
+  </div>
+</div>
+<script src="/assets/js/pagenav.js"></script>
+<!-- Page navigation end -->
+  </aside>
+</main>
+
+</div>
+
+  <!-- Floating button -->
+  <!--
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-light">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+  -->
+</body>
+</html>

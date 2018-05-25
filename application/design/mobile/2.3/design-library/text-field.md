@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Text Field
+order: 1
+---
+
 # Text Field
 
 You can allow users to enter text in an application using a text field. Tapping the text field activates the keypad and reveals a cursor.

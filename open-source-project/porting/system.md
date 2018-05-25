@@ -1,3 +1,9 @@
+---
+layout: solution
+title: System
+order: 3
+---
+
 # System
 
 You can implement various features relatesd to the System framework and the file system.

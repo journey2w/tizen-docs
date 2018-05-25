@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen Compliance Specification
+order: 2
+---
+
 # Tizen Compliance Specification
 
 The Tizen Compliance Specification is the definitive set of requirements for software and hardware to create compliant Tizen devices. This document is the basis for Tizen Compliance Tests and eventual Tizen Compliance certification:

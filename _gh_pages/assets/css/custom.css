@@ -1,0 +1,895 @@
+@import "discourse_custom.css";
+@import "../vendor/font-awesome/css/font-awesome.min.css";
+/* @import "/vendor/font-awesome/css/font-awesome.min.css"; */
+
+:root {
+--card-width:210px;
+--card-height:410px;
+--card-focus-width:260px;
+--card-focus-height:450px;
+}
+
+.container > .navbar-header {
+  /* margin-left:51px; */
+  margin-left:0;
+  padding-left:0;
+}
+
+.container > .navbar-right {
+  margin-right:48px;
+}
+
+body {
+  font-family: museosans-100;
+  overflow-y:hidden;
+}
+
+h1 {
+  font-family: museosans-700;
+}
+
+h2 {
+  font-family: museosans-500;
+}
+
+.scroller {
+  /* margin-top:80px; */
+  overflow-y:auto;
+  max-height:100vh;
+  /* max-height: calc( 100vh - 80px ); */
+}
+
+.portal-main .navbar-nav > li > a,
+.portal-main .navbar-nav > li > a:hover,
+.portal-main .navbar-nav > li.active > a,
+.portal-main .navbar-nav > li.active > a:hover,
+.portal-main .navbar a.navbar-brand,
+.portal-main .navbar a.navbar-brand:hover,
+.portal-main .navbar-nav > li.navbar-divisor {
+  color: #ffffff;
+  border-color:#ffffff;
+}
+
+.portal-main .navbar {
+  background-color:transparent;
+}
+
+.portal-main .navbar-nav > li.active > a,
+.portal-main .navbar-nav > li > a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.carousel-caption p.banner-title {
+  font-family: museosans-700;
+  font-size: 84px;
+  text-shadow:none;
+}
+
+.carousel-caption p.banner-body {
+  font-family: museosans-500;
+  font-size: 28px;
+  text-shadow:none;
+}
+
+.btn-transparent {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: museosans-700;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+}
+
+.btn-docs {
+  margin-top:30px;
+  color: #ffffff;
+  background-color:#56c4d8;
+  font-family: museosans-700;
+  font-size: 16px;
+  border: 2px solid #56c4d8;
+}
+
+.btn-dashboard {
+  margin-top:30px;
+  color: #ffffff;
+  background-color:#567bd8;
+  font-family: museosans-700;
+  font-size: 16px;
+  border: 2px solid #567bd8;
+}
+
+.btn-craftroom {
+  margin-top:30px;
+  color: #ffffff;
+  background-color:#56a5d8;
+  font-family: museosans-700;
+  font-size: 16px;
+  border: 2px solid #56a5d8;
+}
+
+.feature-card-inner {
+  width:180px;
+  text-align:center;
+  margin:20px auto auto auto;
+  word-wrap:break-word;
+}
+
+.feature-card {
+  display:inline-table;
+  padding: 10px;
+  text-align:center;
+  margin: auto 5px;
+  vertical-align:middle;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-family:museosans-300;
+  font-size: 14px;
+
+  width: var(--card-width);
+  height: var(--card-height);
+  -webit-transition-duration:0.5s;
+  transition-duration:0.5s;
+}
+
+.feature-card:hover,
+.feature-card.hover {
+  width: var(--card-focus-width);
+  height:var(--card-focus-height);
+  -webit-transition-duration:0.5s;
+  transition-duration:0.5s;
+}
+
+.feature-card-top {
+  height: 20px;
+  background-color:#dddddd;
+  margin: -10px;
+}
+
+.feature-card-title {
+  font-family:museosans-700;
+  font-size:18px;
+}
+
+.feature-card:hover .feature-card-top {
+  background-image:url("../images/feature_card_top.png");
+}
+
+.feature-card-link {
+  text-align:right;
+  display:none;
+  font-family:museosans-700;
+}
+
+.feature-card:hover .feature-card-link {
+  display:inherit;
+}
+
+.feature-card-container {
+  text-align:center;
+  margin: 0px 15px 0px 15px;
+  height: calc( var(--card-focus-height) + 50px);
+}
+
+.feature-card-inner > h2 {
+  font-family:museosans-700;
+}
+
+.feature-card-inner > p {
+  font-family:museosans-300;
+}
+
+.news-feed {
+  background-color:#f1f1f1;
+  padding-bottom: 95px;
+  margin: 0px 15px 0px 15px;
+}
+
+.news-feed-main-title {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 70px;
+  font-family:museosans-700;
+  font-size:42px;
+}
+
+.news-feed-title {
+  margin-top: 50px;
+  margin-bottom: 57px;
+  font-family:museosans-500;
+  font-size:23px;
+}
+
+.news-feed-body {
+  font-family:museosans-300;
+  font-size:14px;
+  color:#444444;
+  margin-bottom:34px;
+}
+
+.news-feed-card {
+  background-color:#ffffff;
+  width:560px;
+  height:466px;
+  display:inline-table;
+  margin:auto 20px auto 5px;
+}
+
+.news-feed-card-body {
+  display:table-cell;
+}
+
+.news-feed-card-inner {
+  display: table;
+  padding: 0px 52px 52px 30px;
+}
+
+.news-feed-card-more-btn {
+  float: right;
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  border-bottom: 26px solid #85D2E0;
+  border-left: 26px solid #85D2E0;
+  border-right: 26px solid #f4f4f4;
+  border-top: 26px solid #f4f4f4;
+}
+
+.news-feed-card-more-btn-plus {
+  margin-left:-23px;
+  margin-top:-23px;
+}
+
+.news-feed-card-more-btn-plus a {
+  color:white;
+  font-family:museosans-700;
+  font-size:40px;
+}
+
+.news-feed-card-more-btn-plus a:hover {
+  text-decoration:none;
+}
+
+.news-feed-avatar {
+  display: table-cell;
+  width: 70px;
+}
+
+.news-feed-avatar > img {
+  margin-top:20px;
+}
+
+.news-feed-author {
+  font-family:museosans-300;
+  font-size:14px;
+  color:#999999;
+}
+
+.news-feed-more {
+  float:right;
+  margin-top:37px;
+}
+
+body {
+  background-color:#f7f7f7;
+}
+
+/***********************************************************/
+.footer {
+  border-top:1px solid #e5e5e5;
+  background-color:white;
+  padding:0 48px 0 40px;
+  border:none;
+  font-family:museosans-700;
+  font-size:16px;
+  height:128px;
+}
+
+.footer .family-sites {
+  padding-top:34px;
+  float:right;
+}
+
+.footer .family-sites > a {
+  color:#333333
+}
+
+.footer .family-sites > a:hover {
+  color:#56c4d8
+}
+
+.footer .outer-links {
+  padding-top:25px;
+  margin-right:-30px;
+  float:right;
+}
+
+.footer .outer-links .item {
+  margin-right:30px;
+  display:inline-block;
+  font-family:museosans-300;
+  font-size:14px;  
+  /* color:rgba(51,51,51,0.7); */
+  color:#333333;
+}
+
+.footer .outer-links .item > a {
+  color:#333333;
+}
+
+.footer .outer-links .item > a:hover {
+  /* font-family:museosans-500; */
+  font-family:museosans-300;
+  color:#56c4d8;
+}
+
+.footer .outer-links .item img {
+  margin-right:10px;  
+}
+
+.footer .divider {
+  display:inline-block;
+  margin:auto 30px;
+  height:13px;
+  border-left:1px solid rgba(51,51,51,0.35);
+}
+
+.footer .copyright {
+  font-family:museosans-500;
+  font-size:13px;
+  line-height:22px;
+  color:#555555;
+  float:left;
+  text-align:left;
+  margin-top:37px;
+}
+
+/***********************************************************/
+.landing-top {
+  background-image:url("../images/img_docs_banner_bg.png");
+  height:500px;
+
+/* origin
+  margin-top:200px;
+  margin-bottom:120px;
+*/
+}
+
+.landing-top .top-title {
+  font-family:samsungone-700;
+  font-size:48px;
+  color:#ffffff;
+  margin-top:167px;
+  margin-bottom:14px;
+  margin-left:26px;
+  width:515px;
+}
+
+.landing-top .top-subtitle {
+  font-family:samsungone-700;
+  font-size:32px;
+  color:#000000;
+}
+
+.landing-top .body {
+  font-family:samsungone-500;
+  font-size:18px;
+  line-height:24px;
+  color:#ffffff;
+  margin-left:26px;
+  width:515px;
+}
+
+.landing-top .landing-image-right {
+  float:right;
+  width:590px;
+  margin-top:51px;
+  margin-left:46px;
+}
+
+.landing-top .landing-image-left {
+  float:left;
+  width:590px;
+}
+/***********************************************************/
+.landing-middle {
+  background-color:#ffffff;
+  width:100%;
+  text-align:center;
+}
+
+.landing-middle .container {
+  padding: 0px 35px 65px 30px;
+}
+
+.landing-middle .landing-middle-main-title {
+  font-family:samsungone-700;
+  font-size:40px;
+  color:#000000;
+  text-align:center;
+  margin-top:61px;
+  margin-bottom:59px;
+}
+
+.landing-middle .landing-card {
+  width:459px;
+  height:261px;
+  display:inline-block;
+  margin:22px;
+  display:inline-table;
+
+  -webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 3px 3px 1px rgba(0,0,0,0.15);
+  box-shadow: 3px 3px 1px rgba(0,0,0,0.15);
+  /* box-shadow:3px 3px 1px rgba(0,0,0,0.15); */
+  /* box-shadow:3px 3px 1px hsla(90,0,0,0.15); */
+}
+
+/***********************************************************/
+/* landing-card */
+
+.landing-middle .landing-card .landing-card-img {
+  display:table-cell;
+  width:120px;
+}
+
+.landing-middle .landing-card .landing-card-body {
+  display:table-cell;
+  position:relative;
+}
+
+.landing-middle .landing-card .landing-card-body .title {
+  font-family:samsungone-700;
+  font-size:20px;
+  color:#333333;
+  margin-top:40px;
+  margin-left:10px;
+  text-align:left;
+}
+
+.landing-middle .landing-card .landing-card-body .body {
+  font-family:samsungone-300;
+  font-size:14px;
+  line-height:24px;
+  color:#555555;
+  margin-left:10px;
+  text-align:left;
+}
+
+.landing-middle .landing-card .landing-card-body .landing-card-link {
+  font-family:samsungone-700;
+  font-size:14px;
+  color:#56c4d8;
+  text-align:right;
+  margin-right:36px;
+
+  position:absolute;
+  bottom:25px;
+  right:36px;
+}
+
+.moving-arrow a .img-normal {
+  visibility:visible;
+  vertical-align:middle;
+  margin-left:6px;
+}
+
+.moving-arrow a .img-active {
+  visibility:hidden;
+  vertical-align:middle;
+  margin-left:6px;
+}
+
+.moving-arrow a:hover {
+  text-decoration:none;
+  color:#337ab7;
+  margin-left:6px;
+}
+
+.moving-arrow a:hover .img-normal {
+  visibility:hidden;
+  vertical-align:middle;  
+  margin-left:6px;
+}
+
+.moving-arrow a:hover .img-active {
+  vertical-align:middle;
+  visibility:visible;
+  margin-left:6px;
+
+  -ms-transform:translateX(5px); /* IE 9 */
+  -webkit-transform:translateX(5px); /* Chrome, Safari, Opera */
+  transform:translateX(5px);
+
+  -ms-transition-duration:0.5s;
+  -webkit-transition-duration:0.5s;
+  transition-duration:0.5s;
+}
+
+/*
+.landing-middle .landing-card .landing-card-body .go_link {
+  content: url("/images/btn_more_10_nor.png");
+}
+*/
+
+/* TODO */
+/* .landing-middle .landing-card .landing-card-body .landing-card-link { */
+#circle {
+  width:2px;
+  height:2px;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  display:inline-block;
+  background:black;
+  vertical-align:middle;
+  text-align:left;
+}
+/***********************************************************/
+.landing-tizen {
+  background-color:#ffffff;
+  width:100%;
+}
+
+.landing-tizen .container {
+  width:100%; /* 1920px */
+  /* margin:0px; */
+  /* margin-top:-14px; IE broken */ /* bcz inline-flex */
+  padding:0px;
+  /* width:1760px;*/ /* 452px + 1308px */
+}
+
+.landing-tizen .container .row {
+  height:100%;
+  display:inline-flex;
+  margin:0px;
+  position:relative;
+  top:-15px; /* bcz inline-flex */
+}
+
+.landing-tizen .body {
+  /* width:1308px; */
+  width:950px; /* body:1050px toc:300px */
+  margin-top:50px;
+  margin-left:68px;
+  /* margin-right:100px; */
+  display:inline-block;
+}
+
+.landing-tizen .body h1 {
+  font-family:museosans-700;
+  font-size:36px;
+  text-align:left;
+}
+
+.landing-tizen .body h2 {
+  font-family:museosans-500;
+  font-size:24px;
+  text-align:left;
+}
+
+.landing-tizen .body p {
+  font-family:museosans-300;
+  font-size:14px;
+  /* line-height:22px; */
+  line-height:25px;
+  text-align:justify;
+}
+
+
+/**********************************/
+.nav.side-menu {
+  background-color:#f1f1f1;
+  display:inline-block;
+  vertical-align:top;
+  padding-top:30px;
+
+  overflow-y:auto;
+  /* max-height:calc( 70vh - 80px ); */
+  height:100%;
+  width:384px; /* scrollbar width: 20px */
+}
+
+.nav.side-menu > li {
+  /* width:364px; */ /* scrollbar width: 20px */
+  width:384px; /* no scrollbar */
+
+  font-family:museosans-500;
+  font-size:18px;
+  color:#555555;
+}
+
+.nav.side-menu > li > a, 
+.nav.side-menu > li > a:focus {
+  padding:15px 32px 15px 40px;
+
+  font-family:museosans-500;
+  font-size:18px;
+  color:#555555;
+  /* margin:16px auto; */
+
+  /* cannot expand
+  height:56px; line-height:56px;*/
+}
+
+/* Activated BG, Dash */
+.nav.side-menu > li.active > a, 
+.nav.side-menu > li.active > a:focus {
+  background-color: rgba(212,214,217,0.6); /* #d4d6d9_60 */
+  padding-left:34px;
+  border-left:6px solid #56c4d8;
+}
+
+.nav.side-menu > li.active > a:hover {
+  background-color: rgba(212,214,217,0.3); /* #d4d6d9_30 */
+}
+
+.nav.side-menu > li > a > .arrow {
+  display:inline-block;
+  float:right;
+  margin-top:3px;
+}
+
+.nav.side-menu > li > a > .arrow:after {
+  /* content: url("../images/btn_lnb_arrow_close.png"); */
+  content: url("../images/btn_lnb_arrow_open.png");
+}
+
+.nav.side-menu > li.open > a > .arrow {
+  display:inline-block;
+  float:right;
+  /* content:url("../images/btn_lnb_arrow_open.png"); */
+  content:url("../images/btn_lnb_arrow_close.png");
+  margin-top:3px;
+}
+/**********************************/
+.nav.side-menu > li span.fa {
+  float:right;
+}
+
+.nav.side-menu > li span.fa-chevron-down:before {
+  content: url("../images/btn_lnb_arrow_open.png");
+}
+
+.nav.side-menu > li span.fa-chevron-up:before {
+  content: url("../images/btn_lnb_arrow_close.png");
+}
+/**********************************/
+.nav.side-menu li .child_menu {
+  display:none;
+  background-color:#f1f1f1;
+  margin:8px 0 16px 0;
+}
+
+.nav.side-menu li.active .child_menu {
+  display:inherit;
+}
+
+.nav.side-menu li .child_menu > li > a, 
+.nav.side-menu li .child_menu > li > a:focus {
+  color:#555555;
+  font-family:museosans-500;
+  font-size:16px;
+  height:48px;
+  padding: 13px 0px 13px 56px;
+}
+
+.nav.side-menu li .child_menu > li > a:hover {
+  color:#555555;
+  font-family:museosans-500;
+}
+
+.nav.side-menu .child_menu > li.active > a, 
+.nav.side-menu .child_menu > li.active > a:focus {
+  background-color:#f1f1f1;
+  font-family:museosans-500;
+  font-size:16px;
+  color:#56a5d8;
+}
+
+.nav.side-menu .child_menu > li.active.open > a, 
+.nav.side-menu .child_menu > li.active.open > a:focus {
+  background-color:#f1f1f1;
+  font-family:museosans-500;
+  font-size:16px;
+  color:#555555;
+}
+/*********************************************/
+.nav.side-menu .child_child_menu {
+  background-color:#f1f1f1;
+  padding: 0;
+}
+
+.nav.side-menu .child_child_menu > li > a {
+  color:#555555;
+  font-family:museosans-300;
+  font-size:16px;
+  height:48px;
+  /* padding:13px 0px 13px 63px; */
+  padding:13px 0px 13px 5px;
+  display:inline-block;
+}
+
+.nav.side-menu .child_child_menu > li > a:hover,
+.nav.side-menu .child_child_menu > li:hover {
+  font-family:museosans-500;
+  background-color:#f1f1f1;
+}
+
+.nav.side-menu .child_child_menu > li.active > a {
+  font-family:museosans-500;
+  font-size:16px;
+  color:#56a5d8;
+}
+
+.nav.side-menu .child_child_menu > li:first-child .img-lnb-divider {
+  content: url("../images/img_lnb_divider_01.png");
+  margin-top:-30px;
+  margin-left:63px;
+  margin-right:5px;
+  display:inline-block;
+}
+
+.nav.side-menu .child_child_menu > li .img-lnb-divider {
+  content: url("../images/img_lnb_divider_02.png");
+  margin-top:-53px;
+  margin-left:63px;
+  margin-right:5px;
+  display:inline-block;
+}
+
+/* 3rd depth backup
+.nav.side-menu .child_child_menu > li > a {
+  color:#555555;
+  font-family:museosans-300;
+  font-size:16px;
+  height:48px;
+  padding:13px 0px 13px 63px;
+}
+
+.nav.side-menu .child_child_menu > li:first-child > a .img-lnb-divider {
+  content: url("../images/img_lnb_divider_01.png");
+  margin-top:-30px;
+  margin-right:5px;
+}
+
+.nav.side-menu .child_child_menu > li > a .img-lnb-divider {
+  content: url("../images/img_lnb_divider_02.png");
+  margin-top:-53px;
+  margin-right:5px;
+}
+*/
+
+.nav.side-menu .child_child_menu > li > a:hover {
+  color:#555555;
+  font-family:museosans-500;
+}
+
+.nav.side-menu .child_child_menu > li.active > a {
+  font-family:museosans-500;
+  font-size:16px;
+  color:#56a5d8;
+}
+/**********************************/
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: auto 12px;
+  vertical-align:middle;
+}
+
+.carousel-indicators .active {
+  margin: auto 10px;
+  vertical-align:middle;
+}
+
+.docs_row {
+  left:0px;
+  margin-left:0px;
+}
+
+.docs_body {
+  left:0px;
+  margin-left:452px;
+  /* margin-left:384px; */
+}
+
+.breadcrumb {
+  padding: 0px;
+  margin-bottom: 14px;
+  background-color:#ffffff;
+  font-family:musosans-500;
+  font-size:15px;
+  color:#555555;
+}
+
+.breadcrumb > li + li:before {
+  padding:0 8px;
+  content: url("../images/img_navi_arrow_default.png");
+} 
+
+.breadcrumb > li:nth-last-child(2) + li:before {
+  padding:0 8px;
+  content: url("../images/img_navi_arrow_point_02.png");
+}
+
+.breadcrumb a {
+  color:#56a5d8;
+}
+
+/***********************************************************/
+.docs-toc-row {
+  display:inline-flex;
+  float: right;
+  width:300px; /* body:1000px toc:300px */
+
+  padding-right:15px;
+  padding-left:15px;
+
+  margin-top:50px;
+  margin-left:30px;
+  margin-right:50px;
+} 
+
+.toc {
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+
+  color:#555555;
+  font-family:museosans-500;
+
+  float: right;
+  width: 300px;
+
+  position: fixed;
+}
+
+.toc.affix {
+  position: static;
+}
+
+.toc .nav > .active > a, .toc .nav > .active:hover > a,
+.toc .nav > .active :focus > a {
+  border-right: 2px solid #428bca;
+}
+
+.toc .nav .nav { 
+/*
+ * If you want to hide the sub UL elements, then add the following line
+ * display: none;
+ */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.toc .nav .nav > li > a {
+  font-size: 90%;
+}
+
+.toc .toc-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
+  font-family:museosans-700;
+  font-size:18px;
+}
+
+.toc .toc-link-2 { padding-left: 25px; }
+.toc .toc-link-3 { padding-left: 50px; }
+.toc .toc-link-4 { padding-left: 75px; }
+.toc .toc-link-5 { padding-left: 100px; }
+.toc .toc-link-6 { padding-left: 125px; }
+
+@media screen and (min-width: 992px) and (min-height: 700px) {
+  .toc.affix {
+    position: fixed;
+  }
+  .toc .nav > .active > ul {
+    display: block; 
+  } 
+}
+
+.toc .nav .nav {
+  /* display: none; */
+}

@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Graphics and UI
+order: 4
+---
+
 # Graphics and UI
 
 The application composes the graphic user interface by creating a window with a toolkit. The display server composites an application's windows and shows the result on the screen. For this procedure, the graphics and UI middleware offers the following 3 modules for both client and server:

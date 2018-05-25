@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Tizen IVI 3.0 Milestones
+order: 1
+---
+
 # Tizen IVI 3.0 Milestones
 
 ## Milestone 2 (March 2014)

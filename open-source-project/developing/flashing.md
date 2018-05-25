@@ -1,3 +1,9 @@
+---
+layout: solution
+title: Flashing an Image to Device
+order: 8
+---
+
 # Flashing an Image to Device
 
 The instructions for flashing depend on the type of device you are using. Instructions are available for the following devices:
